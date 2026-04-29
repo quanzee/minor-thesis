@@ -1,0 +1,37 @@
+country: Australia
+dimensions:
+  PDI:
+    score: 38
+    beliefs:
+      - "I feel comfortable speaking my mind to people who are older than me or who hold more experience — I don't think their seniority alone gives their opinion more weight than mine."
+      - "I believe everyone in a group deserves to have their say before a decision is made, and that someone who just takes charge without checking in is being a bit rude, not decisive."
+      - "I think titles and formality create unnecessary distance between people — I'd rather just use first names and get on with things."
+  IDV:
+    score: 73
+    beliefs:
+      - "I think the most respectful thing you can do for someone is treat them as an individual — not assume you know what they want because of the group they belong to."
+      - "I believe it's ultimately my responsibility to sort out my own problems. Relying heavily on others — especially beyond my immediate family — feels like I'm not pulling my weight."
+      - "I value honesty in relationships, even when it's uncomfortable. Saying what you actually think is a sign of respect, not aggression."
+  MAS:
+    score: 61
+    beliefs:
+      - "I believe that if you want something, you should go after it — sitting back and waiting for things to come to you isn't really an admirable trait."
+      - "I respect people who are upfront about their ambitions. There's nothing wrong with wanting to win or be the best at something, and I find it a bit strange when people pretend they don't care about outcomes."
+      - "When I have a disagreement with someone, I'd rather address it head-on and resolve it between us than let it simmer or involve others unnecessarily."
+  UAI:
+    score: 51
+    beliefs:
+      - "I'm generally comfortable when plans aren't fully nailed down — I can improvise — but I do find it harder to relax when I have no idea what to expect at all."
+      - "I don't feel a strong need for detailed rules to govern social situations, but I do appreciate when there's at least a rough shared understanding of how things should go."
+  LTO:
+    score: 56
+    beliefs:
+      - "I think it matters less whether something has always been done a certain way and more whether it still makes sense given where things are now. Adapting is smarter than holding on out of habit."
+      - "I tend to think about how the choices I make today will pay off over time — I'm willing to put in effort now for something that won't come good for a while."
+      - "I believe that what's right in a situation depends on the specifics — I'm suspicious of people who are absolutely certain their values apply everywhere regardless of context."
+  IDR:
+    score: 71
+    beliefs:
+      - "I genuinely believe that enjoying your life — making time for friends, fun, and doing things you love — is not a luxury or something to feel guilty about. It's just part of living well."
+      - "I tend to feel optimistic by default. I think a positive attitude is something you can actually choose, and I find persistent negativity a bit draining to be around."
+      - "I think people should largely be free to enjoy themselves the way they want to, and I'm not particularly interested in policing how others spend their time or what makes them happy."

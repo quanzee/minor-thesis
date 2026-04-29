@@ -1,0 +1,44 @@
+{
+    "PDI": 
+        {
+	        "description": "The extent to which the less powerful members of organizations and institutions (like the family) accept and expect that power is distributed unequally.",
+	        "score_note": "0 = small power distance (left pole), 100 = large power distance (right pole)",
+	        "small_power_distance": ["Use of power should be legitimate and is subject to criteria of good and evil", "Parents treat children as equal", "Older people are neither respected nor feared", "Student-centered education", "Hierarchy means inequality of roles, established for convenience", "Subordinates expect to be consulted", "Pluralist governments based on majority vote and changed peacefully", "Corruption rare; scandals end political careers", "Income distribution in society rather even", "Religions stressing equality of believers"],
+	        "large_power_distance": ["Power is a basic fact of society antedating good or evil: its legitimacy is irrelevant", "Parents teach children obedience", "Older people are both respected and feared", "Teacher-centered education", "Hierarchy means existential inequality", "Subordinates expect to be told what to do", "Autocratic governments based on co-optation and changed by revolution", "Corruption frequent; scandals are covered up", "Income distribution in society very uneven", "Religions with a hierarchy of priests"]
+        },
+    "IDV": 
+        {
+	        "description": "The degree of interdependence a society maintains among its members",
+            "score note": "0 = collectivism (left pole), 100 = individualism (right pole)",
+            "collectivism": ["People are born into extended families or clans which protect them in exchange for loyalty", "\"We\" –consciousness", "Stress on belonging", "Harmony should always be maintained", "Others classified as in-group or out-group", "Opinions and votes predetermined by in-group", "Transgression of norms leads to shame feelings", "Languages ini which the word \"I\" is avoided", "Purpose of education is learning how to do", "Relationship prevails over task"],
+            "individualism": ["Everyone is supposed to take care of him - or herself and his or her immediate family only", "\"I\" consciousness", "Right of privacy", "Speaking one's mind is healthy", "Others classified as individuals", "Personal opinion expected: one person one vote", "Transgression of norms leads to guilt feelings", "Languages in which the word \"I\" is indispensable", "Purpose of education is learning how to learn", "Task prevails over relationship"]
+        },
+    "MAS":
+        {
+            "description": "A high score (Decisive) on this dimension indicates that the society will be driven by competition, achievement and success, with success being defined by the winner / best in field - a value system that starts in school and continues throughout organisational life. A low score (Consensus-oriented) on the dimension means that the dominant values in society are caring for others and quality of life.",
+            "score_note": "0 = consensus-oriented (left pole), 100 = decisive (right pole)",
+            "consensus_oriented": ["Minimum emotional and social role differentiationbetween the genders", "Men and women should be modest and caring", "Balance between family and work", "Sympathy for the weak", "Both fathers and mothers deal with facts and feelings", "Both boys and girls may cry but neither should fight", "Mothers decide on number of children", "Many women in elected political positions", "Religion focuses on fellow human beings", "Matter-of-fact attitudes about sexuality; sex is away of relating"],
+            "decisive": ["Maximum emotional and social role differentiation between the genders", "Men should be and women may be assertive and ambitious", "Work prevails over family", "Admiration for the strong", "Fathers deal with facts, mothers with feelings", "Girls cry, boys don’t; boys should fight back, girls shouldn’t fight", "Fathers decide on family size", "Few women in elected political positions", "Religion focuses on God or gods", "Moralistic attitudes about sexuality; sex is a way of performing"]
+        },
+    "UAI":
+        {
+            "description": "to what extent a culture programs its members to feel either uncomfortable or comfortable in unstructured situations.",
+            "score_note": "0 = weak uncertainty avoidance (left pole), 100 = strong uncertainty avoidance (right pole)",
+            "weak_uncertainty_avoidance": ["The uncertainty inherent in life is accepted andeach day is taken as it comes", "Ease, lower stress, self-control, low anxiety", "Higher scores on subjective health and wellbeing", "Tolerance of deviant persons and ideas: what is different is curious", "Comfortable with ambiguity and chaos", "Teachers may say ‘I don’t know’", "Changing jobs no problem", "Dislike of rules - written or unwritten", "In politics, citizens feel and are seen as competent towards authorities", "In religion, philosophy and science: relativism and empiricism"],
+            "strong_uncertainty_avoidance": ["The uncertainty inherent in life is a continuous threat that must be fought", "Higher stress, emotionality, anxiety, neuroticism", "Lower scores on subjective health and wellbeing", "Intolerance of deviant persons and ideas: what is different is dangerous", "Need for clarity and structure", "Teachers supposed to have all the answers", "Staying in jobs even if disliked", "Emotional need for rules – even if not obeyed", "In politics, citizens feel and are seen as incompetent towards authorities", "In religion, philosophy and science: belief in ultimate truths and grand theories"]
+        },
+    "LTO":
+        {
+            "description": "This dimension describes how every society has to maintain some links with its own past while dealing with the challenges of the present and future, and societies prioritise these two existential goals differently.",
+            "score_note": "0 = short-term orientation (left pole), 100 = long-term orientation (right pole)",
+            "short_term_orientation": ["Most important events in life occurred in the past or take place now", "Personal steadiness and stability: a good person is always the same", "There are universal guidelines about what is good and evil", "Traditions are sacrosanct ", "Family life guided by imperatives", "Supposed to be proud of one’s country", "Service to others is an important goal", "Social spending and consumption", "Students attribute success and failure to luck", "Slow or no economic growth of poor countries"],
+            "long_term_orientation": ["Most important events in life will occur in the future", "A good person adapts to the circumstances", "What is good and evil depends upon the circumstances", "Traditions are adaptable to changed circumstances", "Family life guided by shared tasks", "Trying to learn from other countries", "Thrift and perseverance are important goals", "Large savings quote, funds available for investment", "Students attribute success to effort and failure to lack of effort", "Fast economic growth of countries up till a level of prosperity"]
+        },
+    "IDR":
+        {
+            "description": " the extent to which people try to control their desires and impulses, based on the way they were raised.",
+            "score_note": "0 = restrained (left pole), 100 = indulgence (right pole)",
+            "restrained": ["Fewer very happy people", "A perception of helplessness: what happens to me is not my own doing", "Freedom of speech is not a primary concern", "Lower importance of leisure", "Less likely to remember positive emotions", "In countries with educated populations, lower birthrates", "Fewer people actively involved in sports", "In countries with enough food, fewer obese people", "In wealthy countries, stricter sexual norms", "Higher number of police officers per 100,000 population"],
+            "indulgence": ["Higher percentage of people declaring themselves very happy", "A perception of personal life control", "Freedom of speech seen as important", "Higher importance of leisure", "More likely to remember positive emotions", "In countries with educated populations, higher birthrates", "More people actively involved in sports", "In countries with enough food, higher percentages of obese people", "In wealthy countries, lenient sexual norms", "Maintaining order in the nation is not given a high priority"]
+        }
+}

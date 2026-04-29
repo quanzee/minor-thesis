@@ -1,0 +1,69 @@
+country: Australia
+retained_norms:
+  - norm: "First names are almost always used during initial introductions."
+    dimension: PDI
+    relationship: reinforces
+
+  - norm: "Greetings are usually informal in social settings."
+    dimension: PDI
+    relationship: reinforces
+
+  - norm: "If you are a newcomer, take the initiative to introduce yourself rather than expecting to be introduced."
+    dimension: IDV
+    relationship: reinforces
+
+  - norm: "Do not boast or make ostentatious comments that give the impression you see yourself as superior."
+    dimension: MAS
+    relationship: tension
+
+  - norm: "Making self-deprecating jokes is a fast way to build familiarity."
+    dimension: MAS
+    relationship: tension
+
+  - norm: "Direct communication: Australians speak honestly, yet with reasonable sensitivity. Criticism can be delivered vaguely to remain polite."
+    dimension: IDV
+    relationship: tension
+
+  - norm: "Avoid being overly combative or argumentative; Australians may consider such people controversial."
+    dimension: MAS
+    relationship: tension
+
+  - norm: "Humour is used in much Australian communication; sarcasm can be very dry and Australians do not always clarify when joking."
+    dimension: UAI
+    relationship: tension
+
+  - norm: "Australians sometimes grow uncomfortable with long pauses and try to fill silence."
+    dimension: UAI
+    relationship: reinforces
+
+  - norm: "Punctuality matters but is more important in professional settings than social ones; friends forgive tardiness if it's not a pattern."
+    dimension: LTO
+    relationship: tension
+
+  - norm: "In any situation, pitch in and contribute to the shared expense or task however possible."
+    dimension: IDV
+    relationship: reinforces
+
+  - norm: "Being reluctant to share or pay your share is seen as stingy; asking friends to pay for you repeatedly is scabbing."
+    dimension: IDV
+    relationship: reinforces
+
+  - norm: "Try to relax and enjoy yourself in casual settings; Australians bond quickly with people who seem genuine and comfortable."
+    dimension: IDR
+    relationship: reinforces
+
+  - norm: "Swearing is more common in Australia than many other cultures; informality can make others feel more comfortable."
+    dimension: IDR
+    relationship: reinforces
+
+  - norm: "Avoid seeming too conscious of or constrained by rules, as this can make you seem untrustworthy."
+    dimension: UAI
+    relationship: reinforces
+
+  - norm: "Hey how are you is a greeting not a genuine enquiry. A deeply personal or negative answer makes people uncomfortable."
+    dimension: IDV
+    relationship: tension
+
+  - norm: "Keep a measure on how much you criticise others directly."
+    dimension: IDV
+    relationship: tension
