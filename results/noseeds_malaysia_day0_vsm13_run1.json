@@ -247,5 +247,39 @@
     "UAI": -36.25,
     "LTO": -20.0,
     "IVR": 55.0
+  },
+  "individual_dimension_scores": {
+    "Muhammad": {
+      "PDI": 25,
+      "IDV": 0,
+      "MAS": 0,
+      "UAI": -40,
+      "LTO": -40,
+      "IVR": 75
+    },
+    "Abdul": {
+      "PDI": 75,
+      "IDV": 0,
+      "MAS": 0,
+      "UAI": 0,
+      "LTO": -40,
+      "IVR": 35
+    },
+    "Nur": {
+      "PDI": 50,
+      "IDV": 0,
+      "MAS": 25,
+      "UAI": -105,
+      "LTO": 0,
+      "IVR": 75
+    },
+    "Siti": {
+      "PDI": 50,
+      "IDV": 0,
+      "MAS": 0,
+      "UAI": 0,
+      "LTO": 0,
+      "IVR": 35
+    }
   }
 }

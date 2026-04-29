@@ -141,5 +141,39 @@
     "UAI": -70.0,
     "LTO": -11.25,
     "IVR": 92.5
+  },
+  "individual_dimension_scores": {
+    "Oliver": {
+      "PDI": 25,
+      "IDV": 70,
+      "MAS": -35,
+      "UAI": -90,
+      "LTO": -15,
+      "IVR": 75
+    },
+    "James": {
+      "PDI": 50,
+      "IDV": 0,
+      "MAS": -35,
+      "UAI": -75,
+      "LTO": -15,
+      "IVR": 110
+    },
+    "Charlotte": {
+      "PDI": 50,
+      "IDV": 0,
+      "MAS": 0,
+      "UAI": -115,
+      "LTO": -40,
+      "IVR": 110
+    },
+    "Amelia": {
+      "PDI": 50,
+      "IDV": 0,
+      "MAS": 0,
+      "UAI": 0,
+      "LTO": 25,
+      "IVR": 75
+    }
   }
 }
