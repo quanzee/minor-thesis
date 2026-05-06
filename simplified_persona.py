@@ -6,13 +6,12 @@ adapted from Park et al. (2023). Removes Smallville-specific dependencies
 memory-reflection-planning architecture.
 """
 
-import datetime
 import yaml
 from pathlib import Path
 
-from simplified_associative_memory import AssociativeMemory
-from simplified_retrieve import new_retrieve
-from reflect import reflect, post_conversation_reflect
+from cognitive_modules.simplified_associative_memory import AssociativeMemory
+from cognitive_modules.simplified_retrieve import new_retrieve
+from cognitive_modules.simplified_reflect import reflect, post_conversation_reflect
 from config import client, MODEL_NAME
 
 
@@ -35,6 +34,7 @@ class Agent:
 
         # ── Simulation state ───────────────────────────────────────────────
         self.location = None          # current location label e.g. "university"
+        self.primary_location = self._assign_primary_location()
         self.curr_time = None         # current simulation datetime
         self.chat_partner = None      # name of agent currently conversing with
 
@@ -43,15 +43,15 @@ class Agent:
         # Reflection fires when this exceeds the threshold, following
         # Park et al. (2023).
         self.importance_since_last_reflect = 0
-        self.reflection_threshold = 150
+        self.reflection_threshold = 10
+        self.memories_since_last_reflect = []
 
         # ── Seed memories ──────────────────────────────────────────────────
-        created = datetime.datetime.now()
         self.memory.seed_memories(
             seed_descriptions=memory_seeds,
             poignancy=5, #need to think about this value
             embedding_fn=embedding_fn,
-            created=created
+            created="Day 00, Initialisation"
         )
 
     @classmethod
@@ -72,7 +72,7 @@ class Agent:
             embedding_fn=embedding_fn
         )
 
-    def perceive(self, observation: str, curr_time: datetime.datetime):
+    def perceive(self, observation: str, curr_time: str, tracker=None):
         """
         Adds an observation to the agent's memory stream.
         Replaces the maze-based perceive in Park et al. — observations
@@ -84,7 +84,7 @@ class Agent:
         OUTPUT:
             the created MemoryNode
         """
-        poignancy = self._score_poignancy(observation)
+        poignancy = self._score_poignancy(observation, memory_type="event", tracker=tracker)
         embedding = self.embedding_fn(observation)
         node = self.memory.add_event(
             description=observation,
@@ -93,9 +93,10 @@ class Agent:
             created=curr_time
         )
         self.importance_since_last_reflect += poignancy
+        self.memories_since_last_reflect.append(node)
         return node
 
-    def retrieve(self, focal_points: list, curr_time: datetime.datetime):
+    def retrieve(self, focal_points: list, curr_time: str):
         """
         Retrieves relevant memories for a list of focal points.
 
@@ -113,7 +114,7 @@ class Agent:
             curr_time=curr_time
         )
 
-    def plan(self, other_agents: list, curr_time: datetime.datetime):
+    def plan(self, other_agents: list, curr_time: str, tracker=None):
         """
         Decides whether to initiate a conversation and with whom,
         based on current memory state and who is co-present.
@@ -166,6 +167,8 @@ class Agent:
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7 #justification?
         )
+        if tracker:
+            tracker.add(response.usage)
 
         content = response.choices[0].message.content.strip()
 
@@ -186,16 +189,16 @@ class Agent:
 
         return None
 
-    def reflect(self, curr_time: datetime.datetime):
+    def reflect(self, curr_time: str, tracker=None):
         """
         Checks reflection trigger and runs reflection if threshold is met.
         Wraps the reflect function from reflect.py.
         """
         reflect(self, self.client, self.model,
-                self.embedding_fn, curr_time)
+                self.embedding_fn, curr_time, tracker=tracker)
 
-    def converse(self, other_agent, curr_time: datetime.datetime,
-                 n_turns: int = 6): #
+    def converse(self, other_agent, curr_time: str,
+                 n_turns: int = 6, tracker=None): #
         """
         Conducts a multi-turn conversation between this agent and another.
         Each agent generates their utterance in turn based on their memory
@@ -228,7 +231,7 @@ class Agent:
 
         for _ in range(n_turns):
             utterance = current_speaker._generate_utterance(
-                other_speaker, conversation, current_context, curr_time
+                other_speaker, conversation, current_context, other_context_swap,curr_time
             )
             conversation.append((current_speaker.name, utterance))
             current_speaker, other_speaker = other_speaker, current_speaker
@@ -239,7 +242,7 @@ class Agent:
                        f"had a conversation at {self.location}")
 
         for agent in [self, other_agent]:
-            poignancy = agent._score_poignancy(description)
+            poignancy = agent._score_poignancy(description, memory_type="chat", tracker=tracker)
             embedding = agent.embedding_fn(description)
             chat_node = agent.memory.add_chat(
                 description=description,
@@ -249,6 +252,7 @@ class Agent:
                 dialogue_turns=conversation
             )
             agent.importance_since_last_reflect += poignancy
+            agent.memories_since_last_reflect.append(chat_node)
 
             # post-conversation reflection
             post_conversation_reflect(
@@ -278,57 +282,213 @@ class Agent:
         self.memory = AssociativeMemory.load(str(path))
 
     def _generate_utterance(self, other_agent, conversation_so_far,
-                             retrieved_context, curr_time: datetime.datetime):
+                            retrieved_context, other_retrieved_context, curr_time, tracker=None):
         """
-        Generates a single utterance in a conversation, grounded in
-        the agent's memory and persona.
+        Generates a single utterance in a conversation.
+        Prompt adapted from Park et al. (2023) create_conversation_v2.txt.
         """
-        memory_context = ""
+        # build agent summary strings
+        self_summary = (
+            f"{self.name} is a {self.age}-year-old {self.gender} "
+            f"from {self.country}. Their education level is {self.education} "
+            f"and they work as {self.job_type}."
+        )
+        other_summary = (
+            f"{other_agent.name} is a {other_agent.age}-year-old "
+            f"{other_agent.gender} from {other_agent.country}. "
+            f"Their education level is {other_agent.education} "
+            f"and they work as {other_agent.job_type}."
+        )
+
+        # what self thinks about other_agent — from retrieved context
+        self_thoughts = ""
         for nodes in retrieved_context.values():
             for node in nodes[:3]:
-                memory_context += f"- {node.description}\n"
+                self_thoughts += f"- {node.description}\n"
+        if not self_thoughts:
+            self_thoughts = f"{self.name} does not have any prior thoughts about {other_agent.name}."
+
+        # what other_agent thinks about self — retrieve separately
+        other_thoughts = ""
+        for nodes in other_retrieved_context.values():
+            for node in nodes[:3]:
+                other_thoughts += f"- {node.description}\n"
+        if not other_thoughts:
+            other_thoughts = f"{other_agent.name} does not have any prior thoughts about {self.name}."
 
         # format conversation so far
-        convo_so_far = "\n".join(
-            [f"{speaker}: {utterance}"
-             for speaker, utterance in conversation_so_far]
-        ) if conversation_so_far else "This is the start of the conversation."
+        if conversation_so_far:
+            previous_convo = "\n".join(
+                [f"{speaker}: {utterance}"
+                for speaker, utterance in conversation_so_far]
+            )
+            previous_convo = f"Here is the conversation so far:\n{previous_convo}"
+        else:
+            previous_convo = ""
 
-        prompt = f"""You are {self.name}, a {self.age}-year-old {self.gender} from {self.country}.
-        Your education level is {self.education} and you work as {self.job_type}.
+        prompt = f"""We have two characters.
 
-        Relevant memories:
-        {memory_context if memory_context else "No prior memories of this person."}
+        Character 1.
+        {self_summary}
 
-        You are speaking with {other_agent.name}, a {other_agent.age}-year-old {other_agent.gender} from {other_agent.country}. Their education level is {other_agent.education} and they work as {other_agent.job_type}.
+        Character 2.
+        {other_summary}
+        ---
+        Context:
+        Here is what {self.name} thinks about {other_agent.name}:
+        {self_thoughts}
+        Here is what {other_agent.name} thinks about {self.name}:
+        {other_thoughts}
+        Currently, it is {curr_time}
+        -- {self.name} is at {self.location}
+        -- {other_agent.name} is at {other_agent.location}
+        {previous_convo}
 
-        Conversation so far:
-        {convo_so_far}
+        {self.name} and {other_agent.name} are in {self.location}. What would they talk about now?
 
-        Respond naturally as {self.name} in one or two sentences. Stay true to your 
-        background and values."""
+        {self.name}: \""""
 
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.7
+            temperature=0.7,
+            stop=[f"\n{other_agent.name}:"]
         )
-        return response.choices[0].message.content.strip()
+        if tracker:
+            tracker.add(response.usage)
 
-    def _score_poignancy(self, description: str):
+        utterance = response.choices[0].message.content.strip().strip('"')
+        return utterance
+
+    def _score_poignancy(self, description: str, memory_type: str = "event", tracker=None):
         """
-        Scores the emotional significance of a memory on a 1-10 scale.
+        Scores the poignancy of a memory on a 1-10 scale.
+        Uses different prompt calibration per memory type,
+        adapted from Park et al. (2023).
+        
+        memory_type: "event", "thought", or "chat"
         """
-        prompt = f"""On a scale of 1 to 10, how emotionally significant is this event for a person?
-        Event: "{description}"
-        Respond with a single integer only."""
+        if "idle" in description:
+            return 1
+
+        agent_summary = (
+            f"{self.name} is a {self.age}-year-old {self.gender} "
+            f"from {self.country}. Their education level is {self.education} "
+            f"and they work as {self.job_type}."
+        )
+
+        if memory_type == "thought":
+            prompt = f"""Here is a brief description of {self.name}.
+            {agent_summary}
+
+            On the scale of 1 to 10, where 1 is purely mundane (e.g., I need to do the dishes, I need to walk the dog) and 10 is extremely significant (e.g., I wish to become a professor, I love Elie), rate the likely significance of the following thought for {self.name}.
+
+            Thought: {description}
+            Rate (return a number between 1 to 10):"""
+
+        elif memory_type == "chat":
+            prompt = f"""Here is a brief description of {self.name}.
+            {agent_summary}
+
+            On the scale of 1 to 10, where 1 is purely mundane (e.g., routine morning greetings) and 10 is extremely poignant (e.g., a conversation about breaking up, a fight), rate the likely poignancy of the following conversation for {self.name}.
+
+            Conversation:
+            {description}
+            Rate (return a number between 1 to 10):"""
+
+        else:  # event
+            prompt = f"""Here is a brief description of {self.name}.
+            {agent_summary}
+
+            On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following event for {self.name}.
+
+            Event: {description}
+            Rate (return a number between 1 to 10):"""
 
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0
         )
+        if tracker:
+            tracker.add(response.usage)
+
         try:
             return int(response.choices[0].message.content.strip())
         except ValueError:
             return 5
+        
+    def plan_location(self, curr_time, tracker=None):
+        """
+        Decides which location to go to this round.
+        Defaults to primary institution unless memories
+        suggest a strong reason to go elsewhere.
+        """
+        try:
+            retrieved = self.retrieve(
+                [f"plans and intentions for today",
+                f"people I want to talk to"],
+                curr_time
+            )
+
+            memory_context = ""
+            seen_ids = set()
+            for nodes in retrieved.values():
+                for node in nodes[:3]:
+                    if node.node_id not in seen_ids:
+                        memory_context += f"- {node.description}\n"
+                        seen_ids.add(node.node_id)
+
+            prompt = f"""You are {self.name}, a {self.age}-year-old {self.gender} from {self.country}. Your education level is {self.education} and you work as {self.job_type}.
+
+            Your primary location is {self.primary_location}.
+
+            The available locations are:
+            - University
+            - Workplace
+            - Communal Space
+
+            Your relevant memories:
+            {memory_context if memory_context else "No relevant memories yet."}
+
+            Where will you go this round? You should go to your primary location unless you have a specific reason based on your memories to go elsewhere.
+
+            Respond in this exact format:
+            LOCATION: <location name>
+            REASON: <one sentence reason>"""
+
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7
+            )
+            if tracker:
+                tracker.add(response.usage)
+
+            content = response.choices[0].message.content.strip()
+
+            try:
+                lines = {
+                    line.split(":")[0].strip(): line.split(":", 1)[1].strip()
+                    for line in content.split("\n")
+                    if ":" in line
+                }
+                location = lines.get("LOCATION", self.primary_location).strip()
+                if location not in ["University", "Workplace", "Communal Space"]:
+                    return self.primary_location
+                return location
+            except:
+                return self.primary_location
+        except Exception as e:
+            print(f"      WARNING: plan_location failed for {self.name}: {e}")
+            print(f"      Defaulting to primary location: {self.primary_location}")
+            return self.primary_location
+        
+    def _assign_primary_location(self) -> str:
+        """
+        Assigns the agent's primary institution based on job type.
+        """
+        if self.job_type == "Full-time student":
+            return "University"
+        else:
+            return "Workplace"

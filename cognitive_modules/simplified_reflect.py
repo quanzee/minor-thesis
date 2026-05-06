@@ -5,168 +5,175 @@ adapted from Park et al. (2023). Strips Smallville-specific dependencies
 while preserving the core reflect architecture.
 """
 
-import datetime
-from simplified_retrieve import new_retrieve
+from cognitive_modules.simplified_retrieve import new_retrieve
 
-REFLECTION_THRESHOLD = 150  # accumulated poignancy threshold, following Park et al.
-
-
-def generate_focal_points(agent_memory, embedding_fn, client, model, n=3):
+def generate_focal_points(agent, client, model, n=3, tracker=None):
     """
     Generates focal points from the agent's most recent and important memories.
     Focal points are the questions that guide reflection retrieval.
     """
-    # gather recent events and thoughts, excluding idle nodes
-    nodes = agent_memory.seq_event + agent_memory.seq_thought
-    nodes = [n for n in nodes if "idle" not in n.description]
-    nodes = sorted(nodes, key=lambda x: x.last_accessed)
+    # take the nodes accummulated since the last reflection as statements
+    recent = agent.memories_since_last_reflect
 
-    # take the most recent N nodes as statements
-    recent = nodes[-10:] if len(nodes) >= 10 else nodes
+    if not recent:
+    # fallback if no new memories since last reflection
+        recent = sorted(
+            agent.memory.seq_event + agent.memory.seq_thought,
+            key=lambda x: x.last_accessed
+        )[-5:]
+    
     statements = "\n".join([n.description for n in recent])
 
-    prompt = f"""Here are some recent observations and thoughts:
-{statements}
-
-Given these, what are the {n} most important questions we can answer about this person's experiences and feelings? 
-Return exactly {n} questions, one per line, no numbering."""
+    prompt = f"""{statements}
+Given only the information above, what are {n} most salient high-level questions we can answer about the subjects grounded in the statements?
+1)"""
 
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
     )
+    if tracker:
+        tracker.add(response.usage)
 
-    focal_points = [
-        line.strip()
-        for line in response.choices[0].message.content.strip().split("\n")
-        if line.strip()
-    ][:n]
+    focal_points = []
+    for line in response.choices[0].message.content.strip().split("\n"):
+        line = line.strip()
+        if line and line[0].isdigit():
+            # remove the numbering e.g. "1) " or "1. "
+            cleaned = line.split(")", 1)[-1].split(".", 1)[-1].strip()
+            if cleaned:
+                focal_points.append(cleaned)
 
-    return focal_points
+    return focal_points[:n]
 
 
-def generate_insights(nodes, agent_name, client, model, n=5):
+def generate_insights(nodes, agent_name, client, model, n=5, tracker=None):
     """
     Generates high-level insights from a set of retrieved memory nodes.
     Returns a dict mapping insight string to list of source node IDs.
+    Prompt adapted from Park et al. (2023) insight_and_evidence_v1.txt.
     """
     statements = "\n".join(
         [f"{i}. {node.description}" for i, node in enumerate(nodes)]
     )
 
-    prompt = f"""Here are some memories belonging to {agent_name}:
-{statements}
-
-Based on these memories, what are {n} high-level insights or conclusions you can infer about {agent_name}?
-For each insight, indicate which memory numbers (0-indexed) support it.
-
-Respond in this exact format, one insight per line:
-INSIGHT: <insight text> | EVIDENCE: <comma-separated memory numbers>"""
+    prompt = f"""{statements}
+What {n} high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))
+1."""
 
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
     )
+    if tracker:
+        tracker.add(response.usage)
 
     insights = {}
-    for line in response.choices[0].message.content.strip().split("\n"):
-        if "INSIGHT:" in line and "EVIDENCE:" in line:
-            try:
-                insight_part, evidence_part = line.split("|")
-                insight_text = insight_part.replace("INSIGHT:", "").strip()
-                evidence_nums = [
-                    int(x.strip())
-                    for x in evidence_part.replace("EVIDENCE:", "").split(",")
-                    if x.strip().isdigit()
-                ]
-                evidence_node_ids = [
-                    nodes[i].node_id
-                    for i in evidence_nums
-                    if i < len(nodes)
-                ]
-                insights[insight_text] = evidence_node_ids
-            except (ValueError, IndexError):
-                continue
+    raw = "1." + response.choices[0].message.content.strip()
+
+    for line in raw.split("\n"):
+        line = line.strip()
+        if not line or not line[0].isdigit():
+            continue
+
+        # remove numbering
+        content = line.split(".", 1)[-1].strip()
+        if not content:
+            continue
+
+        # split insight text from evidence e.g. "insight (because of 1, 5, 3)"
+        if "(because of" in content:
+            insight_text, evidence_raw = content.rsplit("(because of", 1)
+            insight_text = insight_text.strip()
+            evidence_raw = evidence_raw.replace(")", "").strip()
+            evidence_nums = [
+                int(x.strip())
+                for x in evidence_raw.split(",")
+                if x.strip().isdigit()
+            ]
+            evidence_node_ids = [
+                nodes[i].node_id
+                for i in evidence_nums
+                if i < len(nodes)
+            ]
+        else:
+            insight_text = content.strip()
+            evidence_node_ids = []
+
+        if insight_text:
+            insights[insight_text] = evidence_node_ids
 
     return insights
 
-
-def generate_poignancy(description, client, model):
-    """
-    Scores a memory's poignancy on a 1-10 scale using the LLM.
-    Returns an integer score.
-    """
-    if "idle" in description:
-        return 1
-
-    prompt = f"""On a scale of 1 to 10, how emotionally significant or important is this memory?
-Memory: "{description}"
-Respond with a single integer only."""
-
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
-    )
-
-    try:
-        return int(response.choices[0].message.content.strip())
-    except ValueError:
-        return 5
-
-
 def generate_conversation_reflection(agent_name, conversation_turns,
-                                     client, model):
+                                     client, model, tracker=None):
     """
     Generates a planning thought and memo after a conversation ends.
     Returns (planning_thought, memo_thought) as strings.
+    Prompts adapted from Park et al. (2023):
+    - planning_thought_on_convo_v1.txt
+    - convo_to_thoughts_v1.txt
     """
     dialogue = "\n".join(
         [f"{speaker}: {utterance}"
          for speaker, utterance in conversation_turns]
     )
 
-    planning_prompt = f"""Here is a conversation {agent_name} just had:
+    # identify the other agent in the conversation
+    other_name = next(
+        speaker for speaker, _ in conversation_turns
+        if speaker != agent_name
+    )
+
+    planning_prompt = f"""[Conversation]
 {dialogue}
 
-What should {agent_name} keep in mind for future planning based on this conversation?
-Respond in one sentence."""
+Write down if there is anything from the conversation that {agent_name} needs to remember for their planning, from {agent_name}'s perspective, in a full sentence.
 
-    memo_prompt = f"""Here is a conversation {agent_name} just had:
+\"{agent_name}"""
+
+    memo_prompt = f"""Here is the conversation that happened between {agent_name} and {other_name}.
+
 {dialogue}
 
-What is one key thing {agent_name} will remember about this conversation?
-Respond in one sentence."""
+Summarize what {agent_name} thought about {other_name} in one short sentence. The sentence needs to be in third person:"""
 
     planning_response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": planning_prompt}],
         temperature=0.7
     )
+    if tracker:
+        tracker.add(planning_response.usage)
 
     memo_response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": memo_prompt}],
         temperature=0.7
     )
+    if tracker:
+        tracker.add(memo_response.usage)
 
-    planning_thought = planning_response.choices[0].message.content.strip()
+    planning_thought = (
+        f"{agent_name} " +
+        planning_response.choices[0].message.content.strip().strip('"')
+    )
     memo_thought = memo_response.choices[0].message.content.strip()
 
     return planning_thought, memo_thought
 
 
-def reflection_trigger(agent, threshold=REFLECTION_THRESHOLD):
+def reflection_trigger(agent):
     """
     Returns True if accumulated poignancy since last reflection
     exceeds the threshold.
     """
-    return agent["importance_since_last_reflect"] >= threshold
+    return agent.importance_since_last_reflect >= agent.reflection_threshold
 
 
-def run_reflect(agent, client, model, embedding_fn, curr_time):
+def run_reflect(agent, client, model, curr_time, embedding_fn, tracker=None):
     """
     Runs the full reflection cycle for an agent:
     1. Generate focal points from recent memories
@@ -174,11 +181,11 @@ def run_reflect(agent, client, model, embedding_fn, curr_time):
     3. Generate insights and store as thought nodes
     """
     focal_points = generate_focal_points(
-        agent["memory"], embedding_fn, client, model, n=3
+        agent, client, model, n=3, tracker=tracker
     )
 
     retrieved = new_retrieve(
-        agent_memory=agent["memory"],
+        agent_memory=agent.memory,
         focal_points=focal_points,
         embedding_fn=embedding_fn,
         n_count=30,
@@ -190,14 +197,14 @@ def run_reflect(agent, client, model, embedding_fn, curr_time):
             continue
 
         insights = generate_insights(
-            nodes, agent["name"], client, model, n=5
+            nodes, agent.name, client, model, n=5, tracker=tracker
         )
 
         for thought_text, evidence_ids in insights.items():
-            poignancy = generate_poignancy(thought_text, client, model)
+            poignancy = agent._score_poignancy(thought_text, memory_type="thought")
             embedding = embedding_fn(thought_text)
 
-            agent["memory"].add_thought(
+            agent.memory.add_thought(
                 description=thought_text,
                 poignancy=poignancy,
                 embedding=embedding,
@@ -206,25 +213,26 @@ def run_reflect(agent, client, model, embedding_fn, curr_time):
             )
 
     # reset counter
-    agent["importance_since_last_reflect"] = 0
+    agent.importance_since_last_reflect = 0
+    agent.memories_since_last_reflect = []
 
 
 def post_conversation_reflect(agent, conversation_turns,
                                chat_node_id, client, model,
-                               embedding_fn, curr_time):
+                               embedding_fn, curr_time, tracker=None):
     """
     Runs reflection immediately after a conversation ends.
     Stores planning thought and memo as thought nodes linked to the chat.
     """
     planning_thought, memo_thought = generate_conversation_reflection(
-        agent["name"], conversation_turns, client, model
+        agent.name, conversation_turns, client, model
     )
 
     for thought_text in [planning_thought, memo_thought]:
-        poignancy = generate_poignancy(thought_text, client, model)
+        poignancy = agent._score_poignancy(thought_text, memory_type="thought", tracker=tracker)
         embedding = embedding_fn(thought_text)
 
-        agent["memory"].add_thought(
+        agent.memory.add_thought(
             description=thought_text,
             poignancy=poignancy,
             embedding=embedding,
@@ -233,10 +241,10 @@ def post_conversation_reflect(agent, conversation_turns,
         )
 
 
-def reflect(agent, client, model, embedding_fn, curr_time):
+def reflect(agent, client, model, embedding_fn, curr_time, tracker=None):
     """
     Main reflection entry point. Checks trigger condition and
     runs reflection if threshold is met.
     """
     if reflection_trigger(agent):
-        run_reflect(agent, client, model, embedding_fn, curr_time)
+        run_reflect(agent, client, model, curr_time, embedding_fn, tracker=tracker)

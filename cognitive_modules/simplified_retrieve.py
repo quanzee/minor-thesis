@@ -5,7 +5,6 @@ adapted from Park et al. (2023). Implements the new_retrieve function
 using recency, importance, and relevance scoring.
 """
 
-import datetime
 from numpy import dot
 from numpy.linalg import norm
 
@@ -131,7 +130,7 @@ def new_retrieve(agent_memory, focal_points, embedding_fn,
         gw = [1, 1, 1]
 
     if curr_time is None:
-        curr_time = datetime.datetime.now()
+        curr_time = "Day 00, Initialisation"
 
     retrieved = {} #initialise output dictionary
 
@@ -174,3 +173,14 @@ def new_retrieve(agent_memory, focal_points, embedding_fn,
         retrieved[focal_pt] = master_nodes
 
     return retrieved
+
+def get_embedding(text: str, client) -> list:
+    """
+    Returns an embedding vector for a given text string
+    using Azure OpenAI's embedding model.
+    """
+    response = client.embeddings.create(
+        input=text,
+        model="text-embedding-3-small-1"
+    )
+    return response.data[0].embedding

@@ -6,8 +6,6 @@ while preserving the core memory stream architecture.
 """
 
 import json
-import datetime
-
 
 class MemoryNode:
     def __init__(self, node_id, node_type, description,
@@ -17,7 +15,7 @@ class MemoryNode:
         self.description = description  #the natural langauge memory string
         self.poignancy = poignancy      # importance score 1-10
         self.embedding = embedding      # vector stored directly
-        self.created = created          # datetime object for when the memory was created
+        self.created = created          # string object for when the memory was created
         self.last_accessed = created    # datetime object for when the memory was last accessed (for retrieval sorting)
         self.depth = depth              # 0 for events/chats, 1+ for thoughts
         self.filling = filling or []    # dialogue turns for chats
@@ -131,8 +129,8 @@ class AssociativeMemory:
                 "poignancy": node.poignancy,
                 "embedding": node.embedding if isinstance(node.embedding, list) 
                              else node.embedding.tolist(),
-                "created": node.created.strftime('%Y-%m-%d %H:%M:%S'),
-                "last_accessed": node.last_accessed.strftime('%Y-%m-%d %H:%M:%S'),
+                "created": node.created,
+                "last_accessed": node.last_accessed,
                 "depth": node.depth,
                 "filling": node.filling
             }
@@ -159,13 +157,11 @@ class AssociativeMemory:
                 description=node_data["description"],
                 poignancy=node_data["poignancy"],
                 embedding=node_data["embedding"],
-                created=datetime.datetime.strptime(
-                    node_data["created"], '%Y-%m-%d %H:%M:%S'),
+                created=node_data["created"],
                 depth=node_data["depth"],
                 filling=node_data["filling"]
             )
-            node.last_accessed = datetime.datetime.strptime(
-                node_data["last_accessed"], '%Y-%m-%d %H:%M:%S')
+            node.last_accessed = node_data["last_accessed"]
 
             memory.id_to_node[node_id] = node
 

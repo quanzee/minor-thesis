@@ -3,7 +3,7 @@ import json
 import time
 from pathlib import Path
 from config import MODEL_NAME, client
-from vsm13 import VSM13_QUESTIONS, SECTION_INSTRUCTIONS, compute_dimensions, ask_question
+from vsm13_manual import VSM13_QUESTIONS, SECTION_INSTRUCTIONS, compute_dimensions, ask_question
 
 RESULTS_DIR = Path("results")
 RESULTS_DIR.mkdir(exist_ok=True)
