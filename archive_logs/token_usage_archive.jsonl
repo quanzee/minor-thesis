@@ -10,3 +10,11 @@
 {"label": "Day 00 T0 Measurement", "prompt_tokens": 205272, "completion_tokens": 12237, "total_tokens": 217509}
 {"label": "Day 01 Rounds", "prompt_tokens": 32923, "completion_tokens": 9203, "total_tokens": 42126}
 {"label": "Day 01 Rounds", "prompt_tokens": 38617, "completion_tokens": 11703, "total_tokens": 50320}
+{"label": "Day 01 Rounds", "prompt_tokens": 42696, "completion_tokens": 3839, "total_tokens": 46535}
+{"label": "Day 01 Rounds", "prompt_tokens": 32757, "completion_tokens": 3139, "total_tokens": 35896}
+{"label": "Day 01 Rounds", "prompt_tokens": 83624, "completion_tokens": 19087, "total_tokens": 102711}
+{"label": "Day 01 Rounds", "prompt_tokens": 80978, "completion_tokens": 17709, "total_tokens": 98687}
+{"event": "run_start", "run_label": "Test Day 1 Simulation", "timestamp": "2026-05-08T12:09:47.509753"}
+{"event": "run_start", "run_label": "Test Day 1 Simulation", "timestamp": "2026-05-08T12:16:16.356701"}
+{"label": "Day 01 Rounds", "prompt_tokens": 108923, "completion_tokens": 24647, "total_tokens": 133570}
+{"event": "run_end", "timestamp": "2026-05-08T12:41:10.339128"}

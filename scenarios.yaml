@@ -1,0 +1,36 @@
+scenarios:
+  - day: 1
+    round: Morning
+    location: Workplace
+    text: "During the weekly team briefing, the department manager announces a change to the project procurement process without explaining the rationale, states that the new procedure takes effect immediately, and closes the meeting before any questions are raised."
+    poignancy: 10
+
+  - day: 1
+    round: Morning
+    location: University
+    text: "The lecturer ends the session without inviting questions and assigns the next topic without explanation, telling the group which framework they will apply and which readings they must complete before the following week."
+    poignancy: 10
+
+  - day: 3
+    round: Morning
+    location: Workplace
+    text: "A notice is posted on the shared noticeboard stating that the department manager has been allocated a private office with an en-suite bathroom, while all other engineering staff continue to share a single communal bathroom and open workspace."
+    poignancy: 10
+
+  - day: 3
+    round: Morning
+    location: University
+    text: "A student interrupts the lecturer mid-explanation to say that the approach being described contradicts what they read in the assigned textbook and asks the lecturer to justify the discrepancy."
+    poignancy: 10
+
+  - day: 5
+    round: Morning
+    location: Workplace
+    text: "A senior engineer on the team has submitted a formal written complaint to the department manager alleging that a project supervisor has been assigning him tasks outside his contracted role; the complaint document is left on the shared table in the site office common area and is read by everyone present."
+    poignancy: 10
+
+  - day: 5
+    round: Morning
+    location: University
+    text: "After the seminar ends, a student catches up with the lecturer in the corridor and addresses them by their first name while asking a follow-up question about the session material."
+    poignancy: 10

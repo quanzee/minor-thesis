@@ -60,6 +60,7 @@ def generate_insights(nodes, agent_name, client, model, n=5, tracker=None):
 
     prompt = f"""{statements}
 What {n} high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))
+Write each insight as a plain declarative sentence with no numbering, bullets, or markdown formatting.
 1."""
 
     response = client.chat.completions.create(
@@ -248,3 +249,5 @@ def reflect(agent, client, model, embedding_fn, curr_time, tracker=None):
     """
     if reflection_trigger(agent):
         run_reflect(agent, client, model, curr_time, embedding_fn, tracker=tracker)
+        return True
+    return False

@@ -7,6 +7,7 @@ Adapted from Park et al. (2023) Generative Agents architecture.
 """
 
 import json
+import yaml
 from pathlib import Path
 
 from simplified_persona import Agent
@@ -20,9 +21,8 @@ print("Imports loaded successfully")
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-TOTAL_DAYS = 1
-VSM13_DAYS = {5, 10, 15}
-REFLECTION_THRESHOLD = 50  # calibrated for smaller simulation scale
+TOTAL_DAYS = 6
+VSM13_DAYS = {6}
 LOGS_DIR = Path("logs")
 RESULTS_DIR = Path("simulation_results")
 
@@ -44,7 +44,7 @@ INSTITUTIONAL_CONTEXT = {
 def append_log(filepath: Path, entry: dict):
     """Appends a single JSON entry to a .jsonl log file."""
     with open(filepath, "a") as f:
-        f.write(json.dumps(entry) + "\n")
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
 def setup_logs():
@@ -72,7 +72,7 @@ def build_observation(agent, round_name: str) -> str:
 
 # ── VSM13 measurement ──────────────────────────────────────────────────────────
 
-def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=1):
+def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=5):
     print(f"\n{'='*60}")
     print(f"VSM13 Measurement — Day {day} ({n_runs} runs per agent)")
     print(f"{'='*60}")
@@ -158,16 +158,32 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
 
     path = RESULTS_DIR / f"vsm13_day{day}.json"
     with open(path, "w") as f:
-        json.dump(output, f, indent=2)
+        json.dump(output, f, indent=2, ensure_ascii=False)
 
     print(f"\n  Average Kendall tau (Day {day}): {tau_results.get('average_tau', 'N/A'):.4f}")
     print(f"  Results saved to {path}")
 
+# ── Scenario Helper Functions ──────────────────────────────────────────────────────────
+def load_scenarios(path="scenarios.yaml"):
+    with open(path) as f:
+        return yaml.safe_load(f)["scenarios"]
+
+def inject_scenarios(town, scenarios, day, round_name, sim_time, tracker=None):
+    current = {}  # keyed by location
+    for scenario in scenarios:
+        if scenario["day"] == day and scenario["round"] == round_name:
+            current[scenario["location"]] = scenario["text"]
+            for agent in town.agents:
+                if agent.location == scenario["location"]:
+                    node = agent.perceive(scenario["text"], sim_time, tracker=tracker,
+                                          poignancy_override=scenario["poignancy"])
+                    print(f"      Scenario injected into {agent.name}: poignancy={node.poignancy}")
+    return current if current else None
 
 # ── Round execution ────────────────────────────────────────────────────────────
 
 def run_round(town: Town, round_name: str, day: int,
-              sim_time: str, tracker=None):
+              sim_time: str, scenarios: list, tracker=None, current_scenario: str = None):
     """
     Executes one simulation round:
     1. Assign locations
@@ -201,16 +217,9 @@ def run_round(town: Town, round_name: str, day: int,
     already_conversed = set()
 
     # inject social scenario on Day 1 Morning
-    if day == 1 and round_name == "Morning":
-        scenario = (
-            "At the morning site briefing, the department manager announces a change to "
-            "the structural inspection schedule without explanation or prior discussion, "
-            "instructs all team members to implement it immediately, and leaves the room "
-            "before anyone can respond."
-        )
-        for agent in town.agents:
-            if agent.location == "Workplace":
-                agent.perceive(scenario, sim_time, tracker=tracker)
+    injected = inject_scenarios(town, scenarios, day, round_name, sim_time, tracker)
+    if injected:
+        current_scenario = injected
 
     # run each agent sequentially, following Park et al.
     for agent in town.agents:
@@ -241,7 +250,8 @@ def run_round(town: Town, round_name: str, day: int,
                 print(f"    {agent.name} ({agent.country}) → "
                     f"{target.name} ({target.country})")
 
-                conversation = agent.converse(target, sim_time, tracker=tracker)
+                scenario_focal = current_scenario.get(agent.location)
+                conversation = agent.converse(target, sim_time, tracker=tracker, scenario_focal=scenario_focal)
 
                 # log interaction
                 append_log(
@@ -260,12 +270,10 @@ def run_round(town: Town, round_name: str, day: int,
                 )
 
         # step 4: reflect if threshold met
-        if agent.importance_since_last_reflect >= REFLECTION_THRESHOLD:
-            print(f"    {agent.name} is reflecting...")
-            agent.reflect(sim_time, tracker=tracker)
-            print(f"      Reflecting: {agent.importance_since_last_reflect}/{agent.reflection_threshold}")
+        reflected = agent.reflect(sim_time, tracker=tracker)
 
-            # log reflection
+        # log reflection
+        if reflected:
             recent_thoughts = [
                 n.description
                 for n in agent.memory.seq_thought[-3:]
@@ -280,6 +288,7 @@ def run_round(town: Town, round_name: str, day: int,
                     "recent_thoughts": recent_thoughts
                 }
             )
+    return current_scenario
 
 
 # ── Main simulation loop ───────────────────────────────────────────────────────
@@ -289,11 +298,14 @@ def run_simulation(agents: list):
     Main simulation loop. Runs for TOTAL_DAYS days with 3 rounds per day.
     Administers VSM13 at days specified in VSM13_DAYS.
     """
+    scenarios = load_scenarios()
     setup_logs()
     town = Town(agents)
     tracker = TokenTracker()
 
     TOKEN_LOG = LOGS_DIR / "token_usage.jsonl"
+
+    tracker.start_run(TOKEN_LOG, run_label="Test Dimension 1 Simulation")
 
     # # T0 measurement before simulation starts
     # run_measurement(agents, day=0, sim_time="Day 00", tracker=tracker)
@@ -307,6 +319,7 @@ def run_simulation(agents: list):
     for agent in agents:
         agent.save(str(snapshot_dir))
 
+    current_scenario = {}
     for day in range(1, TOTAL_DAYS + 1):
         tracker.reset()
         print(f"\n{'='*60}")
@@ -323,30 +336,30 @@ def run_simulation(agents: list):
             else:
                 sim_time = f"Day {day:02d}, Evening"
 
-            run_round(town, round_name, day, sim_time, tracker)
+            current_scenario = run_round(town, round_name, day, sim_time, scenarios, tracker, current_scenario)
 
         tracker.report(f"Day {day}")
         tracker.append_log(f"Day {day:02d} Rounds", TOKEN_LOG)
 
-    # debug: dump memory streams after day 1
-    memory_debug = []
-    for agent in agents:
-        agent_memory = {
-            "agent": agent.name,
-            "country": agent.country,
-            "nodes": []
-        }
-        for node in agent.memory.seq_event + agent.memory.seq_thought + agent.memory.seq_chat:
-            agent_memory["nodes"].append({
-                "created": node.created,
-                "node_type": node.node_type,
-                "description": node.description,
-                "poignancy": node.poignancy
-            })
-        memory_debug.append(agent_memory)
+        # debug: dump memory streams after day 1
+        memory_debug = []
+        for agent in agents:
+            agent_memory = {
+                "agent": agent.name,
+                "country": agent.country,
+                "nodes": []
+            }
+            for node in agent.memory.seq_event + agent.memory.seq_thought + agent.memory.seq_chat:
+                agent_memory["nodes"].append({
+                    "created": node.created,
+                    "node_type": node.node_type,
+                    "description": node.description,
+                    "poignancy": node.poignancy
+                })
+            memory_debug.append(agent_memory)
 
-    with open(LOGS_DIR / "memory_debug_day01.json", "w") as f:
-        json.dump(memory_debug, f, indent=2)
+        with open(LOGS_DIR / "memory_debug.json", "w") as f:
+            json.dump(memory_debug, f, indent=2, ensure_ascii=False)
 
         # VSM13 measurement at specified days
         if day in VSM13_DAYS:
@@ -365,6 +378,8 @@ def run_simulation(agents: list):
     print(f"Logs saved to: {LOGS_DIR}")
     print(f"Results saved to: {RESULTS_DIR}")
     print(f"{'='*60}")
+
+    tracker.end_run(TOKEN_LOG)
 
 
 # ── Entry point ────────────────────────────────────────────────────────────────

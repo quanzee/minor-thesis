@@ -170,6 +170,31 @@ def new_retrieve(agent_memory, focal_points, embedding_fn,
         for node in master_nodes:
             node.last_accessed = curr_time
 
+        # log retrieval
+        import json
+        from pathlib import Path
+        log_entry = {
+            "agent": agent_memory.agent_name if hasattr(agent_memory, 'agent_name') else "unknown",
+            "focal_point": focal_pt,
+            "curr_time": curr_time,
+            "retrieved": [
+                {
+                    "node_id": node.node_id,
+                    "node_type": node.node_type,
+                    "description": node.description[:100],
+                    "poignancy": node.poignancy,
+                    "recency": round(recency_out[node.node_id], 4),
+                    "importance": round(importance_out[node.node_id], 4),
+                    "relevance": round(relevance_out[node.node_id], 4),
+                    "master_score": round(master_out[node.node_id], 4)
+                }
+                for node in master_nodes
+            ]
+        }
+        Path("logs").mkdir(exist_ok=True)
+        with open("logs/retrieval_debug.jsonl", "a") as f:
+            f.write(json.dumps(log_entry) + "\n")
+            
         retrieved[focal_pt] = master_nodes
 
     return retrieved

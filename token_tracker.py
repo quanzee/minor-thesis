@@ -2,7 +2,8 @@
 File: token_tracker.py
 Description: Tracks token usage across API calls during simulation.
 """
-
+from datetime import datetime
+import json
 
 class TokenTracker:
     def __init__(self):
@@ -39,6 +40,25 @@ class TokenTracker:
             "prompt_tokens": self.prompt_tokens,
             "completion_tokens": self.completion_tokens,
             "total_tokens": self.total_tokens
+        }
+        with open(filepath, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+
+    def start_run(self, filepath, run_label: str = None):
+        entry = {
+            "event": "run_start",
+            "run_label": run_label,
+            "timestamp": datetime.now().isoformat()
+        }
+        with open(filepath, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+
+    def end_run(self, filepath):
+        from datetime import datetime
+        import json
+        entry = {
+            "event": "run_end",
+            "timestamp": datetime.now().isoformat()
         }
         with open(filepath, "a") as f:
             f.write(json.dumps(entry) + "\n")

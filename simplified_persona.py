@@ -43,13 +43,13 @@ class Agent:
         # Reflection fires when this exceeds the threshold, following
         # Park et al. (2023).
         self.importance_since_last_reflect = 0
-        self.reflection_threshold = 10
+        self.reflection_threshold = 75
         self.memories_since_last_reflect = []
 
         # ── Seed memories ──────────────────────────────────────────────────
         self.memory.seed_memories(
             seed_descriptions=memory_seeds,
-            poignancy=5, #need to think about this value
+            poignancy=8, #need to think about this value
             embedding_fn=embedding_fn,
             created="Day 00, Initialisation"
         )
@@ -72,7 +72,7 @@ class Agent:
             embedding_fn=embedding_fn
         )
 
-    def perceive(self, observation: str, curr_time: str, tracker=None):
+    def perceive(self, observation: str, curr_time: str, tracker=None, poignancy_override=None):
         """
         Adds an observation to the agent's memory stream.
         Replaces the maze-based perceive in Park et al. — observations
@@ -84,7 +84,7 @@ class Agent:
         OUTPUT:
             the created MemoryNode
         """
-        poignancy = self._score_poignancy(observation, memory_type="event", tracker=tracker)
+        poignancy = poignancy_override if poignancy_override is not None else self._score_poignancy(observation, memory_type="event", tracker=tracker)
         embedding = self.embedding_fn(observation)
         node = self.memory.add_event(
             description=observation,
@@ -198,7 +198,7 @@ class Agent:
                 self.embedding_fn, curr_time, tracker=tracker)
 
     def converse(self, other_agent, curr_time: str,
-                 n_turns: int = 6, tracker=None): #
+                 n_turns: int = 6, tracker=None, scenario_focal: str = None): #
         """
         Conducts a multi-turn conversation between this agent and another.
         Each agent generates their utterance in turn based on their memory
@@ -211,15 +211,19 @@ class Agent:
         OUTPUT:
             list of (speaker_name, utterance) tuples
         """
-        # retrieve once at the start for both agents
-        self_context = self.retrieve(
-            [f"relationship with {other_agent.name}",
-            f"experiences at {self.location}"],
-            curr_time
-        )
+        # get most recent high-importance event as scenario anchor
+        focal_points = [
+            f"relationship with {other_agent.name}",
+            f"experiences at {self.location}"
+        ]
+        if scenario_focal:
+            focal_points.append(scenario_focal)
+
+        self_context = self.retrieve(focal_points, curr_time)
         other_context = other_agent.retrieve(
             [f"relationship with {self.name}",
-            f"experiences at {self.location}"],
+             f"experiences at {self.location}",
+             *([ scenario_focal] if scenario_focal else [])],
             curr_time
         )
 
@@ -345,7 +349,7 @@ class Agent:
         {previous_convo}
 
         {self.name} and {other_agent.name} are in {self.location}. What would they talk about now?
-
+        
         {self.name}: \""""
 
         response = self.client.chat.completions.create(
@@ -384,7 +388,8 @@ class Agent:
             On the scale of 1 to 10, where 1 is purely mundane (e.g., I need to do the dishes, I need to walk the dog) and 10 is extremely significant (e.g., I wish to become a professor, I love Elie), rate the likely significance of the following thought for {self.name}.
 
             Thought: {description}
-            Rate (return a number between 1 to 10):"""
+            Rate (return a number between 1 to 10):
+            Respond with a single integer only. Do not explain your reasoning."""
 
         elif memory_type == "chat":
             prompt = f"""Here is a brief description of {self.name}.
@@ -394,7 +399,8 @@ class Agent:
 
             Conversation:
             {description}
-            Rate (return a number between 1 to 10):"""
+            Rate (return a number between 1 to 10):
+            Respond with a single integer only. Do not explain your reasoning."""
 
         else:  # event
             prompt = f"""Here is a brief description of {self.name}.
@@ -403,7 +409,8 @@ class Agent:
             On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following event for {self.name}.
 
             Event: {description}
-            Rate (return a number between 1 to 10):"""
+            Rate (return a number between 1 to 10):
+            Respond with a single integer only. Do not explain your reasoning."""
 
         response = self.client.chat.completions.create(
             model=self.model,
@@ -414,9 +421,20 @@ class Agent:
             tracker.add(response.usage)
 
         try:
-            return int(response.choices[0].message.content.strip())
-        except ValueError:
+            raw = response.choices[0].message.content.strip()
+            import re
+            match = re.search(r'\b(\d+)\b', raw)
+            score = int(match.group(1)) if match else 5
+            print(f"      Poignancy [{memory_type}]: '{raw}' → {score}")
+            return score
+        except (ValueError, AttributeError):
+            print(f"      Poignancy parse failed, defaulting to 5")
             return 5
+
+        # try:
+        #     return int(response.choices[0].message.content.strip())
+        # except ValueError:
+        #     return 5
         
     def plan_location(self, curr_time, tracker=None):
         """
