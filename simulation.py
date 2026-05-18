@@ -21,7 +21,7 @@ print("Imports loaded successfully")
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-TOTAL_DAYS = 6
+TOTAL_DAYS = 1
 VSM13_DAYS = {6}
 LOGS_DIR = Path("logs")
 RESULTS_DIR = Path("simulation_results")
@@ -169,29 +169,28 @@ def load_scenarios(path="scenarios.yaml"):
         return yaml.safe_load(f)["scenarios"]
 
 def inject_scenarios(town, scenarios, day, round_name, sim_time, tracker=None):
-    current = {}  # keyed by location
+    injected = {}
     for scenario in scenarios:
         if scenario["day"] == day and scenario["round"] == round_name:
-            current[scenario["location"]] = scenario["text"]
+            injected[scenario["location"]] = scenario["text"]
             for agent in town.agents:
                 if agent.location == scenario["location"]:
-                    node = agent.perceive(scenario["text"], sim_time, tracker=tracker,
-                                          poignancy_override=scenario["poignancy"])
-                    print(f"      Scenario injected into {agent.name}: poignancy={node.poignancy}")
-    return current if current else None
-
+                    # node = agent.perceive(scenario["text"], sim_time, tracker=tracker,
+                    #                      poignancy_override=scenario["poignancy"])
+                    agent.active_scenario = {"text": scenario["text"], "day": day, "round": round_name}
+                    print(f"      Scenario activated for {agent.name}")
+    return injected if injected else None
 # ── Round execution ────────────────────────────────────────────────────────────
 
 def run_round(town: Town, round_name: str, day: int,
-              sim_time: str, scenarios: list, tracker=None, current_scenario: str = None):
-    """
-    Executes one simulation round:
-    1. Assign locations
-    2. Each agent perceives their environment
-    3. Each agent plans and potentially converses
-    4. Each agent reflects if threshold is met
-    """
+              sim_time: str, scenarios: list, tracker=None):
     print(f"\n  [{round_name} Round]")
+
+    # clear scenarios from previous day at the start of each Morning round
+    if round_name == "Morning":
+        for agent in town.agents:
+            if agent.active_scenario and agent.active_scenario["day"] < day:
+                agent.active_scenario = None
 
     # assign locations for this round
     print(f"  Assigning locations...")
@@ -216,10 +215,8 @@ def run_round(town: Town, round_name: str, day: int,
     # track conversations that have already happened this round
     already_conversed = set()
 
-    # inject social scenario on Day 1 Morning
-    injected = inject_scenarios(town, scenarios, day, round_name, sim_time, tracker)
-    if injected:
-        current_scenario = injected
+    # inject scenarios for this round
+    inject_scenarios(town, scenarios, day, round_name, sim_time, tracker)
 
     # run each agent sequentially, following Park et al.
     for agent in town.agents:
@@ -250,8 +247,7 @@ def run_round(town: Town, round_name: str, day: int,
                 print(f"    {agent.name} ({agent.country}) → "
                     f"{target.name} ({target.country})")
 
-                scenario_focal = current_scenario.get(agent.location)
-                conversation = agent.converse(target, sim_time, tracker=tracker, scenario_focal=scenario_focal)
+                conversation = agent.converse(target, sim_time, tracker=tracker)
 
                 # log interaction
                 append_log(
@@ -288,8 +284,6 @@ def run_round(town: Town, round_name: str, day: int,
                     "recent_thoughts": recent_thoughts
                 }
             )
-    return current_scenario
-
 
 # ── Main simulation loop ───────────────────────────────────────────────────────
 
@@ -336,7 +330,7 @@ def run_simulation(agents: list):
             else:
                 sim_time = f"Day {day:02d}, Evening"
 
-            current_scenario = run_round(town, round_name, day, sim_time, scenarios, tracker, current_scenario)
+            run_round(town, round_name, day, sim_time, scenarios, tracker)
 
         tracker.report(f"Day {day}")
         tracker.append_log(f"Day {day:02d} Rounds", TOKEN_LOG)

@@ -37,6 +37,8 @@ class Agent:
         self.primary_location = self._assign_primary_location()
         self.curr_time = None         # current simulation datetime
         self.chat_partner = None      # name of agent currently conversing with
+        self.active_scenario = None  # {"text": ..., "day": ...}
+        self.recent_partners = []    # list of names of recent conversation partners
 
         # ── Reflection trigger counter ─────────────────────────────────────
         # Accumulates poignancy of new memories since last reflection.
@@ -143,6 +145,7 @@ class Agent:
         # List of available agents
         agent_list = "\n".join([
             f"- {a.name} ({a.age}-year-old {a.gender} from {a.country}, {a.education}, {a.job_type})"
+            + (f" [last spoke: {self.recent_partners.count(a.name)} time(s) recently]" if a.name in self.recent_partners else "")
             for a in other_agents
         ])
 
@@ -198,7 +201,7 @@ class Agent:
                 self.embedding_fn, curr_time, tracker=tracker)
 
     def converse(self, other_agent, curr_time: str,
-                 n_turns: int = 6, tracker=None, scenario_focal: str = None): #
+                 n_turns: int = 6, tracker=None): #
         """
         Conducts a multi-turn conversation between this agent and another.
         Each agent generates their utterance in turn based on their memory
@@ -213,17 +216,14 @@ class Agent:
         """
         # get most recent high-importance event as scenario anchor
         focal_points = [
-            f"relationship with {other_agent.name}",
-            f"experiences at {self.location}"
-        ]
-        if scenario_focal:
-            focal_points.append(scenario_focal)
+        f"relationship with {other_agent.name}",
+        f"experiences at {self.location}",
+        f"conversations with {other_agent.name}"]
 
         self_context = self.retrieve(focal_points, curr_time)
         other_context = other_agent.retrieve(
             [f"relationship with {self.name}",
-             f"experiences at {self.location}",
-             *([ scenario_focal] if scenario_focal else [])],
+             f"experiences at {self.location}"],
             curr_time
         )
 
@@ -233,17 +233,38 @@ class Agent:
         current_context = self_context
         other_context_swap = other_context
 
-        for _ in range(n_turns):
+        for i in range(n_turns):
+            recent_scenario = (
+                current_speaker.active_scenario["text"] 
+                if current_speaker.active_scenario and current_speaker.active_scenario.get("round") == "Morning" 
+                else None
+            )
             utterance = current_speaker._generate_utterance(
-                other_speaker, conversation, current_context, other_context_swap,curr_time
+            other_speaker, conversation, current_context,
+            other_context_swap, curr_time, tracker=tracker,
+            recent_scenario=recent_scenario
             )
             conversation.append((current_speaker.name, utterance))
             current_speaker, other_speaker = other_speaker, current_speaker
             current_context, other_context_swap = other_context_swap, current_context
 
         # Store conversation in both agents' memories
-        description = (f"{self.name} and {other_agent.name} "
-                       f"had a conversation at {self.location}")
+        summary_prompt = f"""Summarise the following conversation between {self.name} and {other_agent.name} in one sentence, focusing on the main topic discussed.
+
+        Conversation:
+        {chr(10).join(f'{speaker}: {utterance}' for speaker, utterance in conversation)}
+
+        Respond with one sentence only."""
+
+        summary_response = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{"role": "user", "content": summary_prompt}],
+            temperature=0.0
+        )
+        if tracker:
+            tracker.add(summary_response.usage)
+
+        description = summary_response.choices[0].message.content.strip()
 
         for agent in [self, other_agent]:
             poignancy = agent._score_poignancy(description, memory_type="chat", tracker=tracker)
@@ -266,7 +287,8 @@ class Agent:
                 client=agent.client,
                 model=agent.model,
                 embedding_fn=agent.embedding_fn,
-                curr_time=curr_time
+                curr_time=curr_time,
+                tracker=tracker
             )
 
         return conversation
@@ -286,7 +308,7 @@ class Agent:
         self.memory = AssociativeMemory.load(str(path))
 
     def _generate_utterance(self, other_agent, conversation_so_far,
-                            retrieved_context, other_retrieved_context, curr_time, tracker=None):
+                            retrieved_context, other_retrieved_context, curr_time, tracker=None, recent_scenario=None):
         """
         Generates a single utterance in a conversation.
         Prompt adapted from Park et al. (2023) create_conversation_v2.txt.
@@ -330,6 +352,13 @@ class Agent:
         else:
             previous_convo = ""
 
+        scenario_context = ""
+        if recent_scenario:
+            scenario_context = (
+                f"\nA recent event that {self.name} witnessed and is still "
+                f"thinking about:\n{recent_scenario}\n"
+            )
+
         prompt = f"""We have two characters.
 
         Character 1.
@@ -343,10 +372,13 @@ class Agent:
         {self_thoughts}
         Here is what {other_agent.name} thinks about {self.name}:
         {other_thoughts}
+        {scenario_context}
         Currently, it is {curr_time}
         -- {self.name} is at {self.location}
         -- {other_agent.name} is at {other_agent.location}
         {previous_convo}
+
+        If {self.name} has spoken with {other_agent.name} before, they should acknowledge their prior conversation and build on it rather than repeating the same topics.
 
         {self.name} and {other_agent.name} are in {self.location}. What would they talk about now?
         

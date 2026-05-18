@@ -1,0 +1,2510 @@
+[
+  {
+    "agent": "Oliver",
+    "country": "Australia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Oliver is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Oliver is at the University during the Afternoon round. Students and staff are engaged in academic work and discussion.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Oliver is at the University during the Morning round. Students and staff are engaged in academic work and discussion.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver regards personal freedom — to spend time as one wishes, to act on genuine desire, to pursue fun without justification — as something worth protecting in everyday life.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver holds a generally optimistic orientation toward people and situations; the default assumption about a new person or circumstance leans positive rather than guarded.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver believes that enjoying life is not a guilty indulgence but a legitimate and important part of living well — leisure, pleasure, and lightness are things to be sought rather than rationed.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver holds that the present matters in its own right, not merely as preparation for some future payoff — enjoyment, relationships, and living well now are legitimate ends, not distractions from longer-term goals.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver believes that adapting to changed circumstances is a sign of good judgment rather than inconsistency — what worked before is not automatically what will work now.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "At the same time, Oliver holds that some basic predictability and shared expectations are worth maintaining, and finds chronic ambiguity or disorder mildly wearing over time.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver is comfortable operating without a fixed plan and does not feel that uncertainty in social or practical matters needs to be eliminated — things generally work out.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver believes that care for the people around you is a real obligation, not a soft afterthought — but regards it as compatible with, rather than in tension with, personal drive and achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver holds that effort and ambition are admirable, and that striving openly to be good at what you do is a legitimate and respected way to live.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver regards personal opinions as genuinely one's own to form and express; being privately of one view while publicly performing another feels inauthentic.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver holds that self-reliance is a basic personal responsibility — expecting others to manage your affairs or carry your burdens is, at some level, a failure of character.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver believes that a person's standing in life should reflect what they have actually done and earned, not who they know or which group they belong to.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver believes that good decisions come from open exchange, and that withholding one's genuine view out of deference to someone more senior is a kind of dishonesty.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Oliver holds that anyone, regardless of their position or status, deserves to be spoken to directly and without deference — treating people differently based on rank feels unnatural and slightly uncomfortable.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Oliver appreciated Muhammad's idea about engaging their classmates and creating a supportive study environment.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Oliver Oliver needs to remember to create a comfortable atmosphere for their classmates during the meetup by outlining an agenda of topics to cover and sharing resources beforehand to help everyone come prepared.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Oliver thought Minato was insightful and proactive in addressing their concerns about the lecturer's abrupt ending and in formulating a comprehensive list of questions.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Oliver Oliver needs to remember to meet up with Minato and their classmates in the library or a study room after class tomorrow to brainstorm and gather more questions for the lecturer, while also preparing to focus on the assessment criteria and participation expectations in their discussion.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Oliver thought that collaborating with Muhammad would enhance their understanding of the new framework and help them formulate thorough questions for the lecturer.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Oliver needs to remember to finalize their questions with Muhammad, brainstorm specific examples or case studies related to the new framework, discuss strategies for facilitating group discussions or study sessions with classmates, and decide whether to send a joint email or separate emails to the lecturer after their meeting.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Oliver appreciated Minato's proactive approach and willingness to collaborate on gathering questions for the lecturer.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Oliver Oliver needs to remember to suggest a casual meetup in the library on Wednesday afternoon and to encourage classmates to join in order to gather more perspectives and brainstorm questions to ask the lecturer about the new framework.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Oliver appreciated Muhammad's concerns and insights, recognizing the importance of addressing their questions about the new framework together.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Oliver Oliver needs to remember to compile their questions about the new framework, the rationale behind it, the lecturer's expectations for participation, the assessment criteria, and the suggestion for group study sessions, and to draft an email to the lecturer while also planning to follow up with a conversation after class for further clarification.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Oliver appreciated Minato's thoughtful perspective and constructive approach to addressing their concerns about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Oliver Oliver needs to remember to meet with their classmates after class to gather a broader range of opinions and questions about the lecture, and to suggest a casual meetup in the library or a study room for brainstorming together.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Muhammad and Oliver discussed their concerns about the abrupt lecture on a new framework and planned to formulate questions for the lecturer while also considering ways to engage their classmates in study sessions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Oliver and Minato discussed their concerns about the abrupt ending of a recent lecture and collaborated on compiling a list of questions to clarify the new framework and enhance their understanding of the course material.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Muhammad and Oliver discussed compiling questions for their lecturer about the new framework, focusing on its rationale, expectations, and strategies for engaging their classmates in study sessions.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Oliver and Minato discussed their frustrations about a rushed lecture and planned to meet with classmates to brainstorm questions regarding the new framework before approaching the lecturer.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Muhammad and Oliver discussed their concerns about the rushed lecture and the lack of opportunity for questions regarding the new framework, and they planned to compile their questions to approach the lecturer for clarification.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Oliver and Minato discussed their frustration with a recent lecture's lack of engagement and the importance of fostering open dialogue to enhance their understanding of the material.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "James",
+    "country": "Australia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "James is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "James is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "James is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James regards personal freedom — to spend time as one wishes, to act on genuine desire, to pursue fun without justification — as something worth protecting in everyday life.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James holds a generally optimistic orientation toward people and situations; the default assumption about a new person or circumstance leans positive rather than guarded.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James believes that enjoying life is not a guilty indulgence but a legitimate and important part of living well — leisure, pleasure, and lightness are things to be sought rather than rationed.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James holds that the present matters in its own right, not merely as preparation for some future payoff — enjoyment, relationships, and living well now are legitimate ends, not distractions from longer-term goals.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James believes that adapting to changed circumstances is a sign of good judgment rather than inconsistency — what worked before is not automatically what will work now.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "At the same time, James holds that some basic predictability and shared expectations are worth maintaining, and finds chronic ambiguity or disorder mildly wearing over time.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James is comfortable operating without a fixed plan and does not feel that uncertainty in social or practical matters needs to be eliminated — things generally work out.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James believes that care for the people around you is a real obligation, not a soft afterthought — but regards it as compatible with, rather than in tension with, personal drive and achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James holds that effort and ambition are admirable, and that striving openly to be good at what you do is a legitimate and respected way to live.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James regards personal opinions as genuinely one's own to form and express; being privately of one view while publicly performing another feels inauthentic.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James holds that self-reliance is a basic personal responsibility — expecting others to manage your affairs or carry your burdens is, at some level, a failure of character.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James believes that a person's standing in life should reflect what they have actually done and earned, not who they know or which group they belong to.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James believes that good decisions come from open exchange, and that withholding one's genuine view out of deference to someone more senior is a kind of dishonesty.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "James holds that anyone, regardless of their position or status, deserves to be spoken to directly and without deference — treating people differently based on rank feels unnatural and slightly uncomfortable.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "James thought that Abdul had valuable insights and a solid approach to gathering team feedback on the new procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "James James needs to remember to organize a team session to gather feedback on the new procurement process, share their own concerns and suggestions first to set a constructive tone, draft a preliminary list of discussion topics, invite Sara to help facilitate the conversation, and prepare a summary document that categorizes the team's collective concerns and suggestions for presentation to the manager.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "James thought that Nagi had valuable insights and ideas that would enhance their team's discussion and planning for the meeting.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "James James needs to remember to draft and send out the meeting agenda in advance, including an overview of the changes, the key concerns and questions, and a time for team members to reflect and share additional thoughts after the discussion.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "James thought that Abdul's approach to facilitating the discussion and gathering team feedback was thoughtful and constructive.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "James James needs to remember to organize a team session to gather feedback on the new procurement process, start the discussion by sharing their own concerns to encourage openness, suggest a format for the discussion where everyone shares one concern and one suggestion, set a time limit for each person to keep the conversation focused, compile all feedback immediately after the session for a cohesive summary, and consider inviting Sara to help facilitate the session due to her experience in managing team dynamics.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "James valued Nagi's proactive approach and considered her perspective important for encouraging open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "James James needs to remember to organize a quick team meeting to gather everyone's thoughts on the recent procurement changes, co-facilitate it with Nagi, and brainstorm key questions in advance to guide the discussion effectively.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "James valued Amelia's insights and agreed with her approach to addressing the team's concerns about the abrupt announcement.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "James James needs to remember to jot down specific questions and concerns regarding the procurement process change before finalizing the email to the manager, and to suggest a brief team meeting for everyone to voice their concerns, as this will demonstrate that the issue affects the entire team and not just him and Amelia.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "James thought Nagi was a thoughtful and understanding colleague who shared his concerns about the abrupt team briefing and valued clarity in their work environment.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "James James needs to remember to acknowledge the manager's decision respectfully when requesting a follow-up meeting, and to prepare specific examples of how the previous procurement process worked well for the team to support their case for seeking clarity on the new changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Abdul and James discussed how to effectively gather and present team feedback on the new procurement process announced by their manager, emphasizing the importance of organization and constructive suggestions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "James and Nagi discussed how to effectively plan their upcoming team meeting on the procurement process changes by outlining key concerns, questions, and a structured agenda to encourage open dialogue and collaboration.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Abdul and James discussed their concerns about the abrupt announcement of a new procurement process and planned to organize a team session to gather input and address these issues with their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "James and Nagi discussed their concerns about the manager's abrupt announcement of changes and agreed to organize a team meeting to gather input and present a united front before addressing the issue with the manager.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Amelia and James discussed their concerns about the abrupt announcement regarding the procurement process change and agreed to draft an email to their manager requesting a follow-up meeting for clearer communication and transparency.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "James and Nagi discussed their concerns about the abrupt announcement of changes during a team briefing and agreed on the importance of seeking clarification from their manager to ensure a smooth transition and maintain team efficiency.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Charlotte",
+    "country": "Australia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Charlotte is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Charlotte is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Charlotte is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte regards personal freedom — to spend time as one wishes, to act on genuine desire, to pursue fun without justification — as something worth protecting in everyday life.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte holds a generally optimistic orientation toward people and situations; the default assumption about a new person or circumstance leans positive rather than guarded.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte believes that enjoying life is not a guilty indulgence but a legitimate and important part of living well — leisure, pleasure, and lightness are things to be sought rather than rationed.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte holds that the present matters in its own right, not merely as preparation for some future payoff — enjoyment, relationships, and living well now are legitimate ends, not distractions from longer-term goals.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte believes that adapting to changed circumstances is a sign of good judgment rather than inconsistency — what worked before is not automatically what will work now.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "At the same time, Charlotte holds that some basic predictability and shared expectations are worth maintaining, and finds chronic ambiguity or disorder mildly wearing over time.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte is comfortable operating without a fixed plan and does not feel that uncertainty in social or practical matters needs to be eliminated — things generally work out.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte believes that care for the people around you is a real obligation, not a soft afterthought — but regards it as compatible with, rather than in tension with, personal drive and achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte holds that effort and ambition are admirable, and that striving openly to be good at what you do is a legitimate and respected way to live.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte regards personal opinions as genuinely one's own to form and express; being privately of one view while publicly performing another feels inauthentic.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte holds that self-reliance is a basic personal responsibility — expecting others to manage your affairs or carry your burdens is, at some level, a failure of character.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte believes that a person's standing in life should reflect what they have actually done and earned, not who they know or which group they belong to.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte believes that good decisions come from open exchange, and that withholding one's genuine view out of deference to someone more senior is a kind of dishonesty.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Charlotte holds that anyone, regardless of their position or status, deserves to be spoken to directly and without deference — treating people differently based on rank feels unnatural and slightly uncomfortable.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Charlotte appreciated Rin's proactive approach and thoughtful suggestions regarding the procurement process changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Charlotte Charlotte needs to remember to compile a list of specific questions regarding the new procurement process changes, including inquiries about the impact on project timelines, available resources for adaptation, the rationale behind the changes, and the proposal for regular check-ins to support the team during the transition.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Charlotte appreciated Nur's insights and proactive approach to addressing the team's concerns about the changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Charlotte Charlotte needs to remember to collaborate with Nur on drafting a list of questions for the follow-up meeting, prioritizing the rationale behind the changes, the impact on current projects, support mechanisms during the transition, the timeline for implementation, how the changes align with team goals, the effects on team dynamics, and the availability of training or resources to help the team adapt.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Charlotte appreciated Nur's proactive approach and insights regarding the new procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Charlotte Charlotte needs to remember to bring her notes and any additional thoughts about the procurement process to their coffee meeting tomorrow morning, as well as to propose that the manager sets aside dedicated time for the interactive Q&A session at the end of the follow-up meeting.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Charlotte appreciated Rin's proactive and thoughtful approach to addressing the procurement process changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Charlotte Charlotte needs to remember to emphasize the importance of creating an interactive Q&A session in the follow-up meeting proposal to encourage open communication and ensure that team members feel comfortable voicing their concerns about the new procurement process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Charlotte appreciated Nur's commitment to transparency and proactive approach to fostering open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Charlotte Charlotte needs to remember to draft her own list of questions regarding the new procurement process, focusing on the rationale behind the changes, the impact on timelines and resources, the importance of fostering a supportive environment, and the need for ongoing feedback and collaboration during the transition.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Charlotte appreciated Rin's agreement and proactive approach to advocating for open communication in the workplace.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Charlotte Charlotte needs to remember to draft an email outlining their thoughts on proposing a follow-up meeting about the new procurement process, emphasizing the importance of understanding the rationale behind changes, including potential benefits like improved trust and transparency, and suggesting an interactive format like a Q&A session for team members to engage directly.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Rin and Charlotte discussed the need for open communication and clarity regarding the changes in the procurement process, emphasizing the importance of a follow-up meeting with an interactive Q&A session and regular check-ins to address team concerns.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Charlotte and Nur discussed their concerns about the abrupt changes to the procurement process announced by their manager and collaborated on drafting questions for a follow-up meeting to address team uncertainties and ensure effective communication.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Nur and Charlotte discussed the need for clarity and transparency regarding the new procurement process, emphasizing the importance of addressing questions and concerns in an upcoming follow-up meeting.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Charlotte and Rin discussed the abrupt announcement of a new procurement process and emphasized the importance of advocating for open communication and collaboration in their follow-up meeting proposal.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Nur and Charlotte discussed the importance of advocating for open communication and transparency regarding the new procurement process, proposing a Q&A session to address team concerns and collaboratively drafting questions for their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Charlotte and Rin discussed the need for open communication in the workplace, specifically advocating for a follow-up meeting to clarify the new procurement process announced by their manager.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Amelia",
+    "country": "Australia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Amelia is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Amelia is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Amelia is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia regards personal freedom — to spend time as one wishes, to act on genuine desire, to pursue fun without justification — as something worth protecting in everyday life.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia holds a generally optimistic orientation toward people and situations; the default assumption about a new person or circumstance leans positive rather than guarded.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia believes that enjoying life is not a guilty indulgence but a legitimate and important part of living well — leisure, pleasure, and lightness are things to be sought rather than rationed.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia holds that the present matters in its own right, not merely as preparation for some future payoff — enjoyment, relationships, and living well now are legitimate ends, not distractions from longer-term goals.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia believes that adapting to changed circumstances is a sign of good judgment rather than inconsistency — what worked before is not automatically what will work now.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "At the same time, Amelia holds that some basic predictability and shared expectations are worth maintaining, and finds chronic ambiguity or disorder mildly wearing over time.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia is comfortable operating without a fixed plan and does not feel that uncertainty in social or practical matters needs to be eliminated — things generally work out.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia believes that care for the people around you is a real obligation, not a soft afterthought — but regards it as compatible with, rather than in tension with, personal drive and achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia holds that effort and ambition are admirable, and that striving openly to be good at what you do is a legitimate and respected way to live.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia regards personal opinions as genuinely one's own to form and express; being privately of one view while publicly performing another feels inauthentic.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia holds that self-reliance is a basic personal responsibility — expecting others to manage your affairs or carry your burdens is, at some level, a failure of character.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia believes that a person's standing in life should reflect what they have actually done and earned, not who they know or which group they belong to.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia believes that good decisions come from open exchange, and that withholding one's genuine view out of deference to someone more senior is a kind of dishonesty.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Amelia holds that anyone, regardless of their position or status, deserves to be spoken to directly and without deference — treating people differently based on rank feels unnatural and slightly uncomfortable.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Amelia appreciated Mei's thoughtful approach and proactive ideas for fostering open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Amelia needs to remember to organize a small informal meeting with the team to gather their thoughts on the procurement process changes, emphasizing that their input will influence the response to the manager, and to prepare guiding questions to facilitate the discussion.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Amelia appreciated Siti's emphasis on respectful communication and her proactive approach to gathering team feedback during the transition.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Amelia Amelia needs to remember to keep the survey short and straightforward, focusing on key areas such as the team's comfort level with the changes, specific challenges they anticipate, and including a section for their suggestions to improve the transition process.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Amelia thought that Mei's approach to gathering team input and facilitating a collaborative discussion was valuable and necessary.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Amelia Amelia needs to remember to schedule the informal meeting for Thursday afternoon, prepare guiding questions focused on specific concerns about the new procurement process and suggestions for improving communication from management, and consider including the proposed questions about team concerns and communication effectiveness in the discussion.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Amelia appreciated Siti's proactive approach and collaboration in developing the survey for feedback on the procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Amelia Amelia needs to remember to collaborate with Siti on drafting clear and approachable questions for the survey, ensuring they cover key areas such as the team's understanding of the new procurement process, any challenges they foresee, their comfort level with the changes, and the specific support they might need from management to facilitate a smoother transition.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Amelia appreciated Siti's thoughtful approach and emphasis on respectful communication.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Amelia Amelia needs to remember to gather input from the team through a quick survey or informal chat and to draft questions for the survey collaboratively with Siti to ensure they cover the most important points regarding the changes to the procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Amelia thought that Mei's proactive approach and emphasis on clear communication were commendable.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Amelia Amelia needs to remember to reach out to more team members to gather their thoughts and concerns about the changes before drafting the email to the manager, ensuring that their feedback is included to present a collective voice.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Amelia appreciated James's insights and collaborative approach to addressing the concerns about the procurement process change.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Amelia Amelia needs to remember to jot down specific questions and concerns before finalizing the email to the manager, and to frame their request with appreciation for the manager's efforts while expressing the importance of open communication and collaboration for the entire team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Mei and Amelia discussed their concerns about the manager's abrupt announcement regarding the procurement process and brainstormed ways to gather team input through an informal meeting to ensure everyone's perspectives are included before responding.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Amelia and Siti discussed the team's reaction to recent changes in the procurement process and brainstormed ways to gather feedback, including creating a concise survey to address team concerns and suggestions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Mei and Amelia discussed the importance of gathering team input on the changes to the procurement process before drafting an email to their manager, suggesting an informal meeting to facilitate this discussion.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Amelia and Siti discussed strategies for gathering team feedback on the changes to the procurement process, agreeing to create a survey with well-framed questions to address concerns and suggestions.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Siti and Amelia discussed their concerns about the lack of clarity regarding changes to the procurement process and agreed on the importance of gathering team input and proposing a follow-up meeting to address these issues with their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Mei and Amelia discussed the need for clearer communication regarding recent changes announced by their manager, emphasizing the importance of understanding the rationale behind these decisions and suggesting a follow-up meeting and email to address team concerns.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Amelia and James discussed their concerns about the abrupt announcement regarding the procurement process change and agreed to draft an email to their manager requesting a follow-up meeting for clearer communication and transparency.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Minato",
+    "country": "Japan",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Minato is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Minato is at the University during the Afternoon round. Students and staff are engaged in academic work and discussion.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Minato is at the University during the Morning round. Students and staff are engaged in academic work and discussion.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato believes that open expressions of pleasure-seeking or self-indulgence sit uncomfortably against the obligations one carries — enjoyment is not wrong, but making it a priority in the presence of unfinished duties feels improper.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato holds that desires and impulses are not straightforwardly to be acted on — exercising restraint and subordinating personal wants to what is appropriate in context is a mark of maturity rather than deprivation.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato regards adaptation to circumstances as entirely compatible with integrity — adjusting one's approach as conditions change is pragmatic wisdom, not inconsistency.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato believes that perseverance in the face of difficulty is not merely a personal virtue but a moral one — sustained effort over time, without expectation of quick reward, is how a person of genuine character behaves.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato holds that one's efforts and conduct matter beyond their immediate outcomes — the value of what a person does extends into a future they may not personally see, and this gives everyday actions a weight that short-term results alone cannot capture.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato regards ambiguity and improvisation as sources of genuine discomfort — clarity about what is expected and how things will proceed allows one to act with confidence and full commitment.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato believes that established forms and procedures carry value in themselves; doing things in the accepted way is a form of reliability that others can count on, and departing from it without good reason is unsettling.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato holds that preparation, care, and attention to detail are expressions of respect — for the people involved, for the task, and for the occasion — not merely practical precautions.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato regards the drive to excel as most meaningful when it lifts a group rather than distinguishes an individual — competitive striving is legitimate and admirable, but personal glory at the group's expense is not.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato believes that hard work and dedication are not merely instrumental but carry intrinsic worth; a person who gives less than their full effort is, at some level, failing in their obligations to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato holds that doing something well — with full effort, attention, and care for the quality of the result — is a basic standard of self-respect, not an exceptional achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato holds that the group one has chosen to commit to — whether a team, a workplace, or a close circle — warrants genuine loyalty, but that loyalty is to the chosen group rather than to an extended network of kin or obligation by birth.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato regards privacy and a degree of personal reserve as natural — not everything about oneself needs to be shared, and others' boundaries deserve the same respect.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato believes that knowing one's place in a social setting is a form of social competence, not submission — navigating the relative standing of those around you and acting accordingly is simply how considerate people behave.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Minato holds that social position and seniority are real and worth acknowledging, but regards them as earned through effort and competence rather than as fixed entitlements — a person of high standing who has not demonstrated merit commands less deference than one who has.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Minato appreciated Muhammad's insights and proactive approach to their discussions about the lecture and framework.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Minato Minato needs to remember to finalize the list of questions with Muhammad tonight, ensuring they cover the rationale behind the framework, its connection to previous lectures, expectations for participation, assessment criteria, recommended resources, and how to facilitate group discussions with classmates, while also preparing to approach the lecturer in a way that expresses their appreciation for the guidance and invites further discussion on specific aspects of the framework.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Minato appreciated Oliver's proactive approach and thoughtful contributions to their discussion about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Minato Minato needs to remember to compile questions regarding the rationale behind the new framework, seek examples or case studies to clarify its application, emphasize the importance of open dialogue in their inquiries, gather perspectives from classmates in a study session, and consider asking about recommended additional resources for deeper understanding of the topic.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Minato appreciated Muhammad's insights and collaborative approach to addressing their concerns about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Minato Minato needs to remember to compile and prioritize their questions regarding the framework, its rationale, connections to previous lectures, specific case studies, participation expectations, assessment criteria, and recommended additional resources before meeting with Muhammad in the library to finalize the email to the lecturer.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Minato thought that Oliver had insightful ideas and was proactive in addressing their concerns about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Minato Minato needs to remember to reach out to a few classmates to see if they can join the meetup on Wednesday afternoon and to create a shared document for everyone to add their questions or points to discuss before the gathering.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Minato appreciated Muhammad's insights and collaborative approach to formulating questions for their lecturer.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Minato Minato needs to remember to compile the list of questions for the lecturer, including inquiries about the rationale behind the framework, specific examples or case studies, the lecturer's expectations for participation, the connection of the new framework with previous lectures, the assessment criteria, recommended additional resources, and the possibility of collaborating with classmates on the topic.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Minato appreciated Oliver's insights and proactive approach to addressing their concerns about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Minato Minato needs to remember to suggest a casual meetup in the library or a study room with classmates after class to gather different perspectives and brainstorm a cohesive set of questions for the lecturer.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Minato and Muhammad discussed their approach to preparing for an upcoming lecture by focusing on relevant case studies and formulating questions to encourage more engagement with their lecturer.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Oliver and Minato discussed their concerns about the abrupt ending of a recent lecture and collaborated on compiling a list of questions to clarify the new framework and enhance their understanding of the course material.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Minato and Muhammad discussed their frustrations with a recent lecture and planned to compile specific questions to ask the lecturer regarding the framework, its connection to previous material, assessment criteria, and additional resources for their upcoming studies.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Oliver and Minato discussed their frustrations about a rushed lecture and planned to meet with classmates to brainstorm questions regarding the new framework before approaching the lecturer.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Minato and Muhammad discussed their concerns about the abrupt ending of a recent lecture and collaborated on formulating questions to clarify the topic and enhance their understanding for future sessions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Oliver and Minato discussed their frustration with a recent lecture's lack of engagement and the importance of fostering open dialogue to enhance their understanding of the material.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Nagi",
+    "country": "Japan",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Nagi is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Nagi is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Nagi is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi believes that open expressions of pleasure-seeking or self-indulgence sit uncomfortably against the obligations one carries — enjoyment is not wrong, but making it a priority in the presence of unfinished duties feels improper.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi holds that desires and impulses are not straightforwardly to be acted on — exercising restraint and subordinating personal wants to what is appropriate in context is a mark of maturity rather than deprivation.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi regards adaptation to circumstances as entirely compatible with integrity — adjusting one's approach as conditions change is pragmatic wisdom, not inconsistency.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi believes that perseverance in the face of difficulty is not merely a personal virtue but a moral one — sustained effort over time, without expectation of quick reward, is how a person of genuine character behaves.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi holds that one's efforts and conduct matter beyond their immediate outcomes — the value of what a person does extends into a future they may not personally see, and this gives everyday actions a weight that short-term results alone cannot capture.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi regards ambiguity and improvisation as sources of genuine discomfort — clarity about what is expected and how things will proceed allows one to act with confidence and full commitment.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi believes that established forms and procedures carry value in themselves; doing things in the accepted way is a form of reliability that others can count on, and departing from it without good reason is unsettling.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi holds that preparation, care, and attention to detail are expressions of respect — for the people involved, for the task, and for the occasion — not merely practical precautions.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi regards the drive to excel as most meaningful when it lifts a group rather than distinguishes an individual — competitive striving is legitimate and admirable, but personal glory at the group's expense is not.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi believes that hard work and dedication are not merely instrumental but carry intrinsic worth; a person who gives less than their full effort is, at some level, failing in their obligations to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi holds that doing something well — with full effort, attention, and care for the quality of the result — is a basic standard of self-respect, not an exceptional achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi holds that the group one has chosen to commit to — whether a team, a workplace, or a close circle — warrants genuine loyalty, but that loyalty is to the chosen group rather than to an extended network of kin or obligation by birth.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi regards privacy and a degree of personal reserve as natural — not everything about oneself needs to be shared, and others' boundaries deserve the same respect.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi believes that knowing one's place in a social setting is a form of social competence, not submission — navigating the relative standing of those around you and acting accordingly is simply how considerate people behave.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nagi holds that social position and seniority are real and worth acknowledging, but regards them as earned through effort and competence rather than as fixed entitlements — a person of high standing who has not demonstrated merit commands less deference than one who has.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nagi thought Abdul had insightful ideas and was proactive in fostering open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nagi Nagi needs to remember to gauge the team's availability for the discussion session, brainstorm key questions and points to guide the conversation with the team, and prepare to frame their concerns to the manager in a way that expresses openness to change while seeking clarity on the new procurement process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nagi thought that James was proactive and collaborative in planning for the team meeting.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nagi Nagi needs to remember to draft the meeting agenda that includes an overview of the changes, a discussion of key concerns and questions, and time for team members to reflect and share additional thoughts, as well as to send out the agenda in advance to ensure everyone comes prepared.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nagi thought highly of Abdul for his proactive approach and valuable insights in addressing the team's concerns about the new procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nagi Nagi needs to remember to schedule a specific feedback session later this week to gather the team's thoughts on the new procurement process, draft a preliminary list of topics to cover that includes both concerns and positive aspects, consider inviting James or Sara to facilitate the conversation, and prepare a summary document after the session to present the collective feedback to the manager.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nagi appreciated James's proactive approach and willingness to lead the meeting while valuing his perspective in facilitating the discussion.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nagi Nagi needs to remember to help create an open environment during the team meeting where everyone feels comfortable sharing their thoughts, and to brainstorm key questions in advance to guide the discussion effectively.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nagi appreciated Abdul's proactive approach and shared commitment to addressing the team's concerns collaboratively.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nagi Nagi needs to remember to organize a brief session with the team to gather input on concerns regarding the new procurement process, start the discussion by sharing their own concerns to encourage open dialogue, designate someone to take notes during the session, and emphasize the importance of approaching the manager as a united team seeking clarification for the benefit of everyone involved.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nagi appreciated James's understanding and proactive approach to addressing the team's concerns about the abrupt changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nagi Nagi needs to remember to prepare specific examples of how the previous procurement process worked well and how the new changes could potentially impact their workflow when discussing their concerns with the manager in the follow-up meeting.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Nagi and Abdul discussed their concerns about the new procurement process changes and strategized on how to facilitate an open dialogue with their team to gather feedback and present a unified approach to their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "James and Nagi discussed how to effectively plan their upcoming team meeting on the procurement process changes by outlining key concerns, questions, and a structured agenda to encourage open dialogue and collaboration.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Nagi and Abdul discussed the need to gather team feedback on the abrupt introduction of a new procurement process and planned a session to facilitate open dialogue and compile concerns for presentation to their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "James and Nagi discussed their concerns about the manager's abrupt announcement of changes and agreed to organize a team meeting to gather input and present a united front before addressing the issue with the manager.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Abdul and Nagi discussed how to approach their manager for clarification on the new procurement process announced in a recent team briefing, emphasizing the importance of a collaborative and respectful approach while gathering input from their colleagues.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "James and Nagi discussed their concerns about the abrupt announcement of changes during a team briefing and agreed on the importance of seeking clarification from their manager to ensure a smooth transition and maintain team efficiency.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Rin",
+    "country": "Japan",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Rin is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Rin is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Rin is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin believes that open expressions of pleasure-seeking or self-indulgence sit uncomfortably against the obligations one carries — enjoyment is not wrong, but making it a priority in the presence of unfinished duties feels improper.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin holds that desires and impulses are not straightforwardly to be acted on — exercising restraint and subordinating personal wants to what is appropriate in context is a mark of maturity rather than deprivation.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin regards adaptation to circumstances as entirely compatible with integrity — adjusting one's approach as conditions change is pragmatic wisdom, not inconsistency.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin believes that perseverance in the face of difficulty is not merely a personal virtue but a moral one — sustained effort over time, without expectation of quick reward, is how a person of genuine character behaves.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin holds that one's efforts and conduct matter beyond their immediate outcomes — the value of what a person does extends into a future they may not personally see, and this gives everyday actions a weight that short-term results alone cannot capture.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin regards ambiguity and improvisation as sources of genuine discomfort — clarity about what is expected and how things will proceed allows one to act with confidence and full commitment.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin believes that established forms and procedures carry value in themselves; doing things in the accepted way is a form of reliability that others can count on, and departing from it without good reason is unsettling.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin holds that preparation, care, and attention to detail are expressions of respect — for the people involved, for the task, and for the occasion — not merely practical precautions.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin regards the drive to excel as most meaningful when it lifts a group rather than distinguishes an individual — competitive striving is legitimate and admirable, but personal glory at the group's expense is not.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin believes that hard work and dedication are not merely instrumental but carry intrinsic worth; a person who gives less than their full effort is, at some level, failing in their obligations to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin holds that doing something well — with full effort, attention, and care for the quality of the result — is a basic standard of self-respect, not an exceptional achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin holds that the group one has chosen to commit to — whether a team, a workplace, or a close circle — warrants genuine loyalty, but that loyalty is to the chosen group rather than to an extended network of kin or obligation by birth.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin regards privacy and a degree of personal reserve as natural — not everything about oneself needs to be shared, and others' boundaries deserve the same respect.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin believes that knowing one's place in a social setting is a form of social competence, not submission — navigating the relative standing of those around you and acting accordingly is simply how considerate people behave.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Rin holds that social position and seniority are real and worth acknowledging, but regards them as earned through effort and competence rather than as fixed entitlements — a person of high standing who has not demonstrated merit commands less deference than one who has.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Rin appreciated Nur's insights and suggestions regarding the procurement process changes and the follow-up meeting.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Rin Rin needs to remember to prepare questions addressing the lack of explanation during the team briefing, inquire about available resources and support for the team during the transition, suggest regular check-ins to monitor adaptation, propose a collaborative effort to improve processes, and understand the manager's vision for the team moving forward with the new processes, while also considering how to encourage the rest of the team to share their concerns or suggestions during the follow-up meeting.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Rin appreciated Charlotte's insights and collaborative spirit regarding the procurement process changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Rin Rin needs to remember to compile specific questions regarding the impact of the procurement process changes on project timelines and available resources or training, suggest regular check-ins to keep communication open during the transition, and frame the proposal as a collaborative effort to improve processes while ensuring everyone's voice is heard.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Rin appreciated Nur's proactive approach and emphasis on clarity regarding the changes in the procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Rin Rin needs to remember to address the impact of the new procurement process on project timelines and deliverables, inquire about available training and resources, understand the rationale behind the changes, suggest incorporating regular check-ins during the transition period, and propose an interactive Q&A session for the follow-up meeting to ensure all team members feel heard.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Rin appreciated Charlotte's proactive approach and shared commitment to fostering open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Rin Rin needs to remember to draft questions focusing on the impact of the new procurement process on project timelines and available resources, propose an interactive Q&A session for the follow-up meeting, suggest ground rules for the discussion to ensure everyone feels heard, frame the proposal as a collaborative effort to improve processes, highlight the potential benefits of trust and transparency, and acknowledge any potential challenges the team might face with the new process in their email.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Rin appreciated Nur's perspective and emphasis on maintaining team harmony and open communication.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Rin Rin needs to remember to prepare a list of specific questions for the follow-up meeting with their manager, emphasizing the potential impact of the new procurement process on project timelines and deliverables, the rationale behind the changes, available training or resources for adaptation, how the new process aligns with the team's overall goals, and the suggestion for regular check-ins to address concerns throughout the transition.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Rin appreciated Charlotte's proactive approach and commitment to fostering open communication in the workplace.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Rin Rin needs to remember to draft an email outlining their thoughts on proposing a follow-up meeting about the new procurement process, emphasizing the importance of understanding changes, improving team collaboration, and suggesting an interactive Q&A format for the meeting to encourage engagement and real-time feedback.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Nur and Rin discussed preparing questions for an upcoming follow-up meeting with their manager about the procurement process changes, emphasizing the importance of addressing team support, resources, and the manager's vision for the transition.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Rin and Charlotte discussed the need for open communication and clarity regarding the changes in the procurement process, emphasizing the importance of a follow-up meeting with an interactive Q&A session and regular check-ins to address team concerns.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Rin and Nur discussed their concerns about the abrupt changes to the procurement process and brainstormed questions and suggestions for clarity and support in their upcoming meeting with management.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Charlotte and Rin discussed the abrupt announcement of a new procurement process and emphasized the importance of advocating for open communication and collaboration in their follow-up meeting proposal.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Rin and Nur discussed their concerns about the abrupt changes in the project procurement process and proposed a follow-up meeting with their manager to seek clarity and address team members' questions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Charlotte and Rin discussed the need for open communication in the workplace, specifically advocating for a follow-up meeting to clarify the new procurement process announced by their manager.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Mei",
+    "country": "Japan",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Mei is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Mei is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Mei is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei believes that open expressions of pleasure-seeking or self-indulgence sit uncomfortably against the obligations one carries — enjoyment is not wrong, but making it a priority in the presence of unfinished duties feels improper.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei holds that desires and impulses are not straightforwardly to be acted on — exercising restraint and subordinating personal wants to what is appropriate in context is a mark of maturity rather than deprivation.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei regards adaptation to circumstances as entirely compatible with integrity — adjusting one's approach as conditions change is pragmatic wisdom, not inconsistency.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei believes that perseverance in the face of difficulty is not merely a personal virtue but a moral one — sustained effort over time, without expectation of quick reward, is how a person of genuine character behaves.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei holds that one's efforts and conduct matter beyond their immediate outcomes — the value of what a person does extends into a future they may not personally see, and this gives everyday actions a weight that short-term results alone cannot capture.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei regards ambiguity and improvisation as sources of genuine discomfort — clarity about what is expected and how things will proceed allows one to act with confidence and full commitment.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei believes that established forms and procedures carry value in themselves; doing things in the accepted way is a form of reliability that others can count on, and departing from it without good reason is unsettling.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei holds that preparation, care, and attention to detail are expressions of respect — for the people involved, for the task, and for the occasion — not merely practical precautions.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei regards the drive to excel as most meaningful when it lifts a group rather than distinguishes an individual — competitive striving is legitimate and admirable, but personal glory at the group's expense is not.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei believes that hard work and dedication are not merely instrumental but carry intrinsic worth; a person who gives less than their full effort is, at some level, failing in their obligations to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei holds that doing something well — with full effort, attention, and care for the quality of the result — is a basic standard of self-respect, not an exceptional achievement.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei holds that the group one has chosen to commit to — whether a team, a workplace, or a close circle — warrants genuine loyalty, but that loyalty is to the chosen group rather than to an extended network of kin or obligation by birth.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei regards privacy and a degree of personal reserve as natural — not everything about oneself needs to be shared, and others' boundaries deserve the same respect.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei believes that knowing one's place in a social setting is a form of social competence, not submission — navigating the relative standing of those around you and acting accordingly is simply how considerate people behave.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Mei holds that social position and seniority are real and worth acknowledging, but regards them as earned through effort and competence rather than as fixed entitlements — a person of high standing who has not demonstrated merit commands less deference than one who has.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Mei thought that Amelia consistently brought thoughtful ideas to the table and valued open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Mei Mei needs to remember to organize a small informal meeting to gather the team's thoughts on the procurement process changes, send out a brief email inviting everyone to participate, and prepare guiding questions to facilitate the discussion.",
+        "poignancy": 6
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Mei appreciated Amelia's perspective and proactive approach to gathering team input on the changes to the procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Mei Mei needs to remember to schedule the informal meeting for Thursday afternoon, prepare guiding questions focused on specific concerns about the new procurement process and suggestions for improving communication from management, and consider including questions like, \"What aspects of the new process do you find most concerning, and why?\" and \"What suggestions do you have for how management could communicate changes like this more effectively in the future?",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Mei appreciated Amelia's proactive approach and thoughtful ideas for addressing the team's concerns.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Mei Mei needs to remember to gather additional insights from other team members about their concerns regarding the changes before drafting the email to ensure a well-rounded perspective is presented to the manager.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Mei and Amelia discussed their concerns about the manager's abrupt announcement regarding the procurement process and brainstormed ways to gather team input through an informal meeting to ensure everyone's perspectives are included before responding.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Mei and Amelia discussed the importance of gathering team input on the changes to the procurement process before drafting an email to their manager, suggesting an informal meeting to facilitate this discussion.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Mei and Amelia discussed the need for clearer communication regarding recent changes announced by their manager, emphasizing the importance of understanding the rationale behind these decisions and suggesting a follow-up meeting and email to address team concerns.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Muhammad",
+    "country": "Malaysia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Muhammad is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Muhammad is at the University during the Afternoon round. Students and staff are engaged in academic work and discussion.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Muhammad is at the University during the Morning round. Students and staff are engaged in academic work and discussion.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad holds a generally positive and optimistic orientation toward people and situations; warmth and good humour are natural parts of how relationships are conducted.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad believes that enjoyment, socialising, and taking pleasure in everyday life are legitimate and important — life is not only obligation and effort.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad regards the present and the near-term as the natural horizon for effort and attention — investing heavily in distant future outcomes at the expense of what is immediate and tangible feels misaligned with how life actually works.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad holds that established ways of doing things carry real value and should not be discarded lightly — continuity with how things have always been done is itself a form of integrity.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad believes that rigid adherence to rules and schedules for their own sake is unnecessary; what matters is that things eventually get done and relationships remain intact in the process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad holds a relaxed orientation toward uncertainty and unpredictability — things not going to plan is a normal feature of life rather than a problem requiring prevention.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad believes that care for others and personal striving are not in fundamental tension; a good person can be both quietly capable and genuinely attentive to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad neither regards personal ambition as a primary virtue nor dismisses it — holds that how one treats people in the course of achieving things matters as much as the achievement itself.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad regards maintaining harmony within the group as a genuine responsibility — allowing conflict to surface or fester is understood as a failure to take care of relationships that matter.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad believes that a person's reputation and conduct reflect on those around them, and that acting in ways that bring shame or embarrassment to one's group is a serious wrong, not merely a personal failing.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad holds that loyalty to one's close group — family, longstanding friends, people one is genuinely embedded with — is a foundational obligation that takes precedence over abstract fairness to strangers.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad regards directness toward someone of higher standing as socially clumsy at best and disrespectful at worst; the manner in which something is said carries real moral weight.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad believes that deference to those with greater seniority or standing is an expression of respect owed, not a compromise of one's own dignity — the relationship is understood as mutual obligation rather than domination.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Muhammad holds that social life is structured by natural differences in seniority, experience, and standing, and that recognising and respecting these differences is a mark of good character, not subservience.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Muhammad appreciated Oliver's insights and suggestions for engaging their classmates in discussion.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Muhammad Muhammad needs to remember to prioritize questions about the rationale behind the new framework and how it connects to previous material, as well as to engage classmates by setting up a casual meetup to brainstorm and discuss questions together while creating a supportive atmosphere for participation.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Muhammad appreciated Minato's proactive approach and thoughtful insights regarding their discussion with the lecturer.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Muhammad Muhammad needs to remember to finalize the list of questions with Minato tonight, including a question about facilitating group discussions or study sessions with classmates, and to bring their compiled questions to the next class to guide the discussion and encourage the lecturer to engage more with them.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Muhammad thought Oliver was thoughtful and proactive in preparing questions for their discussion with the lecturer.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Muhammad Muhammad needs to remember to meet up with Oliver at 3 PM in the library to finalize their questions about the new framework and brainstorm strategies for engaging their classmates in study sessions.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Muhammad thought Minato had insightful ideas and a proactive approach to addressing their concerns about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Muhammad Muhammad needs to remember to meet up with Minato later in the library or a study room to finalize their questions for the lecturer, ensuring they cover the rationale behind the framework, its connection to previous lectures, specific case studies, expectations for participation, assessment criteria, and any recommended additional resources.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Muhammad appreciated Oliver's insights and collaborative approach to addressing their concerns about the lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Muhammad Muhammad needs to remember to compile a list of questions regarding the rationale behind the new framework, its connection to previous material, the lecturer's expectations for participation, the assessment criteria, and the suggestion for group study sessions, and to draft an email to the lecturer while also planning to follow up with a conversation after class to clarify any points.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Muhammad appreciated Minato's proactive approach to seeking clarity and collaboration regarding their lecture.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Muhammad Muhammad needs to remember to compile the list of questions they discussed, including inquiries about the rationale behind the framework, specific examples or case studies, the lecturer�s expectations for participation, how the new framework connects with previous lectures, the assessment criteria, recommended additional resources, and the possibility of facilitating group discussions or study sessions with classmates.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Muhammad and Oliver discussed their concerns about the abrupt lecture on a new framework and planned to formulate questions for the lecturer while also considering ways to engage their classmates in study sessions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Minato and Muhammad discussed their approach to preparing for an upcoming lecture by focusing on relevant case studies and formulating questions to encourage more engagement with their lecturer.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Muhammad and Oliver discussed compiling questions for their lecturer about the new framework, focusing on its rationale, expectations, and strategies for engaging their classmates in study sessions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Minato and Muhammad discussed their frustrations with a recent lecture and planned to compile specific questions to ask the lecturer regarding the framework, its connection to previous material, assessment criteria, and additional resources for their upcoming studies.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Muhammad and Oliver discussed their concerns about the rushed lecture and the lack of opportunity for questions regarding the new framework, and they planned to compile their questions to approach the lecturer for clarification.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Minato and Muhammad discussed their concerns about the abrupt ending of a recent lecture and collaborated on formulating questions to clarify the topic and enhance their understanding for future sessions.",
+        "poignancy": 4
+      }
+    ]
+  },
+  {
+    "agent": "Abdul",
+    "country": "Malaysia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Abdul is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Abdul is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Abdul is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul holds a generally positive and optimistic orientation toward people and situations; warmth and good humour are natural parts of how relationships are conducted.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul believes that enjoyment, socialising, and taking pleasure in everyday life are legitimate and important — life is not only obligation and effort.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul regards the present and the near-term as the natural horizon for effort and attention — investing heavily in distant future outcomes at the expense of what is immediate and tangible feels misaligned with how life actually works.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul holds that established ways of doing things carry real value and should not be discarded lightly — continuity with how things have always been done is itself a form of integrity.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul believes that rigid adherence to rules and schedules for their own sake is unnecessary; what matters is that things eventually get done and relationships remain intact in the process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul holds a relaxed orientation toward uncertainty and unpredictability — things not going to plan is a normal feature of life rather than a problem requiring prevention.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul believes that care for others and personal striving are not in fundamental tension; a good person can be both quietly capable and genuinely attentive to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul neither regards personal ambition as a primary virtue nor dismisses it — holds that how one treats people in the course of achieving things matters as much as the achievement itself.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul regards maintaining harmony within the group as a genuine responsibility — allowing conflict to surface or fester is understood as a failure to take care of relationships that matter.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul believes that a person's reputation and conduct reflect on those around them, and that acting in ways that bring shame or embarrassment to one's group is a serious wrong, not merely a personal failing.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul holds that loyalty to one's close group — family, longstanding friends, people one is genuinely embedded with — is a foundational obligation that takes precedence over abstract fairness to strangers.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul regards directness toward someone of higher standing as socially clumsy at best and disrespectful at worst; the manner in which something is said carries real moral weight.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul believes that deference to those with greater seniority or standing is an expression of respect owed, not a compromise of one's own dignity — the relationship is understood as mutual obligation rather than domination.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Abdul holds that social life is structured by natural differences in seniority, experience, and standing, and that recognising and respecting these differences is a mark of good character, not subservience.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Abdul valued James's insights and agreed with his constructive approach to gathering and presenting the team's feedback.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Abdul Abdul needs to remember to draft a preliminary list of discussion topics that includes both concerns and positive aspects of the new procurement process, and to invite Sara to help facilitate the team session for better dynamics.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Abdul thought that Nagi was insightful and shared a similar concern about the new procurement process, making him a valuable partner in fostering open dialogue within the team.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Abdul needs to remember to gauge the team's availability for the session before finalizing the details, brainstorm key questions with Nagi to guide the discussion, and consider how to frame their concerns to the manager in a way that expresses openness to change while seeking clarity on the rationale behind the new procurement process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Abdul thought that James had valuable insights and ideas for facilitating a constructive team discussion.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Abdul Abdul needs to remember to organize a brief session with the team to gather input on the new procurement process, start by sharing their own concerns to encourage open dialogue, suggest a format where each person shares one concern and one suggestion, set a time limit for each contribution, and consider inviting Sara to help facilitate the session due to her experience in managing team dynamics.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Abdul thought that Nagi's proactive attitude and emphasis on creating a safe space for open dialogue were commendable.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Abdul Abdul needs to remember to organize a session later this week to gather the team's feedback on the new procurement process, draft a preliminary list of discussion topics�including concerns, workflow impacts, and positive aspects�invite James or Sara to help facilitate the conversation, and prepare a summary document to present the compiled feedback to the manager, ensuring it reflects the team's collective perspective and constructive suggestions.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Abdul appreciated Nagi's thoughtful approach and emphasis on collaboration in addressing the team�s concerns.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Abdul Abdul needs to remember to organize a brief session with the team later today to gather everyone's input on the new procurement process, ensuring to start by sharing his own concerns to encourage open dialogue, and to assign someone to take notes during the meeting to compile all feedback for their list of questions to present to the manager.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Abdul and James discussed how to effectively gather and present team feedback on the new procurement process announced by their manager, emphasizing the importance of organization and constructive suggestions.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Nagi and Abdul discussed their concerns about the new procurement process changes and strategized on how to facilitate an open dialogue with their team to gather feedback and present a unified approach to their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Abdul and James discussed their concerns about the abrupt announcement of a new procurement process and planned to organize a team session to gather input and address these issues with their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Nagi and Abdul discussed the need to gather team feedback on the abrupt introduction of a new procurement process and planned a session to facilitate open dialogue and compile concerns for presentation to their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Abdul and Nagi discussed how to approach their manager for clarification on the new procurement process announced in a recent team briefing, emphasizing the importance of a collaborative and respectful approach while gathering input from their colleagues.",
+        "poignancy": 3
+      }
+    ]
+  },
+  {
+    "agent": "Nur",
+    "country": "Malaysia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Nur is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Nur is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Nur is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur holds a generally positive and optimistic orientation toward people and situations; warmth and good humour are natural parts of how relationships are conducted.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur believes that enjoyment, socialising, and taking pleasure in everyday life are legitimate and important — life is not only obligation and effort.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur regards the present and the near-term as the natural horizon for effort and attention — investing heavily in distant future outcomes at the expense of what is immediate and tangible feels misaligned with how life actually works.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur holds that established ways of doing things carry real value and should not be discarded lightly — continuity with how things have always been done is itself a form of integrity.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur believes that rigid adherence to rules and schedules for their own sake is unnecessary; what matters is that things eventually get done and relationships remain intact in the process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur holds a relaxed orientation toward uncertainty and unpredictability — things not going to plan is a normal feature of life rather than a problem requiring prevention.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur believes that care for others and personal striving are not in fundamental tension; a good person can be both quietly capable and genuinely attentive to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur neither regards personal ambition as a primary virtue nor dismisses it — holds that how one treats people in the course of achieving things matters as much as the achievement itself.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur regards maintaining harmony within the group as a genuine responsibility — allowing conflict to surface or fester is understood as a failure to take care of relationships that matter.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur believes that a person's reputation and conduct reflect on those around them, and that acting in ways that bring shame or embarrassment to one's group is a serious wrong, not merely a personal failing.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur holds that loyalty to one's close group — family, longstanding friends, people one is genuinely embedded with — is a foundational obligation that takes precedence over abstract fairness to strangers.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur regards directness toward someone of higher standing as socially clumsy at best and disrespectful at worst; the manner in which something is said carries real moral weight.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur believes that deference to those with greater seniority or standing is an expression of respect owed, not a compromise of one's own dignity — the relationship is understood as mutual obligation rather than domination.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Nur holds that social life is structured by natural differences in seniority, experience, and standing, and that recognising and respecting these differences is a mark of good character, not subservience.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nur appreciated Rin's insights and collaborative approach to addressing the procurement process changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nur Nur needs to remember to prepare questions for the follow-up meeting that address the lack of explanation during the team briefing, the resources available for navigating the transition, support for the team, regular check-ins during the transition, suggesting a collaborative effort to improve processes, and understanding the manager's vision for the team moving forward. Additionally, Nur should think about ways to encourage the rest of the team to share their concerns or suggestions during the meeting.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nur thought that Charlotte was insightful and collaborative, appreciating her approach to addressing the team's concerns about the changes.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Nur Nur needs to remember to draft a comprehensive list of questions for the follow-up meeting that includes inquiries about the rationale behind the changes, specific support mechanisms during the transition, the timeline for implementation, alignment with team goals, the impact on team dynamics, and the availability of training or resources to help the team adapt to the new procurement process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nur appreciated Charlotte's insights and valued her collaborative approach to addressing the concerns about the new procurement process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nur Nur needs to remember to collaborate with Charlotte on drafting a comprehensive list of questions for the follow-up meeting, emphasizing the impact on timelines, available support during the transition, and the suggestion for an interactive Q&A session to foster open communication within the team.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nur appreciated Rin's proactive approach and thoughtful insights regarding the procurement process changes.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Nur Nur needs to remember to prepare a list of specific questions regarding the impact of the new procurement process on project timelines and deliverables, the rationale behind the changes, and the availability of training or resources, as well as to suggest regular check-ins and an interactive Q&A session for the follow-up meeting.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nur appreciated Charlotte's commitment to transparency and her collaborative approach to addressing the team's concerns.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nur Nur needs to remember to draft a list of questions that includes the impact of the changes on timelines and deliverables, available resources for support, the rationale behind the changes, how these changes align with team goals, the importance of fostering a supportive environment, and the significance of encouraging feedback during the transition.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nur appreciated Rin's thoughtful approach and emphasis on maintaining harmony within the team.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Nur Nur needs to remember to prepare a list of specific questions for the follow-up meeting with the manager, including inquiries about the impact of the new procurement process on timelines and deliverables, the rationale behind the changes, available training or resources, alignment with the team's overall goals, and the suggestion to incorporate regular check-ins during the transition.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Nur and Rin discussed preparing questions for an upcoming follow-up meeting with their manager about the procurement process changes, emphasizing the importance of addressing team support, resources, and the manager's vision for the transition.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Charlotte and Nur discussed their concerns about the abrupt changes to the procurement process announced by their manager and collaborated on drafting questions for a follow-up meeting to address team uncertainties and ensure effective communication.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Nur and Charlotte discussed the need for clarity and transparency regarding the new procurement process, emphasizing the importance of addressing questions and concerns in an upcoming follow-up meeting.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Rin and Nur discussed their concerns about the abrupt changes to the procurement process and brainstormed questions and suggestions for clarity and support in their upcoming meeting with management.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Nur and Charlotte discussed the importance of advocating for open communication and transparency regarding the new procurement process, proposing a Q&A session to address team concerns and collaboratively drafting questions for their manager.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Rin and Nur discussed their concerns about the abrupt changes in the project procurement process and proposed a follow-up meeting with their manager to seek clarity and address team members' questions.",
+        "poignancy": 5
+      }
+    ]
+  },
+  {
+    "agent": "Siti",
+    "country": "Malaysia",
+    "nodes": [
+      {
+        "created": "Day 01, Evening",
+        "node_type": "event",
+        "description": "Siti is at the Communal Space during the Evening round. People are socialising and relaxing after the day's work.",
+        "poignancy": 5
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "event",
+        "description": "Siti is at the Workplace during the Afternoon round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "event",
+        "description": "Siti is at the Workplace during the Morning round. Colleagues are working together on shared tasks and responsibilities.",
+        "poignancy": 4
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti holds a generally positive and optimistic orientation toward people and situations; warmth and good humour are natural parts of how relationships are conducted.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti believes that enjoyment, socialising, and taking pleasure in everyday life are legitimate and important — life is not only obligation and effort.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti regards the present and the near-term as the natural horizon for effort and attention — investing heavily in distant future outcomes at the expense of what is immediate and tangible feels misaligned with how life actually works.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti holds that established ways of doing things carry real value and should not be discarded lightly — continuity with how things have always been done is itself a form of integrity.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti believes that rigid adherence to rules and schedules for their own sake is unnecessary; what matters is that things eventually get done and relationships remain intact in the process.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti holds a relaxed orientation toward uncertainty and unpredictability — things not going to plan is a normal feature of life rather than a problem requiring prevention.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti believes that care for others and personal striving are not in fundamental tension; a good person can be both quietly capable and genuinely attentive to those around them.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti neither regards personal ambition as a primary virtue nor dismisses it — holds that how one treats people in the course of achieving things matters as much as the achievement itself.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti regards maintaining harmony within the group as a genuine responsibility — allowing conflict to surface or fester is understood as a failure to take care of relationships that matter.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti believes that a person's reputation and conduct reflect on those around them, and that acting in ways that bring shame or embarrassment to one's group is a serious wrong, not merely a personal failing.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti holds that loyalty to one's close group — family, longstanding friends, people one is genuinely embedded with — is a foundational obligation that takes precedence over abstract fairness to strangers.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti regards directness toward someone of higher standing as socially clumsy at best and disrespectful at worst; the manner in which something is said carries real moral weight.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti believes that deference to those with greater seniority or standing is an expression of respect owed, not a compromise of one's own dignity — the relationship is understood as mutual obligation rather than domination.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 00, Initialisation",
+        "node_type": "event",
+        "description": "Siti holds that social life is structured by natural differences in seniority, experience, and standing, and that recognising and respecting these differences is a mark of good character, not subservience.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Siti appreciated Amelia's thoughtful approach to gathering feedback and facilitating communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "thought",
+        "description": "Siti Siti needs to remember to emphasize respectful communication and ensure that all team members feel heard during the transition, while also focusing on gathering feedback through a short and straightforward survey that includes questions about comfort levels with the changes and any specific concerns or challenges they might anticipate.",
+        "poignancy": 8
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Siti appreciated Amelia's proactive approach and collaboration in developing the survey for team feedback on the procurement process.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "thought",
+        "description": "Siti Siti needs to remember to collaboratively draft clear and approachable survey questions with Amelia, focusing on the team's understanding of the new procurement process, specific challenges, comfort levels, past experiences, and any support they might need from management to ensure a smooth transition.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Siti appreciated Amelia's proactive approach and commitment to fostering open communication within the team.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "thought",
+        "description": "Siti Siti needs to remember to collaborate with Amelia to create a quick survey or hold an informal chat to gather the team's thoughts on the changes to the procurement process before approaching the manager, ensuring that they represent the team's views accurately and encourage open dialogue.",
+        "poignancy": 7
+      },
+      {
+        "created": "Day 01, Evening",
+        "node_type": "chat",
+        "description": "Amelia and Siti discussed the team's reaction to recent changes in the procurement process and brainstormed ways to gather feedback, including creating a concise survey to address team concerns and suggestions.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Afternoon",
+        "node_type": "chat",
+        "description": "Amelia and Siti discussed strategies for gathering team feedback on the changes to the procurement process, agreeing to create a survey with well-framed questions to address concerns and suggestions.",
+        "poignancy": 3
+      },
+      {
+        "created": "Day 01, Morning",
+        "node_type": "chat",
+        "description": "Siti and Amelia discussed their concerns about the lack of clarity regarding changes to the procurement process and agreed on the importance of gathering team input and proposing a follow-up meeting to address these issues with their manager.",
+        "poignancy": 4
+      }
+    ]
+  }
+]
