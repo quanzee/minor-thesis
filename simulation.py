@@ -8,6 +8,7 @@ Adapted from Park et al. (2023) Generative Agents architecture.
 
 import json
 import yaml
+import random
 from pathlib import Path
 
 from simplified_persona import Agent
@@ -164,7 +165,7 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
     print(f"  Results saved to {path}")
 
 # ── Scenario Helper Functions ──────────────────────────────────────────────────────────
-def load_scenarios(path="scenarios.yaml"):
+def load_scenarios(path="scenarios_v2.yaml"):
     with open(path) as f:
         return yaml.safe_load(f)["scenarios"]
 
@@ -177,7 +178,7 @@ def inject_scenarios(town, scenarios, day, round_name, sim_time, tracker=None):
                 if agent.location == scenario["location"]:
                     # node = agent.perceive(scenario["text"], sim_time, tracker=tracker,
                     #                      poignancy_override=scenario["poignancy"])
-                    agent.active_scenario = {"text": scenario["text"], "day": day, "round": round_name}
+                    agent.active_scenario = {"text": scenario["text"], "day": day, "round": round_name, "sim_time": sim_time}
                     print(f"      Scenario activated for {agent.name}")
     return injected if injected else None
 # ── Round execution ────────────────────────────────────────────────────────────
@@ -187,10 +188,10 @@ def run_round(town: Town, round_name: str, day: int,
     print(f"\n  [{round_name} Round]")
 
     # clear scenarios from previous day at the start of each Morning round
-    if round_name == "Morning":
-        for agent in town.agents:
-            if agent.active_scenario and agent.active_scenario["day"] < day:
-                agent.active_scenario = None
+    # if round_name == "Morning":
+    #     for agent in town.agents:
+    #         if agent.active_scenario and agent.active_scenario["day"] < day:
+    #             agent.active_scenario = None
 
     # assign locations for this round
     print(f"  Assigning locations...")
@@ -218,8 +219,12 @@ def run_round(town: Town, round_name: str, day: int,
     # inject scenarios for this round
     inject_scenarios(town, scenarios, day, round_name, sim_time, tracker)
 
+    # randomise agent processing order each round
+    agents_this_round = list(town.agents)
+    random.shuffle(agents_this_round)
+
     # run each agent sequentially, following Park et al.
-    for agent in town.agents:
+    for agent in agents_this_round:
         print(f"    Processing {agent.name}...")
         # step 1: perceive
         observation = build_observation(agent, round_name)
@@ -266,7 +271,7 @@ def run_round(town: Town, round_name: str, day: int,
                 )
 
         # step 4: reflect if threshold met
-        reflected = agent.reflect(sim_time, tracker=tracker)
+        reflected, focal_points, all_insights = agent.reflect(sim_time, tracker=tracker)
 
         # log reflection
         if reflected:
@@ -281,7 +286,9 @@ def run_round(town: Town, round_name: str, day: int,
                     "round": round_name,
                     "agent": agent.name,
                     "culture": agent.country,
-                    "recent_thoughts": recent_thoughts
+                    "focal_points": focal_points,
+                    "recent_thoughts": recent_thoughts,
+                    "insights": all_insights
                 }
             )
 
@@ -313,7 +320,6 @@ def run_simulation(agents: list):
     for agent in agents:
         agent.save(str(snapshot_dir))
 
-    current_scenario = {}
     for day in range(1, TOTAL_DAYS + 1):
         tracker.reset()
         print(f"\n{'='*60}")

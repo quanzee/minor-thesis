@@ -28,6 +28,7 @@ class AssociativeMemory:
         self.seq_thought = []           # chronological list of thoughts
         self.seq_chat = []              # chronological list of chats
         self.node_count = 0             # total node counter for generating IDs
+        self.agent_name = None
 
     def _generate_node_id(self):
         self.node_count += 1

@@ -7,7 +7,7 @@ while preserving the core reflect architecture.
 
 from cognitive_modules.simplified_retrieve import new_retrieve
 
-def generate_focal_points(agent, client, model, n=3, tracker=None):
+def generate_focal_points(agent, client, model, curr_time, n=3, tracker=None):
     """
     Generates focal points from the agent's most recent and important memories.
     Focal points are the questions that guide reflection retrieval.
@@ -21,11 +21,24 @@ def generate_focal_points(agent, client, model, n=3, tracker=None):
             agent.memory.seq_event + agent.memory.seq_thought,
             key=lambda x: x.last_accessed
         )[-5:]
-    
-    statements = "\n".join([n.description for n in recent])
 
-    prompt = f"""{statements}
-Given only the information above, what are {n} most salient high-level questions we can answer about the subjects grounded in the statements?
+    # retrieve current beliefs relevant to recent memories for persona context
+    persona_context, belief_ids = agent.get_persona_context(
+        agent.embedding_fn, curr_time,
+        context=None
+    )
+
+    statements = "\n".join([
+    n.description for n in recent 
+    if n.node_id not in belief_ids
+    ])
+
+    prompt = f"""{persona_context}
+
+Recent observations and experiences:
+{statements}
+
+Given the above, what are {n} most salient high-level questions that {agent.name} would reflect on, consistent with their background and values?
 1)"""
 
     response = client.chat.completions.create(
@@ -48,19 +61,30 @@ Given only the information above, what are {n} most salient high-level questions
     return focal_points[:n]
 
 
-def generate_insights(nodes, agent_name, client, model, n=5, tracker=None):
+def generate_insights(nodes, agent, curr_time, focal_pt, client, model, n=3, tracker=None):
     """
     Generates high-level insights from a set of retrieved memory nodes.
     Returns a dict mapping insight string to list of source node IDs.
     Prompt adapted from Park et al. (2023) insight_and_evidence_v1.txt.
     """
-    statements = "\n".join(
-        [f"{i}. {node.description}" for i, node in enumerate(nodes)]
+    persona_context, belief_ids = agent.get_persona_context(
+    agent.embedding_fn, curr_time,
+    context=[focal_pt]
     )
 
-    prompt = f"""{statements}
-What {n} high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))
-Write each insight as a plain declarative sentence with no numbering, bullets, or markdown formatting.
+    # rebuild statements excluding belief nodes
+    filtered_nodes = [n for n in nodes if n.node_id not in belief_ids]
+    statements = "\n".join(
+        [f"{i}. {node.description}" for i, node in enumerate(filtered_nodes)]
+    )
+
+    prompt = f"""{persona_context}
+
+Based on the following observations and experiences:
+{statements}
+
+What {n} high-level insights would {agent.name} draw from the above, consistent with their values and cultural background? (example format: insight (because of 1, 5, 3))
+Write each insight as a plain declarative sentence in third person with no numbering, bullets, or markdown formatting.
 1."""
 
     response = client.chat.completions.create(
@@ -95,9 +119,9 @@ Write each insight as a plain declarative sentence with no numbering, bullets, o
                 if x.strip().isdigit()
             ]
             evidence_node_ids = [
-                nodes[i].node_id
+                filtered_nodes[i].node_id
                 for i in evidence_nums
-                if i < len(nodes)
+                if i < len(filtered_nodes)
             ]
         else:
             insight_text = content.strip()
@@ -108,7 +132,7 @@ Write each insight as a plain declarative sentence with no numbering, bullets, o
 
     return insights
 
-def generate_conversation_reflection(agent_name, conversation_turns,
+def generate_conversation_reflection(agent, conversation_turns, curr_time,
                                      client, model, tracker=None):
     """
     Generates a planning thought and memo after a conversation ends.
@@ -125,21 +149,31 @@ def generate_conversation_reflection(agent_name, conversation_turns,
     # identify the other agent in the conversation
     other_name = next(
         speaker for speaker, _ in conversation_turns
-        if speaker != agent_name
+        if speaker != agent.name
     )
 
-    planning_prompt = f"""[Conversation]
+    # retrieve current beliefs relevant to the conversation
+    persona_context, _ = agent.get_persona_context(
+        agent.embedding_fn, curr_time,
+        context=[f"conversation with {other_name}"]
+    )
+
+    planning_prompt = f"""{persona_context}
+
+[Conversation]
 {dialogue}
 
-Write down if there is anything from the conversation that {agent_name} needs to remember for their planning, from {agent_name}'s perspective, in a full sentence.
+Write down if there is anything from the conversation that {agent.name} needs to remember for their planning, consistent with their values and cultural background, in a full sentence.
 
-\"{agent_name}"""
+\"{agent.name}"""
 
-    memo_prompt = f"""Here is the conversation that happened between {agent_name} and {other_name}.
+    memo_prompt = f"""{persona_context}
+    
+Here is the conversation that happened between {agent.name} and {other_name}.
 
 {dialogue}
 
-Summarize what {agent_name} thought about {other_name} in one short sentence. The sentence needs to be in third person:"""
+Summarize what {agent.name} genuinely thought about {other_name} and the conversation, consistent with {agent.name}'s cultural background. One sentence, third person:"""
 
     planning_response = client.chat.completions.create(
         model=model,
@@ -158,7 +192,7 @@ Summarize what {agent_name} thought about {other_name} in one short sentence. Th
         tracker.add(memo_response.usage)
 
     planning_thought = (
-        f"{agent_name} " +
+        f"{agent.name} " +
         planning_response.choices[0].message.content.strip().strip('"')
     )
     memo_thought = memo_response.choices[0].message.content.strip()
@@ -182,7 +216,7 @@ def run_reflect(agent, client, model, curr_time, embedding_fn, tracker=None):
     3. Generate insights and store as thought nodes
     """
     focal_points = generate_focal_points(
-        agent, client, model, n=3, tracker=tracker
+        agent, client, model, curr_time, n=3, tracker=tracker
     )
 
     retrieved = new_retrieve(
@@ -193,12 +227,14 @@ def run_reflect(agent, client, model, curr_time, embedding_fn, tracker=None):
         curr_time=curr_time
     )
 
+    all_insights = []
+
     for focal_pt, nodes in retrieved.items():
         if not nodes:
             continue
 
         insights = generate_insights(
-            nodes, agent.name, client, model, n=5, tracker=tracker
+            nodes, agent, curr_time, focal_pt, client, model, n=3, tracker=tracker
         )
 
         for thought_text, evidence_ids in insights.items():
@@ -212,10 +248,13 @@ def run_reflect(agent, client, model, curr_time, embedding_fn, tracker=None):
                 created=curr_time,
                 source_node_ids=evidence_ids
             )
+            all_insights.append(thought_text)
 
     # reset counter
     agent.importance_since_last_reflect = 0
     agent.memories_since_last_reflect = []
+
+    return focal_points, all_insights
 
 
 def post_conversation_reflect(agent, conversation_turns,
@@ -226,7 +265,7 @@ def post_conversation_reflect(agent, conversation_turns,
     Stores planning thought and memo as thought nodes linked to the chat.
     """
     planning_thought, memo_thought = generate_conversation_reflection(
-        agent.name, conversation_turns, client, model
+        agent, conversation_turns, curr_time, client, model, tracker=tracker
     )
 
     for thought_text in [planning_thought, memo_thought]:
@@ -248,6 +287,7 @@ def reflect(agent, client, model, embedding_fn, curr_time, tracker=None):
     runs reflection if threshold is met.
     """
     if reflection_trigger(agent):
-        run_reflect(agent, client, model, curr_time, embedding_fn, tracker=tracker)
-        return True
-    return False
+        focal_points, all_insights = run_reflect(agent, client, model, curr_time, embedding_fn, tracker=tracker)
+        return True, focal_points, all_insights
+    return False, [], []
+

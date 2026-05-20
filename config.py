@@ -8,5 +8,7 @@ MODEL_NAME = "gpt-4o-mini"
 client = AzureOpenAI(
     azure_endpoint = os.getenv("AZURE_ENDPOINT"), 
     api_key = os.getenv("AZURE_API_KEY"),  
-    api_version = os.getenv("AZURE_API_VERSION")
+    api_version = os.getenv("AZURE_API_VERSION"),
+    timeout=30.0,
+    max_retries=2
 )

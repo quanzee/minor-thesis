@@ -105,12 +105,12 @@ def build_system_prompt_from_agent(agent, curr_time=None) -> str:
             ["personal values and beliefs",
              "attitudes toward work and authority",
              "relationships with others"],
-            curr_time
+            curr_time, n = 5
         )
         memory_context = ""
         seen_ids = set()
         for nodes in retrieved.values():
-            for node in nodes[:3]:
+            for node in nodes[:5]:
                 if node.node_id not in seen_ids:
                     memory_context += f"- {node.description}\n"
                     seen_ids.add(node.node_id)

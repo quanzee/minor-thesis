@@ -127,7 +127,7 @@ def new_retrieve(agent_memory, focal_points, embedding_fn,
         retrieved: dict mapping focal point string to list of MemoryNode objects
     """
     if gw is None:
-        gw = [1, 1, 1]
+        gw = [0.5, 3, 2]
 
     if curr_time is None:
         curr_time = "Day 00, Initialisation"
@@ -137,6 +137,12 @@ def new_retrieve(agent_memory, focal_points, embedding_fn,
     for focal_pt in focal_points:
         # Get all non-idle nodes sorted by last_accessed ascending
         nodes = agent_memory.get_all_nodes()
+
+        # if focal point references a specific person, filter chat nodes by partner name
+        if "conversations with" in focal_pt:
+            partner_name = focal_pt.split("conversations with")[-1].strip()
+            nodes = [n for n in nodes if n.node_type != "chat" 
+                    or partner_name in n.description]
 
         if not nodes:
             retrieved[focal_pt] = []
@@ -209,3 +215,33 @@ def get_embedding(text: str, client) -> list:
         model="text-embedding-3-small-1"
     )
     return response.data[0].embedding
+
+def retrieve_current_beliefs(agent, embedding_fn, curr_time, context=None):
+    """
+    Retrieves the agent's most currently salient values and beliefs
+    from memory. Early in simulation this returns persona seeds;
+    later it reflects whatever beliefs have become most salient
+    through interaction and reflection.
+    """
+    if context:
+        focal_point = ["personal values and beliefs related to " + ", ".join(context)]
+    else:
+        focal_point = ["personal values and beliefs"]
+
+    belief_retrieved = new_retrieve(
+        agent_memory=agent.memory,
+        focal_points=focal_point,
+        embedding_fn=embedding_fn,
+        n_count=5,
+        curr_time=curr_time
+    )
+
+    seen_ids = set()
+    belief_lines = []
+    for nodes in belief_retrieved.values():
+        for node in nodes[:5]:
+            if node.node_id not in seen_ids and node.node_type in ["event", "thought"]:
+                belief_lines.append(f"- {node.description}")
+                seen_ids.add(node.node_id)
+
+    return "\n".join(belief_lines), seen_ids

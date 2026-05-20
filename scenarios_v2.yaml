@@ -1,0 +1,36 @@
+scenarios:
+  - day: 1
+    round: Morning
+    location: Workplace
+    text: "During the weekly team briefing, the department manager announces a change to the project procurement process without explaining the rationale, states that the new procedure takes effect immediately, and closes the meeting before any questions are raised. This is presented as a straightforward directive from management, with the expectation that staff will implement it without requiring further explanation."
+    poignancy: 10
+
+  - day: 1
+    round: Morning
+    location: University
+    text: "The lecturer ends the session without inviting questions and assigns the next topic without explanation, telling the group which framework they will apply and which readings they must complete before the following week. This is presented as the lecturer's prerogative as the subject expert, with the expectation that students will follow the direction given without needing justification."
+    poignancy: 10
+
+  - day: 3
+    round: Morning
+    location: Workplace
+    text: "A notice is posted on the shared noticeboard stating that the department manager has been allocated a private office with an en-suite bathroom, while all other engineering staff continue to share a single communal bathroom and open workspace. This is presented as reflecting the manager's seniority and position within the organisation, with the differential in facilities considered appropriate to their rank."
+    poignancy: 10
+
+  - day: 3
+    round: Morning
+    location: University
+    text: "A student interrupts the lecturer mid-explanation to say that the approach being described contradicts what they read in the assigned textbook and asks the lecturer to justify the discrepancy. The student addresses the lecturer directly and confidently, treating the challenge as a straightforward academic question rather than a matter requiring deference to the lecturer's authority."
+    poignancy: 10
+
+  - day: 5
+    round: Morning
+    location: Workplace
+    text: "A senior engineer on the team has submitted a formal written complaint to the department manager alleging that a project supervisor has been assigning him tasks outside his contracted role; the complaint document is left on the shared table in the site office common area and is read by everyone present. The act of making the complaint public and in writing is presented as a direct challenge to the supervisor's authority rather than a matter to be resolved through informal channels."
+    poignancy: 10
+
+  - day: 5
+    round: Morning
+    location: University
+    text: "After the seminar ends, a student catches up with the lecturer in the corridor and addresses them by their first name while asking a follow-up question about the session material. The student treats the interaction as a peer-to-peer exchange, showing no deference to the lecturer's role or academic seniority."
+    poignancy: 10

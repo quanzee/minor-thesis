@@ -6,11 +6,12 @@ adapted from Park et al. (2023). Removes Smallville-specific dependencies
 memory-reflection-planning architecture.
 """
 
+import json
 import yaml
 from pathlib import Path
 
 from cognitive_modules.simplified_associative_memory import AssociativeMemory
-from cognitive_modules.simplified_retrieve import new_retrieve
+from cognitive_modules.simplified_retrieve import new_retrieve, retrieve_current_beliefs
 from cognitive_modules.simplified_reflect import reflect, post_conversation_reflect
 from config import client, MODEL_NAME
 
@@ -28,6 +29,7 @@ class Agent:
 
         # ── Cognitive infrastructure ───────────────────────────────────────
         self.memory = AssociativeMemory()
+        self.memory.agent_name = self.name
         self.embedding_fn = embedding_fn
         self.client = client
         self.model = MODEL_NAME
@@ -98,7 +100,7 @@ class Agent:
         self.memories_since_last_reflect.append(node)
         return node
 
-    def retrieve(self, focal_points: list, curr_time: str):
+    def retrieve(self, focal_points: list, curr_time: str, n: int = 30):
         """
         Retrieves relevant memories for a list of focal points.
 
@@ -112,7 +114,7 @@ class Agent:
             agent_memory=self.memory,
             focal_points=focal_points,
             embedding_fn=self.embedding_fn,
-            n_count=30,
+            n_count=n,
             curr_time=curr_time
         )
 
@@ -131,13 +133,13 @@ class Agent:
         ] + [f"experiences with {a.name}" for a in other_agents]
 
         # Retrieve relevant memories using the proper retrieval mechanism
-        retrieved = self.retrieve(focal_points, curr_time) #30 nodes
+        retrieved = self.retrieve(focal_points, curr_time, n=3)
 
         # Flatten retrieved nodes into a deduplicated context string
         seen_ids = set()
         memory_context = ""
         for nodes in retrieved.values():
-            for node in nodes[:3]: #takes only the top 3 from each focal point's results
+            for node in nodes[:3]:
                 if node.node_id not in seen_ids:
                     memory_context += f"- {node.description}\n"
                     seen_ids.add(node.node_id)
@@ -168,7 +170,7 @@ class Agent:
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.7 #justification?
+            temperature=0.7
         )
         if tracker:
             tracker.add(response.usage)
@@ -183,6 +185,18 @@ class Agent:
             }
             if lines.get("DECISION", "no").lower() == "yes":
                 target_name = lines.get("TARGET", "none").strip()
+                reason = lines.get("REASON", "")
+
+                with open("logs/planning_debug.jsonl", "a") as f:
+                    f.write(json.dumps({
+                        "agent": self.name,
+                        "culture": self.country,
+                        "curr_time": curr_time,
+                        "decision": "yes",
+                        "target": target_name,
+                        "reason": reason
+                    }, ensure_ascii=False) + "\n")
+
                 target = next(
                     (a for a in other_agents if a.name == target_name), None
                 )
@@ -197,7 +211,7 @@ class Agent:
         Checks reflection trigger and runs reflection if threshold is met.
         Wraps the reflect function from reflect.py.
         """
-        reflect(self, self.client, self.model,
+        return reflect(self, self.client, self.model,
                 self.embedding_fn, curr_time, tracker=tracker)
 
     def converse(self, other_agent, curr_time: str,
@@ -214,18 +228,44 @@ class Agent:
         OUTPUT:
             list of (speaker_name, utterance) tuples
         """
-        # get most recent high-importance event as scenario anchor
-        focal_points = [
+
+        # retrieve beliefs and build summaries in one call
+        self_summary, self_belief_ids = self.get_persona_context(
+            self.embedding_fn, curr_time,
+            context=[self.active_scenario["text"]] if self.active_scenario else None
+        )
+
+        other_summary, other_belief_ids = other_agent.get_persona_context(
+            other_agent.embedding_fn, curr_time,
+            context=[other_agent.active_scenario["text"]] if other_agent.active_scenario else None
+        )
+
+        # retrieve relevant memories for both agents to ground the conversation
+        self_context = self.retrieve([
         f"relationship with {other_agent.name}",
         f"experiences at {self.location}",
-        f"conversations with {other_agent.name}"]
+        f"conversations with {other_agent.name}"], curr_time, n=3)
 
-        self_context = self.retrieve(focal_points, curr_time)
-        other_context = other_agent.retrieve(
-            [f"relationship with {self.name}",
-             f"experiences at {self.location}"],
-            curr_time
+        other_context = other_agent.retrieve([
+            f"relationship with {self.name}",
+            f"experiences at {other_agent.location}",
+            f"conversations with {self.name}"],
+            curr_time, n=3
         )
+
+        # get most recent chat with this agent directly
+        recent_chat = next(
+            (n for n in self.memory.seq_chat 
+            if other_agent.name in n.description),
+            None
+        )
+
+        prior_convo_context = ""
+        if recent_chat:
+            prior_convo_context = (
+                f"\nMost recent conversation between {self.name} and {other_agent.name}:\n"
+                f"{recent_chat.description}\n"
+            )
 
         conversation = []
         current_speaker = self
@@ -242,19 +282,22 @@ class Agent:
             utterance = current_speaker._generate_utterance(
             other_speaker, conversation, current_context,
             other_context_swap, curr_time, tracker=tracker,
-            recent_scenario=recent_scenario
+            self_summary=self_summary if current_speaker == self else other_summary, 
+            other_summary=other_summary if current_speaker == self else self_summary,
+            self_belief_ids=self_belief_ids if current_speaker == self else other_belief_ids,
+            other_belief_ids=other_belief_ids if current_speaker == self else self_belief_ids,
+            recent_scenario=recent_scenario, prior_convo_context=prior_convo_context
             )
             conversation.append((current_speaker.name, utterance))
             current_speaker, other_speaker = other_speaker, current_speaker
             current_context, other_context_swap = other_context_swap, current_context
 
         # Store conversation in both agents' memories
-        summary_prompt = f"""Summarise the following conversation between {self.name} and {other_agent.name} in one sentence, focusing on the main topic discussed.
-
+        summary_prompt = f"""Summarise the following conversation between {self.name} and {other_agent.name} in one or two sentences. Focus on what was agreed, decided, or planned — not just what was discussed.
         Conversation:
         {chr(10).join(f'{speaker}: {utterance}' for speaker, utterance in conversation)}
 
-        Respond with one sentence only."""
+        Respond with one or two sentences only."""
 
         summary_response = self.client.chat.completions.create(
             model=self.model,
@@ -308,37 +351,34 @@ class Agent:
         self.memory = AssociativeMemory.load(str(path))
 
     def _generate_utterance(self, other_agent, conversation_so_far,
-                            retrieved_context, other_retrieved_context, curr_time, tracker=None, recent_scenario=None):
+                            retrieved_context, other_retrieved_context, 
+                            curr_time, tracker=None, 
+                            self_summary="", self_belief_ids=None,
+                            other_summary="", other_belief_ids=None,recent_scenario=None,
+                            prior_convo_context=None):
         """
         Generates a single utterance in a conversation.
         Prompt adapted from Park et al. (2023) create_conversation_v2.txt.
         """
-        # build agent summary strings
-        self_summary = (
-            f"{self.name} is a {self.age}-year-old {self.gender} "
-            f"from {self.country}. Their education level is {self.education} "
-            f"and they work as {self.job_type}."
-        )
-        other_summary = (
-            f"{other_agent.name} is a {other_agent.age}-year-old "
-            f"{other_agent.gender} from {other_agent.country}. "
-            f"Their education level is {other_agent.education} "
-            f"and they work as {other_agent.job_type}."
-        )
 
         # what self thinks about other_agent — from retrieved context
         self_thoughts = ""
+        seen = set(self_belief_ids) if self_belief_ids else set()
         for nodes in retrieved_context.values():
             for node in nodes[:3]:
-                self_thoughts += f"- {node.description}\n"
+                if node.node_id not in seen:
+                    self_thoughts += f"- {node.description}\n"
+                    seen.add(node.node_id)
         if not self_thoughts:
             self_thoughts = f"{self.name} does not have any prior thoughts about {other_agent.name}."
 
-        # what other_agent thinks about self — retrieve separately
         other_thoughts = ""
+        seen = set(other_belief_ids) if other_belief_ids else set()
         for nodes in other_retrieved_context.values():
             for node in nodes[:3]:
-                other_thoughts += f"- {node.description}\n"
+                if node.node_id not in seen:
+                    other_thoughts += f"- {node.description}\n"
+                    seen.add(node.node_id)
         if not other_thoughts:
             other_thoughts = f"{other_agent.name} does not have any prior thoughts about {self.name}."
 
@@ -352,12 +392,20 @@ class Agent:
         else:
             previous_convo = ""
 
+        #recent scenario context if applicable
         scenario_context = ""
         if recent_scenario:
+            scenario_time = self.active_scenario.get("sim_time", "earlier")
             scenario_context = (
-                f"\nA recent event that {self.name} witnessed and is still "
-                f"thinking about:\n{recent_scenario}\n"
+                f"\nAn event that {self.name} witnessed on {scenario_time} "
+                f"that has been on their mind:\n{recent_scenario}\n"
             )
+
+        #handles the case where the agents have not spoken before
+        if not prior_convo_context:
+            no_prior_convo = f"Note: {self.name} and {other_agent.name} have not spoken before. Do not reference any previous conversations.\n"
+        else:
+            no_prior_convo = ""
 
         prompt = f"""We have two characters.
 
@@ -373,6 +421,7 @@ class Agent:
         Here is what {other_agent.name} thinks about {self.name}:
         {other_thoughts}
         {scenario_context}
+        {prior_convo_context}
         Currently, it is {curr_time}
         -- {self.name} is at {self.location}
         -- {other_agent.name} is at {other_agent.location}
@@ -381,7 +430,9 @@ class Agent:
         If {self.name} has spoken with {other_agent.name} before, they should acknowledge their prior conversation and build on it rather than repeating the same topics.
 
         {self.name} and {other_agent.name} are in {self.location}. What would they talk about now?
-        
+
+        {no_prior_convo}
+
         {self.name}: \""""
 
         response = self.client.chat.completions.create(
@@ -427,7 +478,7 @@ class Agent:
             prompt = f"""Here is a brief description of {self.name}.
             {agent_summary}
 
-            On the scale of 1 to 10, where 1 is purely mundane (e.g., routine morning greetings) and 10 is extremely poignant (e.g., a conversation about breaking up, a fight), rate the likely poignancy of the following conversation for {self.name}.
+            On the scale of 1 to 10, where 1 is purely mundane (e.g., routine morning greetings) and 10 is extremely poignant (e.g., agreeing on an important plan of action, resolving a major disagreement, making a significant decision together), rate the likely poignancy of the following conversation for {self.name}.
 
             Conversation:
             {description}
@@ -478,7 +529,8 @@ class Agent:
             retrieved = self.retrieve(
                 [f"plans and intentions for today",
                 f"people I want to talk to"],
-                curr_time
+                curr_time,
+                n=3
             )
 
             memory_context = ""
@@ -542,3 +594,23 @@ class Agent:
             return "University"
         else:
             return "Workplace"
+        
+    def get_persona_context(self, embedding_fn=None, curr_time=None, context=None):
+        """
+        Returns a string combining demographic profile and current beliefs.
+        If embedding_fn and curr_time are provided, includes dynamically
+        retrieved beliefs. Otherwise returns demographic summary only.
+        """
+        demographic = (
+            f"{self.name} is a {self.age}-year-old {self.gender} "
+            f"from {self.country}. Their education level is {self.education} "
+            f"and they work as {self.job_type}."
+        )
+
+        if embedding_fn and curr_time:
+            beliefs, seen_ids = retrieve_current_beliefs(self, embedding_fn, curr_time, context=context)
+            if beliefs:
+                summary = f"{demographic}\n\nCurrent values and beliefs:\n{beliefs}"
+                return summary, seen_ids
+
+        return demographic, set()
