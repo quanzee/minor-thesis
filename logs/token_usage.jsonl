@@ -1,3 +1,0 @@
-{"event": "run_start", "run_label": "Test Dimension 1 Simulation", "timestamp": "2026-05-20T22:07:32.347300"}
-{"label": "Day 01 Rounds", "prompt_tokens": 397779, "completion_tokens": 28186, "total_tokens": 425965}
-{"event": "run_end", "timestamp": "2026-05-20T22:23:30.938037"}

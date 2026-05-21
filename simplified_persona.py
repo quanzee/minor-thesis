@@ -129,7 +129,8 @@ class Agent:
         # Generate focal points based on co-present agents and current location
         focal_points = [
             f"relationship and experiences with people at {self.location}",
-            f"my thoughts and feelings about my current situation"
+            f"my thoughts and feelings about my current situation",
+            f"people I haven't spoken to yet today"
         ] + [f"experiences with {a.name}" for a in other_agents]
 
         # Retrieve relevant memories using the proper retrieval mechanism
@@ -147,7 +148,7 @@ class Agent:
         # List of available agents
         agent_list = "\n".join([
             f"- {a.name} ({a.age}-year-old {a.gender} from {a.country}, {a.education}, {a.job_type})"
-            + (f" [last spoke: {self.recent_partners.count(a.name)} time(s) recently]" if a.name in self.recent_partners else "")
+            + (f" - {self.name} has spoken with {a.name} {self.recent_partners.count(a.name)} time(s) recently]" if a.name in self.recent_partners else " — not yet spoken today""")
             for a in other_agents
         ])
 
@@ -411,9 +412,11 @@ class Agent:
 
         Character 1.
         {self_summary}
+        {self.name} works at/attends: {self.primary_location}
 
         Character 2.
         {other_summary}
+        {other_agent.name} works at/attends: {other_agent.primary_location}
         ---
         Context:
         Here is what {self.name} thinks about {other_agent.name}:

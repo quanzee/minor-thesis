@@ -22,7 +22,7 @@ print("Imports loaded successfully")
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-TOTAL_DAYS = 1
+TOTAL_DAYS = 6
 VSM13_DAYS = {6}
 LOGS_DIR = Path("logs")
 RESULTS_DIR = Path("simulation_results")
@@ -81,12 +81,14 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
     cultures = ["Australia", "Japan", "Malaysia"]
     culture_responses = {c: {} for c in cultures}
     culture_explanations = {c: {} for c in cultures}
-    culture_all_runs = {c: {} for c in cultures}  # stores all runs per agent
+    culture_all_runs = {c: {} for c in cultures}
+    culture_run_dimensions = {c: {} for c in cultures}  # NEW
 
     for agent in agents:
         print(f"  Administering VSM13 to {agent.name} ({n_runs} runs)...")
         all_runs = []
         last_explanations = {}
+        per_run_dims = {}  # NEW
 
         for run in range(n_runs):
             print(f"    Run {run + 1}/{n_runs}...")
@@ -94,9 +96,9 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
                 agent, curr_time=sim_time, tracker=tracker
             )
             all_runs.append(responses)
-            last_explanations = explanations  # keep explanations from last run
+            last_explanations = explanations
+            per_run_dims[f"run_{run + 1}"] = compute_dimensions(responses)  # NEW
 
-        # average question scores across runs
         averaged = {}
         for q in range(1, 25):
             averaged[q] = sum(r[q] for r in all_runs) / n_runs
@@ -107,10 +109,11 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
             f"run_{i+1}": {str(k): v for k, v in run.items()}
             for i, run in enumerate(all_runs)
         }
+        culture_run_dimensions[agent.country][agent.name] = per_run_dims  # NEW
 
-    # pool scores per culture and compute dimensions
     pooled = {}
     individual_dimensions = {c: {} for c in cultures}
+    pooled_run_dimensions = {c: {} for c in cultures}  # NEW
 
     for culture in cultures:
         agent_responses = culture_responses[culture]
@@ -118,11 +121,9 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
             continue
         n = len(agent_responses)
 
-        # individual dimension scores from averaged responses
         for name, responses in agent_responses.items():
             individual_dimensions[culture][name] = compute_dimensions(responses)
 
-        # pooled means and dimensions
         pooled_means = {}
         for q in range(1, 25):
             pooled_means[q] = sum(
@@ -130,10 +131,19 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
             ) / n
         pooled[culture] = compute_dimensions(pooled_means)
 
-    # compute kendall tau
+        # NEW: pooled dimension scores per run across all agents in this culture
+        for run_idx in range(n_runs):
+            run_key = f"run_{run_idx + 1}"
+            run_pooled_means = {}
+            for q in range(1, 25):
+                run_pooled_means[q] = sum(
+                    culture_all_runs[culture][name][run_key][str(q)]
+                    for name in culture_all_runs[culture]
+                ) / n
+            pooled_run_dimensions[culture][run_key] = compute_dimensions(run_pooled_means)
+
     tau_results = compute_kendall_tau(HUMAN_SCORES, pooled)
 
-    # save results
     output = {
         "day": day,
         "n_runs": n_runs,
@@ -153,7 +163,9 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
             for culture, explanations in culture_explanations.items()
         },
         "individual_dimension_scores": individual_dimensions,
+        "individual_run_dimensions": culture_run_dimensions,   # NEW
         "pooled_dimension_scores": pooled,
+        "pooled_run_dimensions": pooled_run_dimensions,        # NEW
         "kendall_tau": tau_results
     }
 
@@ -253,6 +265,14 @@ def run_round(town: Town, round_name: str, day: int,
                     f"{target.name} ({target.country})")
 
                 conversation = agent.converse(target, sim_time, tracker=tracker)
+
+                #update recent partners
+                agent.recent_partners.append(target.name)
+                target.recent_partners.append(agent.name)
+
+                # keep only last 3
+                agent.recent_partners = agent.recent_partners[-3:]
+                target.recent_partners = target.recent_partners[-3:]
 
                 # log interaction
                 append_log(
