@@ -33,8 +33,8 @@ class Town:
         Assigns agents to locations for a given round.
         
         - Morning and Afternoon: agents use plan_location to decide,
-          defaulting to their primary institution unless memories
-          suggest otherwise
+        defaulting to their primary institution unless memories
+        suggest otherwise
         - Evening: all agents go to Communal Space
         
         INPUT:

@@ -216,7 +216,7 @@ class Agent:
                 self.embedding_fn, curr_time, tracker=tracker)
 
     def converse(self, other_agent, curr_time: str,
-                 n_turns: int = 6, tracker=None): #
+             n_turns: int = 6, tracker=None):
         """
         Conducts a multi-turn conversation between this agent and another.
         Each agent generates their utterance in turn based on their memory
@@ -230,23 +230,23 @@ class Agent:
             list of (speaker_name, utterance) tuples
         """
 
-        # retrieve beliefs and build summaries in one call
+        # retrieve beliefs and build summaries
         self_summary, self_belief_ids = self.get_persona_context(
             self.embedding_fn, curr_time,
             context=[self.active_scenario["text"]] if self.active_scenario else None
         )
-
         other_summary, other_belief_ids = other_agent.get_persona_context(
             other_agent.embedding_fn, curr_time,
             context=[other_agent.active_scenario["text"]] if other_agent.active_scenario else None
         )
 
-        # retrieve relevant memories for both agents to ground the conversation
+        # retrieve relevant memories for both agents
         self_context = self.retrieve([
-        f"relationship with {other_agent.name}",
-        f"experiences at {self.location}",
-        f"conversations with {other_agent.name}"], curr_time, n=3)
-
+            f"relationship with {other_agent.name}",
+            f"experiences at {self.location}",
+            f"conversations with {other_agent.name}"],
+            curr_time, n=3
+        )
         other_context = other_agent.retrieve([
             f"relationship with {self.name}",
             f"experiences at {other_agent.location}",
@@ -254,13 +254,12 @@ class Agent:
             curr_time, n=3
         )
 
-        # get most recent chat with this agent directly
+        # get most recent chat with this agent
         recent_chat = next(
-            (n for n in self.memory.seq_chat 
+            (n for n in self.memory.seq_chat
             if other_agent.name in n.description),
             None
         )
-
         prior_convo_context = ""
         if recent_chat:
             prior_convo_context = (
@@ -268,37 +267,102 @@ class Agent:
                 f"{recent_chat.description}\n"
             )
 
+        # determine scenario framing based on time of day
+        def get_scenario_framing(agent, curr_time):
+            if not agent.active_scenario:
+                return None
+            scenario_text = agent.active_scenario.get("text")
+            scenario_round = agent.active_scenario.get("round")
+            current_round = curr_time.split(", ")[-1]
+            if scenario_round == current_round:
+                return f"An event that just happened and is on your mind:\n{scenario_text}"
+            else:
+                return f"Something that happened earlier today that you have been reflecting on:\n{scenario_text}"
+
+        # generate reasoning once per agent before conversation starts
+        def generate_reasoning(agent, agent_summary, scenario_framing, conversation_so_far, tracker):
+            if not scenario_framing:
+                return None
+            
+            convo_context = ""
+            if conversation_so_far:
+                convo_context = "\nThe conversation so far:\n" + "\n".join(
+                    f"{speaker}: {utt}" for speaker, utt in conversation_so_far
+                ) + "\n\nGiven what has been said, reconsider your position."
+
+            reasoning_prompt = f"""You are {agent.name}.
+
+    Your background:
+    {agent_summary}
+
+    {scenario_framing}
+    {convo_context}
+
+    Before responding, reason through these questions as {agent.name}:
+    - How do you personally feel about this event, given your values and beliefs?
+    - What would someone with your background and cultural outlook actually think — not what is socially expected, but what feels true to you?
+    - What do you want to say, and how would you say it in a way that reflects who you are?
+
+    Write your reasoning in 3-4 sentences, in first person."""
+
+            reasoning_response = agent.client.chat.completions.create(
+                model=agent.model,
+                messages=[{"role": "user", "content": reasoning_prompt}],
+                temperature=0.7
+            )
+            if tracker:
+                tracker.add(reasoning_response.usage)
+
+            return reasoning_response.choices[0].message.content.strip()
+
+        self_scenario_framing = get_scenario_framing(self, curr_time)
+        other_scenario_framing = get_scenario_framing(other_agent, curr_time)
+
+        # conversation loop
         conversation = []
         current_speaker = self
         other_speaker = other_agent
         current_context = self_context
         other_context_swap = other_context
 
+        self_reasoning = generate_reasoning(self, self_summary, self_scenario_framing, [], tracker)
+        other_reasoning = generate_reasoning(other_agent, other_summary, other_scenario_framing, [], tracker)
+
+        reasoning_log = {self.name: [], other_agent.name: []}
+
         for i in range(n_turns):
-            recent_scenario = (
-                current_speaker.active_scenario["text"] 
-                if current_speaker.active_scenario and current_speaker.active_scenario.get("round") == "Morning" 
-                else None
-            )
+            current_sum = self_summary if current_speaker == self else other_summary
+            other_sum = other_summary if current_speaker == self else self_summary
+            current_belief_ids = self_belief_ids if current_speaker == self else other_belief_ids
+            other_belief_ids_swap = other_belief_ids if current_speaker == self else self_belief_ids
+            current_scenario_framing = self_scenario_framing if current_speaker == self else other_scenario_framing
+
+            current_reasoning = self_reasoning if current_speaker == self else other_reasoning
+
+            if current_reasoning:
+                reasoning_log[current_speaker.name].append(current_reasoning)
+
             utterance = current_speaker._generate_utterance(
-            other_speaker, conversation, current_context,
-            other_context_swap, curr_time, tracker=tracker,
-            self_summary=self_summary if current_speaker == self else other_summary, 
-            other_summary=other_summary if current_speaker == self else self_summary,
-            self_belief_ids=self_belief_ids if current_speaker == self else other_belief_ids,
-            other_belief_ids=other_belief_ids if current_speaker == self else self_belief_ids,
-            recent_scenario=recent_scenario, prior_convo_context=prior_convo_context
+                other_speaker, conversation,
+                current_context, other_context_swap,
+                curr_time, tracker=tracker,
+                self_summary=current_sum,
+                other_summary=other_sum,
+                self_belief_ids=current_belief_ids,
+                other_belief_ids=other_belief_ids_swap,
+                reasoning=current_reasoning,
+                prior_convo_context=prior_convo_context
             )
             conversation.append((current_speaker.name, utterance))
             current_speaker, other_speaker = other_speaker, current_speaker
             current_context, other_context_swap = other_context_swap, current_context
 
-        # Store conversation in both agents' memories
+        # store conversation in both agents' memories
         summary_prompt = f"""Summarise the following conversation between {self.name} and {other_agent.name} in one or two sentences. Focus on what was agreed, decided, or planned — not just what was discussed.
-        Conversation:
-        {chr(10).join(f'{speaker}: {utterance}' for speaker, utterance in conversation)}
+    Conversation:
+    {chr(10).join(f'{speaker}: {utterance}' for speaker, utterance in conversation)}
 
-        Respond with one or two sentences only."""
+    Respond with one or two sentences only."""
 
         summary_response = self.client.chat.completions.create(
             model=self.model,
@@ -323,7 +387,6 @@ class Agent:
             agent.importance_since_last_reflect += poignancy
             agent.memories_since_last_reflect.append(chat_node)
 
-            # post-conversation reflection
             post_conversation_reflect(
                 agent=agent,
                 conversation_turns=conversation,
@@ -335,7 +398,7 @@ class Agent:
                 tracker=tracker
             )
 
-        return conversation
+        return conversation, reasoning_log
 
     def save(self, save_dir: str):
         """
@@ -352,17 +415,18 @@ class Agent:
         self.memory = AssociativeMemory.load(str(path))
 
     def _generate_utterance(self, other_agent, conversation_so_far,
-                            retrieved_context, other_retrieved_context, 
-                            curr_time, tracker=None, 
-                            self_summary="", self_belief_ids=None,
-                            other_summary="", other_belief_ids=None,recent_scenario=None,
-                            prior_convo_context=None):
+                        retrieved_context, other_retrieved_context,
+                        curr_time, tracker=None,
+                        self_summary="", self_belief_ids=None,
+                        other_summary="", other_belief_ids=None,
+                        reasoning=None,
+                        prior_convo_context=None):
         """
         Generates a single utterance in a conversation.
         Prompt adapted from Park et al. (2023) create_conversation_v2.txt.
         """
 
-        # what self thinks about other_agent — from retrieved context
+        # what self thinks about other_agent
         self_thoughts = ""
         seen = set(self_belief_ids) if self_belief_ids else set()
         for nodes in retrieved_context.values():
@@ -393,16 +457,16 @@ class Agent:
         else:
             previous_convo = ""
 
-        #recent scenario context if applicable
-        scenario_context = ""
-        if recent_scenario:
-            scenario_time = self.active_scenario.get("sim_time", "earlier")
-            scenario_context = (
-                f"\nAn event that {self.name} witnessed on {scenario_time} "
-                f"that has been on their mind:\n{recent_scenario}\n"
+        # reasoning block
+        if reasoning:
+            reasoning_block = (
+                f"{self.name} has reflected on the situation and is thinking:\n{reasoning}\n\n"
+                f"Speaking authentically from this reflection, what does {self.name} say to {other_agent.name}?"
             )
+        else:
+            reasoning_block = f"What does {self.name} say to {other_agent.name}?"
 
-        #handles the case where the agents have not spoken before
+        # prior convo note
         if not prior_convo_context:
             no_prior_convo = f"Note: {self.name} and {other_agent.name} have not spoken before. Do not reference any previous conversations.\n"
         else:
@@ -410,33 +474,33 @@ class Agent:
 
         prompt = f"""We have two characters.
 
-        Character 1.
-        {self_summary}
-        {self.name} works at/attends: {self.primary_location}
+    Character 1.
+    {self_summary}
+    {self.name} works at/attends: {self.primary_location}
 
-        Character 2.
-        {other_summary}
-        {other_agent.name} works at/attends: {other_agent.primary_location}
-        ---
-        Context:
-        Here is what {self.name} thinks about {other_agent.name}:
-        {self_thoughts}
-        Here is what {other_agent.name} thinks about {self.name}:
-        {other_thoughts}
-        {scenario_context}
-        {prior_convo_context}
-        Currently, it is {curr_time}
-        -- {self.name} is at {self.location}
-        -- {other_agent.name} is at {other_agent.location}
-        {previous_convo}
+    Character 2.
+    {other_summary}
+    {other_agent.name} works at/attends: {other_agent.primary_location}
 
-        If {self.name} has spoken with {other_agent.name} before, they should acknowledge their prior conversation and build on it rather than repeating the same topics.
+    ---
+    Context:
+    Here is what {self.name} thinks about {other_agent.name}:
+    {self_thoughts}
+    Here is what {other_agent.name} thinks about {self.name}:
+    {other_thoughts}
+    {prior_convo_context}
+    Currently, it is {curr_time}
+    -- {self.name} is at {self.location}
+    -- {other_agent.name} is at {other_agent.location}
+    {previous_convo}
 
-        {self.name} and {other_agent.name} are in {self.location}. What would they talk about now?
+    If {self.name} has spoken with {other_agent.name} before, they should acknowledge their prior conversation and build on it rather than repeating the same topics.
 
-        {no_prior_convo}
+    {reasoning_block}
 
-        {self.name}: \""""
+    {no_prior_convo}
+
+    {self.name}: \""""
 
         response = self.client.chat.completions.create(
             model=self.model,
@@ -588,6 +652,16 @@ class Agent:
             print(f"      WARNING: plan_location failed for {self.name}: {e}")
             print(f"      Defaulting to primary location: {self.primary_location}")
             return self.primary_location
+        
+    def _assign_primary_location(self) -> str:
+        """
+        Assigns the agent's primary institution based on job type.
+        """
+        if self.job_type == "Full-time student":
+            return "University"
+        else:
+            return "Workplace"
+
         
     def _assign_primary_location(self) -> str:
         """

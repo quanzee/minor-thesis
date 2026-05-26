@@ -22,8 +22,8 @@ print("Imports loaded successfully")
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-TOTAL_DAYS = 6
-VSM13_DAYS = {6}
+TOTAL_DAYS = 3
+VSM13_DAYS = {3}
 LOGS_DIR = Path("logs")
 RESULTS_DIR = Path("simulation_results")
 
@@ -38,7 +38,6 @@ INSTITUTIONAL_CONTEXT = {
     ("Communal Space", "Afternoon"): "People are taking a break and socialising.",
     ("Communal Space", "Evening"):  "People are socialising and relaxing after the day's work.",
 }
-
 
 # ── Logging helpers ────────────────────────────────────────────────────────────
 
@@ -69,7 +68,6 @@ def build_observation(agent, round_name: str) -> str:
         f"{agent.name} is at the {agent.location} "
         f"during the {round_name} round. {context}"
     )
-
 
 # ── VSM13 measurement ──────────────────────────────────────────────────────────
 
@@ -177,22 +175,39 @@ def run_measurement(agents: list, day: int, sim_time=None, tracker=None, n_runs=
     print(f"  Results saved to {path}")
 
 # ── Scenario Helper Functions ──────────────────────────────────────────────────────────
-def load_scenarios(path="scenarios_v2.yaml"):
+def load_scenarios(path="scenarios_v3.yaml"):
     with open(path) as f:
         return yaml.safe_load(f)["scenarios"]
 
 def inject_scenarios(town, scenarios, day, round_name, sim_time, tracker=None):
-    injected = {}
-    for scenario in scenarios:
-        if scenario["day"] == day and scenario["round"] == round_name:
-            injected[scenario["location"]] = scenario["text"]
-            for agent in town.agents:
-                if agent.location == scenario["location"]:
-                    # node = agent.perceive(scenario["text"], sim_time, tracker=tracker,
-                    #                      poignancy_override=scenario["poignancy"])
-                    agent.active_scenario = {"text": scenario["text"], "day": day, "round": round_name, "sim_time": sim_time}
-                    print(f"      Scenario activated for {agent.name}")
-    return injected if injected else None
+    matching = [
+        s for s in scenarios
+        if s["day"] == day and s["round"] == round_name
+    ]
+
+    if not matching:
+        return
+
+    for scenario in matching:
+        location = scenario["location"]
+        agents_at_location = [
+            a for a in town.agents
+            if a.location == location
+        ]
+        if not agents_at_location:
+            print(f"      WARNING: No agents at {location} for Day {day} {round_name} scenario")
+            continue
+
+        for agent in agents_at_location:
+            agent.active_scenario = {
+                "text": scenario["text"],
+                "day": day,
+                "round": round_name,
+                "location": location,
+                "sim_time": sim_time
+            }
+            print(f"      Scenario activated for {agent.name} ({location})")
+            
 # ── Round execution ────────────────────────────────────────────────────────────
 
 def run_round(town: Town, round_name: str, day: int,
@@ -200,10 +215,10 @@ def run_round(town: Town, round_name: str, day: int,
     print(f"\n  [{round_name} Round]")
 
     # clear scenarios from previous day at the start of each Morning round
-    # if round_name == "Morning":
-    #     for agent in town.agents:
-    #         if agent.active_scenario and agent.active_scenario["day"] < day:
-    #             agent.active_scenario = None
+    if round_name == "Morning":
+        for agent in town.agents:
+            if agent.active_scenario and agent.active_scenario["day"] < day:
+                agent.active_scenario = None
 
     # assign locations for this round
     print(f"  Assigning locations...")
@@ -264,7 +279,7 @@ def run_round(town: Town, round_name: str, day: int,
                 print(f"    {agent.name} ({agent.country}) → "
                     f"{target.name} ({target.country})")
 
-                conversation = agent.converse(target, sim_time, tracker=tracker)
+                conversation, reasoning_log = agent.converse(target, sim_time, tracker=tracker)
 
                 #update recent partners
                 agent.recent_partners.append(target.name)
@@ -286,6 +301,7 @@ def run_round(town: Town, round_name: str, day: int,
                         "culture_b": target.country,
                         "location": agent.location,
                         "cross_cultural": agent.country != target.country,
+                        "reasoning": reasoning_log,
                         "dialogue": conversation
                     }
                 )

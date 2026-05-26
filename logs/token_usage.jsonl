@@ -1,0 +1,6 @@
+{"event": "run_start", "run_label": "Test Dimension 1 Simulation", "timestamp": "2026-05-22T10:29:23.252137"}
+{"label": "Day 01 Rounds", "prompt_tokens": 637663, "completion_tokens": 56777, "total_tokens": 694440}
+{"label": "Day 02 Rounds", "prompt_tokens": 739919, "completion_tokens": 63123, "total_tokens": 803042}
+{"label": "Day 03 Rounds", "prompt_tokens": 737836, "completion_tokens": 60522, "total_tokens": 798358}
+{"label": "Day 03 VSM13 Measurement", "prompt_tokens": 1832044, "completion_tokens": 119432, "total_tokens": 1951476}
+{"event": "run_end", "timestamp": "2026-05-22T13:13:39.181244"}
