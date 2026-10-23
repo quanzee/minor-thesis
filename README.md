@@ -131,6 +131,6 @@ The large-population study uses VSM13 and WVS only.
 | `past_runs/C4` | Anti-compromise instruction |
 | `past_runs/RQ2_deepseek` | C1 configuration on DeepSeek-V4-Flash |
 | `past_runs/RQ2_grok` | C1 configuration on Grok 4.1 Fast |
-| `past_runs/side_study` | Large-population study |
+| `past_runs/large-population` | Large-population study |
 
 Each run folder contains `logs/` and `results/`. `results/run_config.json` records the flags the run was started with.
