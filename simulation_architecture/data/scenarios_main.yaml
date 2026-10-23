@@ -1,0 +1,60 @@
+scenarios:
+  - day: 1
+    round: Morning
+    location: Workplace
+    text: "During a project presentation, a junior employee interrupts a
+      senior manager to correct a factual error in front of the room.
+      The correction turns out to be accurate."
+
+  - day: 2
+    round: Morning
+    location: Workplace
+    text: "The team has been working toward a shared deadline. One team
+      member completes their portion of the work ahead of schedule and
+      is offered — and accepts — an early release from the project to
+      begin a higher-profile assignment in another department, leaving
+      the remaining team members to absorb their tasks for the final
+      push."
+
+  - day: 3
+    round: Morning
+    location: Workplace
+    text: "The department manager announces that the project has been
+      recognised by the firm's leadership and that the team has been
+      given a discretionary budget to mark the outcome. The manager
+      asks the team to decide by end of day how to use it — either
+      as individual cash bonuses distributed to each member, or as
+      a shared team event. During the discussion, one team member
+      argues that the individual bonuses are the right outcome because
+      the team worked hard and deserves tangible personal reward for
+      their performance. Another team member argues that a shared
+      event would mean more because it recognises what the team
+      achieved together rather than reducing it to individual payouts."
+
+  - day: 4
+    round: Morning
+    location: Workplace
+    text: "The department manager informs the team that the project's
+      requirements have been left deliberately open-ended and that each
+      team member is expected to use their own judgment to determine
+      the appropriate methods and standards, with no further procedural
+      guidance to be provided."
+
+  - day: 5
+    round: Morning
+    location: Workplace
+    text: "The department manager presents the team with the firm's
+      updated performance review criteria, which rank team members
+      solely on output delivered in the past quarter, with no weighting
+      given to skill development, relationship-building, or
+      contributions whose value would only be realised over a longer
+      timeframe."
+
+  - day: 6
+    round: Morning
+    location: Workplace
+    text: "The department manager announces that the team has been given
+      a half-day off on Friday afternoon with no work obligations,
+      explicitly telling the team to use the time however they
+      personally enjoy and to treat it as free time rather than an
+      opportunity to catch up on outstanding tasks."

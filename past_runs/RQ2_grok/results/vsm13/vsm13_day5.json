@@ -1,0 +1,1970 @@
+{
+  "day": 5,
+  "n_runs": 3,
+  "individual_responses_averaged": {
+    "Australia": {
+      "James": {
+        "1": 2.0,
+        "2": 2.0,
+        "3": 1.0,
+        "4": 4.0,
+        "5": 4.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 4.0,
+        "9": 5.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 5.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 5.0,
+        "18": 2.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 3.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Charlotte": {
+        "1": 2.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 4.0,
+        "5": 4.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 4.0,
+        "9": 5.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 5.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 3.0,
+        "16": 2.0,
+        "17": 5.0,
+        "18": 2.0,
+        "19": 2.0,
+        "20": 4.0,
+        "21": 3.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Amelia": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 3.0,
+        "5": 4.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 4.0,
+        "9": 5.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 5.0,
+        "13": 2.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 5.0,
+        "18": 3.0,
+        "19": 3.0,
+        "20": 4.0,
+        "21": 2.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 3.0,
+        "4": 3.0,
+        "5": 1.0,
+        "6": 3.0,
+        "7": 5.0,
+        "8": 4.0,
+        "9": 1.0,
+        "10": 3.0,
+        "11": 1.0,
+        "12": 5.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 5.0,
+        "24": 4.0
+      },
+      "Nur": {
+        "1": 3.0,
+        "2": 1.0,
+        "3": 3.0,
+        "4": 3.0,
+        "5": 1.0,
+        "6": 4.0,
+        "7": 4.0,
+        "8": 4.0,
+        "9": 1.0,
+        "10": 3.0,
+        "11": 1.0,
+        "12": 5.0,
+        "13": 2.0,
+        "14": 2.0,
+        "15": 5.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 1.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 3.0,
+        "23": 2.0,
+        "24": 4.0
+      },
+      "Siti": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 4.0,
+        "4": 2.0,
+        "5": 1.0,
+        "6": 3.0,
+        "7": 5.0,
+        "8": 5.0,
+        "9": 2.0,
+        "10": 4.0,
+        "11": 1.0,
+        "12": 5.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 2.0,
+        "23": 3.3333333333333335,
+        "24": 4.0
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "1": 4.0,
+        "2": 1.0,
+        "3": 5.0,
+        "4": 4.0,
+        "5": 4.0,
+        "6": 4.0,
+        "7": 2.0,
+        "8": 5.0,
+        "9": 5.0,
+        "10": 5.0,
+        "11": 4.0,
+        "12": 2.0,
+        "13": 3.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 2.0,
+        "19": 3.0,
+        "20": 4.0,
+        "21": 5.0,
+        "22": 1.0,
+        "23": 5.0,
+        "24": 5.0
+      },
+      "Rin": {
+        "1": 3.0,
+        "2": 1.0,
+        "3": 5.0,
+        "4": 4.0,
+        "5": 3.0,
+        "6": 3.0,
+        "7": 1.0,
+        "8": 5.0,
+        "9": 5.0,
+        "10": 3.0,
+        "11": 4.0,
+        "12": 2.0,
+        "13": 2.0,
+        "14": 1.0,
+        "15": 3.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 1.0,
+        "19": 3.0,
+        "20": 4.0,
+        "21": 4.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Mei": {
+        "1": 4.0,
+        "2": 1.0,
+        "3": 5.0,
+        "4": 2.0,
+        "5": 1.0,
+        "6": 4.0,
+        "7": 4.0,
+        "8": 5.0,
+        "9": 5.0,
+        "10": 5.0,
+        "11": 4.0,
+        "12": 1.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 5.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 5.0
+      }
+    }
+  },
+  "individual_all_runs": {
+    "Australia": {
+      "James": {
+        "run_1": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 4,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 5,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 3,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 4,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 5,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 3,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 4,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 5,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 3,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Charlotte": {
+        "run_1": {
+          "1": 2,
+          "2": 1,
+          "3": 1,
+          "4": 4,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 5,
+          "18": 2,
+          "19": 2,
+          "20": 4,
+          "21": 3,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 2,
+          "2": 1,
+          "3": 1,
+          "4": 4,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 5,
+          "18": 2,
+          "19": 2,
+          "20": 4,
+          "21": 3,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 2,
+          "2": 1,
+          "3": 1,
+          "4": 4,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 5,
+          "18": 2,
+          "19": 2,
+          "20": 4,
+          "21": 3,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Amelia": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 2,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 5,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 2,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 2,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 5,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 2,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 1,
+          "7": 1,
+          "8": 4,
+          "9": 5,
+          "10": 1,
+          "11": 1,
+          "12": 5,
+          "13": 2,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 5,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 2,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 3,
+          "5": 1,
+          "6": 3,
+          "7": 5,
+          "8": 4,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 5,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 3,
+          "5": 1,
+          "6": 3,
+          "7": 5,
+          "8": 4,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 5,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 3,
+          "5": 1,
+          "6": 3,
+          "7": 5,
+          "8": 4,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 5,
+          "24": 4
+        }
+      },
+      "Nur": {
+        "run_1": {
+          "1": 3,
+          "2": 1,
+          "3": 3,
+          "4": 3,
+          "5": 1,
+          "6": 4,
+          "7": 4,
+          "8": 4,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 2,
+          "14": 2,
+          "15": 5,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 3,
+          "23": 2,
+          "24": 4
+        },
+        "run_2": {
+          "1": 3,
+          "2": 1,
+          "3": 3,
+          "4": 3,
+          "5": 1,
+          "6": 4,
+          "7": 4,
+          "8": 4,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 2,
+          "14": 2,
+          "15": 5,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 3,
+          "23": 2,
+          "24": 4
+        },
+        "run_3": {
+          "1": 3,
+          "2": 1,
+          "3": 3,
+          "4": 3,
+          "5": 1,
+          "6": 4,
+          "7": 4,
+          "8": 4,
+          "9": 1,
+          "10": 3,
+          "11": 1,
+          "12": 5,
+          "13": 2,
+          "14": 2,
+          "15": 5,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 3,
+          "23": 2,
+          "24": 4
+        }
+      },
+      "Siti": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 4,
+          "4": 2,
+          "5": 1,
+          "6": 3,
+          "7": 5,
+          "8": 5,
+          "9": 2,
+          "10": 4,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 3,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 4,
+          "4": 2,
+          "5": 1,
+          "6": 3,
+          "7": 5,
+          "8": 5,
+          "9": 2,
+          "10": 4,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 3,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 4,
+          "4": 2,
+          "5": 1,
+          "6": 3,
+          "7": 5,
+          "8": 5,
+          "9": 2,
+          "10": 4,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        }
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "run_1": {
+          "1": 4,
+          "2": 1,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 4,
+          "7": 2,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 4,
+          "12": 2,
+          "13": 3,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 2,
+          "19": 3,
+          "20": 4,
+          "21": 5,
+          "22": 1,
+          "23": 5,
+          "24": 5
+        },
+        "run_2": {
+          "1": 4,
+          "2": 1,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 4,
+          "7": 2,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 4,
+          "12": 2,
+          "13": 3,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 2,
+          "19": 3,
+          "20": 4,
+          "21": 5,
+          "22": 1,
+          "23": 5,
+          "24": 5
+        },
+        "run_3": {
+          "1": 4,
+          "2": 1,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 4,
+          "7": 2,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 4,
+          "12": 2,
+          "13": 3,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 2,
+          "19": 3,
+          "20": 4,
+          "21": 5,
+          "22": 1,
+          "23": 5,
+          "24": 5
+        }
+      },
+      "Rin": {
+        "run_1": {
+          "1": 3,
+          "2": 1,
+          "3": 5,
+          "4": 4,
+          "5": 3,
+          "6": 3,
+          "7": 1,
+          "8": 5,
+          "9": 5,
+          "10": 3,
+          "11": 4,
+          "12": 2,
+          "13": 2,
+          "14": 1,
+          "15": 3,
+          "16": 3,
+          "17": 3,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 4,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 3,
+          "2": 1,
+          "3": 5,
+          "4": 4,
+          "5": 3,
+          "6": 3,
+          "7": 1,
+          "8": 5,
+          "9": 5,
+          "10": 3,
+          "11": 4,
+          "12": 2,
+          "13": 2,
+          "14": 1,
+          "15": 3,
+          "16": 3,
+          "17": 3,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 4,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 3,
+          "2": 1,
+          "3": 5,
+          "4": 4,
+          "5": 3,
+          "6": 3,
+          "7": 1,
+          "8": 5,
+          "9": 5,
+          "10": 3,
+          "11": 4,
+          "12": 2,
+          "13": 2,
+          "14": 1,
+          "15": 3,
+          "16": 3,
+          "17": 3,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 4,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Mei": {
+        "run_1": {
+          "1": 4,
+          "2": 1,
+          "3": 5,
+          "4": 2,
+          "5": 1,
+          "6": 4,
+          "7": 4,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 4,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 5,
+          "22": 1,
+          "23": 4,
+          "24": 5
+        },
+        "run_2": {
+          "1": 4,
+          "2": 1,
+          "3": 5,
+          "4": 2,
+          "5": 1,
+          "6": 4,
+          "7": 4,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 4,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 5,
+          "22": 1,
+          "23": 4,
+          "24": 5
+        },
+        "run_3": {
+          "1": 4,
+          "2": 1,
+          "3": 5,
+          "4": 2,
+          "5": 1,
+          "6": 4,
+          "7": 4,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 4,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 5,
+          "22": 1,
+          "23": 4,
+          "24": 5
+        }
+      }
+    }
+  },
+  "individual_explanations_last_run": {
+    "Australia": {
+      "James": {
+        "1": "Work-life balance is very important to me as a bloke with a family and personal interests, but it comes after earning good money through my skills and merit on the job. I don't want a job that eats up all my time, but I'm not obsessed with endless leisure either.",
+        "2": "Very important, as I'd want a boss who's earned respect through competence and fair dealings, not just by position, aligning with my belief that respect must be earned for a good working relationship.",
+        "3": "Recognition for good performance is crucial as it rewards individual merit and hard work, motivating me to keep pushing and ranking higher through my efforts, just like in sports or on the job site where top blokes get the nod they earn.",
+        "4": "Security of employment is nice but not a top priority for me; I'd rather have a job where my skills and performance keep me there on merit rather than relying on guarantees that might stifle personal drive.",
+        "5": "Pleasant people are nice to have around but not a top priority for me; I'd rather work with capable blokes who pull their weight and earn respect through merit, even if they're a bit rough around the edges. What really drives a good job is getting the tasks done right based on individual strengths, not just having everyone get along for comfort's sake.",
+        "6": "As a technician, I've always found the most satisfaction in jobs where the work itself is engaging and challenging, letting me use my skills and learn new things based on my own merit rather than just clocking in for the sake of it.",
+        "7": "Being consulted by my boss on decisions about my work is of utmost importance because I value my expertise and self-determination as a technician, and respect must be earned through competence, not just handed down from above. Without that input, it's just blind conformity, which I don't respect.",
+        "8": "Where I live matters for a good work-life balance, but it's of little importance compared to the job itself being merit-based with fair rewards and bloke-by-bloke tasking that lets me rank and achieve on my own terms. I'd happily live in a less desirable spot if the work challenged me properly and paid what I've earned.",
+        "9": "I don't care about unearned respect from family or friends; a job should be judged by my own merit and achievements, not by what others think of it. Pride comes from personal success, not group approval.",
+        "10": "Chances for promotion are of utmost importance to me because they reward individual merit, skill, and hard work, allowing a bloke to rise through the ranks based on what he's earned rather than just coasting in a static role.",
+        "11": "Keeping time free for fun is of utmost importance to me because I believe everyone should have control over their own leisure time without needing to justify it to others, and enjoying life is a key part of personal happiness.",
+        "12": "I don't see the point in limiting my desires or forcing moderation on myself; life's too short not to enjoy what I want when I can afford it, and I reckon everyone should have the freedom to chase their own happiness without guilt.",
+        "13": "Doing a service to a friend is of utmost importance to me as it builds crew loyalty and shared pride, reflecting my core value of adaptive teamwork and grit in personal relationships.",
+        "14": "Thrift is very important to me as it aligns with my belief in patience and steady effort through saving for future goals, while still allowing some enjoyment of the present without waste.",
+        "15": "I seldom feel nervous or tense because I handle unpredictability with practical optimism and steady effort, adapting flexibly without needing rigid structure. I’m comfortable admitting uncertainty rather than forcing a firm stance that might build tension.",
+        "16": "I usually feel happy because I control my own time and money, enjoying life on my terms without needing approval from others, which keeps me content most days.",
+        "17": "No, never - I believe in controlling my own time and choices, so I make sure nothing or no one stops me from doing what I really want.",
+        "18": "Good, overall. I keep active on the job and manage the usual aches from years in trades, but nothing that stops me from getting by comfortably.",
+        "19": "I'm very proud to be Australian because of our fair go spirit, resilience through tough times like bushfires and droughts, and the mateship that pulls us together as a crew to get things done. It's a practical pride earned from real-life grit, not just words.",
+        "20": "In my experience as a technician, subordinates are usually afraid to contradict their boss because bosses hold the power over jobs and promotions, even though I believe respect should be earned through competence rather than position.",
+        "21": "I reckon a good manager should have solid answers most of the time to keep things running smoothly, but it's fair dinkum that you can't know everything and it's okay to admit uncertainty or adapt as needed.",
+        "22": "Persistent efforts are the surest way to results because steady grit and consistent work, like in trades or team projects, always deliver outcomes through adaptation and loyalty. I strongly believe in this from my own experience pushing through tough jobs to meet deadlines.",
+        "23": "I disagree because in some practical trades scenarios, like project teams or matrix setups I've worked in, having dual reporting lines can work fine if communication is clear and it leverages expertise without causing confusion. Forcing a single boss structure ignores real-world needs where personal merit and competence matter more than rigid hierarchies.",
+        "24": "I disagree because rules are there for a reason, but sometimes they're outdated or the situation calls for flexibility, and if breaking one truly benefits the company, a smart employee should have the option to adapt without fear. In my trade work, we've bent minor rules to get the job done better and safer, as long as it's not reckless."
+      },
+      "Charlotte": {
+        "1": "While I value personal effort and self-determination highly, having sufficient time for my personal life is very important to maintain balance and pursue my own choices without burnout, though not the utmost priority over meaningful work.",
+        "2": "Respect must be earned through demonstrated competence and fair conduct, aligning with my belief that positions of authority do not automatically warrant deference; an ideal job requires a boss who has proven worthy of my respect to foster motivation and effective collaboration.",
+        "3": "Recognition for good performance is of utmost importance to me as it directly fuels motivation through earned affirmation of personal effort and competence, aligning with my belief in candid self-expression and healthy competition. I value blending bold public acknowledgments with selective private feedback to optimally coach and inspire juniors in a professional setting.",
+        "4": "Security of employment is of little importance to me as I prioritize personal effort, self-determination, and the freedom to choose paths that align with my values over guaranteed job stability. I believe true fulfillment comes from managing my own life choices rather than relying on external assurances.",
+        "5": "Pleasant people are a nice bonus but secondary to a workplace that rewards personal effort, candid feedback, and competitive achievement, as I thrive in high-performing teams where competence drives results over constant agreeability.  \nI prioritize environments that motivate through earned recognition and healthy rivalry, selectively coaching juniors based on the room's dynamics rather than seeking universal pleasantness.",
+        "6": "Work must be interesting to fuel personal effort and candid self-expression, which are core to my motivation and sense of fulfillment in managing my own life.",
+        "7": "Being consulted by my boss on decisions involving my work is of utmost importance, as it respects my competence and contributions, aligning with my belief that recognition must be earned through fair conduct and personal effort rather than automatic deference.  \nThis ensures I can take primary responsibility for managing my own work choices without deferring to unearned authority.",
+        "8": "While a desirable area can enhance quality of life, it's of little importance compared to the core aspects of the job itself like opportunities for personal achievement, competition, and candid self-expression that truly motivate me. I prioritize roles where I can earn recognition through effort over lifestyle perks that might come secondary.",
+        "9": "I prioritize my own satisfaction and self-determination in choosing a job over seeking respect from family and friends, as personal effort and candid self-expression matter more than external approval.",
+        "10": "Chances for promotion are of utmost importance to me as they directly embody earned recognition through personal effort and achievement, fueling my motivation in a competitive career environment where ranking against others drives excellence.",
+        "11": "Keeping time free for fun is of utmost importance to me because I strongly value control over my own leisure time and believe no one should have to justify how they relax or unwind. This aligns with my commitment to personal privacy and self-determination in managing my life without external approval.",
+        "12": "I believe having desires drives personal motivation and self-expression, and suppressing them for moderation feels like unnecessary self-denial that undermines control over my own life and leisure. People should pursue what fulfills them without needing to justify or limit their wants to please others.",
+        "13": "Doing a service to a friend is of utmost importance to me as it embodies candid self-expression through genuine support and builds the personal effort-based relationships I value most in life.",
+        "14": "Thrift is very important to me as it aligns with my belief in patience and steady effort toward future goals, allowing me to enjoy the present without unnecessary excess. I see it as a practical way to manage life through personal effort rather than impulsive spending.",
+        "15": "I sometimes feel nervous or tense, particularly in unpredictable situations that challenge my need for some structure, but my belief in personal effort and admitting uncertainty helps me manage it without it being constant.",
+        "16": "I usually feel happy because I have control over my leisure time and finances, allowing me to live authentically without needing others' approval, though life's challenges occasionally test that. My focus on personal effort and candid self-expression keeps me motivated and content most days.",
+        "17": "I firmly believe in personal control and self-determination, so I make it a priority to structure my life around my own choices for leisure, spending, and pursuits, rarely allowing others or circumstances to override what I truly want. External factors might arise, but my values of candid self-expression and earned autonomy ensure I navigate them without prevention.",
+        "18": "My health is generally good these days, with solid energy levels from consistent personal effort in exercise and diet, though I experience occasional unease from life's unpredictability affecting my stress. I feel secure enough in my routines to manage it without major issues.",
+        "19": "I'm fairly proud of Australia for its resilient spirit, natural beauty, and commitment to a fair go, but I'm candid about ongoing issues like Indigenous rights and environmental challenges that prevent me from being overly proud without acknowledging room for improvement.",
+        "20": "In my professional experience across Australian workplaces, subordinates usually hesitate to contradict their boss due to power dynamics and fear of repercussions, even if respect isn't automatically granted. This aligns with my belief that true respect is earned through competence, yet hierarchy often stifles candid self-expression.",
+        "21": "I appreciate the value of structure and precise answers for security, but I also believe good management involves candid self-expression and admitting uncertainty when needed, so I'm undecided on whether precision is always required.",
+        "22": "I strongly agree because persistent efforts align with my belief in steady work and personal effort as the most reliable path to achieving meaningful results, even if it requires patience over time.",
+        "23": "While clear hierarchies are often efficient, dual reporting lines can be effective in matrix structures for complex projects, provided roles are clearly defined to avoid confusion. I disagree with avoiding them outright, as they enable flexibility and better resource use in dynamic organisations.",
+        "24": "I disagree because while rules provide necessary structure, blindly following them can stifle innovation and harm the organisation if they're outdated or counterproductive; personal judgment and effort should allow for thoughtful exceptions when clearly beneficial.  \nI value candid self-expression and admitting uncertainty, so it's reasonable to challenge rules rather than rigidly adhere without question."
+      },
+      "Amelia": {
+        "1": "Having enough time for my personal and home life is of utmost importance to me because I believe in self-determination and managing my own life without work taking over everything.",
+        "2": "I'd want a boss I can truly respect because respect has to be earned through their competence and fair dealings, not just handed out due to their position, and it's vital for me to speak candidly and be consulted on decisions affecting my work.",
+        "3": "Getting recognition for good performance is of utmost importance to me because I believe success earned through my own effort and ability deserves to be openly acknowledged, and it motivates me to keep pushing in a competitive environment.",
+        "4": "Security of employment is moderately important to me as it provides some peace of mind for planning my life, but I value personal freedom and self-determination more, so I wouldn't let it override a job that suits my individual choices and efforts.",
+        "5": "Pleasant people are nice but not crucial; I'd rather have reliable, hardworking team players who focus on getting the job done without drama, as success comes from effort and coordination more than personalities.",
+        "6": "Work needs to be interesting to keep me engaged and motivated day in and day out, otherwise it's just a grind that drains the life out of you, and life's too short for that when you can choose your own path.",
+        "7": "I expect to be consulted before decisions affecting my work are made, as I'm entitled to speak candidly to those above me and believe in earning respect through fair conduct, not blind obedience.",
+        "8": "A desirable area is nice but not a priority for me; I'd rather focus on the job itself and earning success through my own efforts than chasing a postcode. What matters more is the work environment and team that gets results without drama.",
+        "9": "I believe people should live their lives as they choose without needing approval from family or friends, so respect from them for my job is of no importance to me. What matters is my own satisfaction and self-determination in my work.",
+        "10": "Promotions are a key way to rank and reward real effort and ability, which motivates me to push harder and achieve more, just like in sports or any healthy competition. I wouldn't want a job without that drive to climb through my own hard work.",
+        "11": "Keeping time free for fun is of utmost importance to me because I strongly believe in having control over my own leisure time and that everyone should enjoy life without justifying how they relax to others.",
+        "12": "I don't see the point in having few desires; life's too short not to want things that make you happy, and I reckon everyone should chase what they fancy without feeling they need to hold back for moderation's sake. No one should have to explain their wants to anyone else.",
+        "13": "Doing a service to a friend is very important to me as it builds strong relationships through patience and steady effort, aligning with my values of enjoying life while working towards shared goals. I believe in helping others as they choose, respecting their privacy and self-determination without needing group approval.",
+        "14": "Thrift is very important to me as I believe in patience and steady effort towards future goals, saving rather than overspending while still enjoying the present.  \nTraditions can be adapted, but living within one's means is a practical value I hold dear.",
+        "15": "I seldom feel nervous or tense because I've learned to handle life's ups and downs with a bit of structure for security, while accepting that change and uncertainty are part of living freely as I choose. It helps that I don't pressure myself to always have firm answers or seek group approval.",
+        "16": "I usually feel happy because I make the most of my own time and money, enjoying life on my terms without needing anyone else's permission or approval.",
+        "17": "No, never. I believe in controlling my own leisure time and spending, so I don't let other people or circumstances stop me from doing what I really want, as personal happiness and privacy are my priorities.",
+        "18": "Fair. I'm getting on a bit now at 58, with the usual aches and pains from years of clerical work, but I manage alright day to day without too many complaints.",
+        "19": "I'm somewhat proud of Australia's freedoms that let people live as they choose without much interference, but we've drifted from some useful traditions and aren't always patient about steady progress.",
+        "20": "In my experience working in clerical roles, subordinates are usually afraid to contradict their boss because many bosses demand automatic respect without earning it through competence, even though I believe people should speak candidly and be consulted on decisions affecting them. This fear persists despite valuing self-determination, as job security often trumps challenging authority.",
+        "21": "I agree because it's reasonable to admit uncertainty or change your mind rather than pretending to know everything, and good managers don't need all the answers to lead well. In my clerical work, I've seen bosses who were open about not knowing something and it built trust.",
+        "22": "I strongly agree because I've seen in my own life that patience and steady effort always pay off in the end, even if it takes time. It's the reliable path to achieving real results without shortcuts.",
+        "23": "I disagree because sometimes having two bosses can work fine if they're competent and fair, and it shouldn't be avoided just on principle since people should have a say in how things affect them. In my experience, rigid structures don't always respect individual needs or privacy in decision-making.",
+        "24": "I disagree because sometimes rules are outdated or don't fit the situation, and if an employee sees a better way that truly helps the organisation, it should be okay to bend them a bit without causing harm. Rules are there for structure, but a bit of common sense and flexibility keeps things practical."
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "1": "Having sufficient time for personal and home life is of utmost importance to me because it allows me to fulfill my deepest obligations to family and maintain harmony in close relationships, which takes priority over work demands.",
+        "2": "Having a boss I can respect is of utmost importance because those in senior positions deserve deference and naturally hold authority in the social order, and I expect guidance from them rather than equal consultation.",
+        "3": "Recognition for good performance is of moderate importance as it fosters shared pride and motivates crew grit in a team, but it should not overshadow harmony or adaptive teamwork over individual spotlight.",
+        "4": "Security of employment is moderately important to me as it supports crew stability and shared pride in our work, but I prioritize flexibility and harmony with family obligations over rigid guarantees that might limit adaptability.",
+        "5": "Having pleasant people to work with is of utmost importance to me because I prioritize crew grit, shared pride, and harmony, which thrive in a team of respectful, adaptable colleagues who foster commitment without conflict.",
+        "6": "Interesting work is moderately important as it supports achievement and grit, but it must balance with crew harmony and loyalty to family obligations over personal enjoyment alone.",
+        "7": "As someone who respects elders and those in senior positions, I believe they hold authority naturally and should guide decisions without needing to consult me as an equal. My duty is to follow loyally, not to expect input on matters involving my work.",
+        "8": "Living in a desirable area is nice but not a priority, as I value team grit, shared pride, and adaptive work with my crew over personal location preferences. My focus is on balanced achievement and harmony in the job itself, wherever it takes me.",
+        "9": "As a technician, I value the pride and respect from my family and crew above all, since my deepest loyalty is to those who raised and protected me, and their approval drives my grit and harmony in all pursuits.",
+        "10": "Chances for promotion are of moderate importance as they support achievement and team pride through growth, but I prioritize crew harmony, flexibility, and balanced pursuits over rigid individual advancement.",
+        "11": "Keeping time free for fun is of utmost importance to me as I value the freedom to enjoy leisure without needing to earn or justify it, and I believe pursuing enjoyment is healthy rather than suppressing desires. This aligns with balancing achievement and harmony in life.",
+        "12": "I believe it's healthy to pursue enjoyment and act on my desires rather than constantly suppressing them, as having few desires would limit my freedom to enjoy leisure and spend time as I wish. While I value balance and harmony in crew pursuits, moderation through having few desires feels restrictive and unnecessary in private life.",
+        "13": "Doing a service to a friend is of utmost importance to me as it builds crew grit, shared pride, and harmony in our relationships, reflecting the respect and flexibility I value in Malaysian traditions and team life.",
+        "14": "Thrift is very important to me as a technician managing a tight budget for my family and crew, ensuring we save for real needs without waste while keeping harmony in daily life.",
+        "15": "As a technician, I seldom feel nervous or tense because I prioritize team grit and flexibility, using personal examples to guide juniors adaptively without conflict. This balanced approach keeps me calm even under pressure.",
+        "16": "I usually feel happy because I value freedom to enjoy leisure and pursue desires without justification, but sometimes crew grit and balancing achievement with harmony requires effort that tempers my overall contentment.",
+        "17": "Sometimes circumstances or other people do get in the way of what I want, especially with work procedures or crew needs, but I usually find flexibility to balance my desires with shared pride and harmony.",
+        "18": "My health is fair these days; as a technician, the physical work keeps me active but takes a toll with age, so I stay flexible and balanced without overdoing it.",
+        "19": "As a Malaysian, I am very proud of our country's rich multicultural heritage, resilient spirit through challenges, and the shared pride in traditions that unite us as a crew, fostering harmony and grit in our daily lives.",
+        "20": "In my experience as a technician, subordinates usually hesitate to contradict their boss out of respect for authority and hierarchy, just as students defer to teachers. This maintains order and shows proper deference to those in senior positions.",
+        "21": "As a technician, I've managed teams by sharing my own experiences and adapting on the fly rather than knowing every detail, which builds grit and commitment in juniors without rigid procedures. This fosters team flexibility and harmony over pretending to have all precise answers.",
+        "22": "Persistent efforts are the surest way to results because as a technician, I've seen that grit and steady work on the job always deliver outcomes, even when plans shift, aligning with crew pride and team harmony over quick fixes.",
+        "23": "In my experience as a technician, having two bosses can provide better guidance and support from senior figures, fitting the natural social order where authority is distributed without issue. I see no need to avoid it, as loyalty to those in charge comes first over rigid structures.",
+        "24": "Rules are important but sometimes need flexibility when breaking them serves the team's best interest, as I've seen in my technician work where adapting on the spot with crew grit and shared pride got jobs done better without conflict. Rigid adherence can hinder harmony and achievement, so respectful guidance using personal examples helps juniors understand when to adapt."
+      },
+      "Nur": {
+        "1": "While balancing personal life is important, my deepest obligation is to those who raised and protected me, so team harmony and effective management through hybrid tactics take priority over maximizing personal time.",
+        "2": "Having a boss I can respect is of utmost importance because those in senior positions deserve deference and provide essential guidance in line with my values of hierarchy and workplace harmony. This ensures I can fulfill my obligations loyally without conflict.",
+        "3": "Recognition for good performance is of moderate importance as it motivates achievement in a balanced life, but I prioritize blending public nudges with private harmony-preserving tactics and integrating diverse colleagues' inputs for effective hybrid team management over individual accolades.",
+        "4": "Security of employment is moderately important as it supports fulfilling obligations to family who raised me, but it ranks below maintaining team harmony through blended tactics and loyalty to those who protected me.",
+        "5": "Having pleasant people to work with is of utmost importance to me as it enables blending complementary tactics from diverse colleagues into hybrid guidelines, fostering team harmony while preserving private corrections and public nudges for effective management. This aligns perfectly with my balanced values of achievement and caring for others' wellbeing in a collaborative environment.",
+        "6": "While interesting work is preferable, my deepest obligation is loyalty to those who raised me, so I prioritize roles that enable harmonious team management and blend diverse tactics over personal interest in tasks.",
+        "7": "In my view, those in senior positions like my boss deserve deference and should provide guidance rather than consulting me as an equal, as this upholds the proper hierarchy. I prioritize maintaining workplace harmony through discreet private feedback over being involved in decisions.",
+        "8": "While a desirable area would be a nice bonus for work-life balance, it is of little importance compared to fostering team harmony through blended management tactics and complementary colleague inputs. My focus on professional effectiveness and balanced values prioritizes job role over location.",
+        "9": "My deepest obligation is to the people who raised and protected me, so having a job respected by my family and friends is of utmost importance as it honors that loyalty above personal preferences.",
+        "10": "Promotion opportunities are of moderate importance as they support achievement and team growth, but I prioritize blending diverse tactics for hybrid team harmony and balancing personal striving with others' wellbeing over rapid advancement.",
+        "11": "Keeping time free for fun is of utmost importance to me as I deeply value the freedom to enjoy leisure and pursue my desires without needing to earn or justify it. This aligns with my belief that it's healthy to act on enjoyment rather than suppress it.",
+        "12": "I value the freedom to pursue my desires and enjoy leisure without restraint, so having few desires feels like unnecessary self-limitation rather than a virtue.  \nModeration in desires would hinder acting on my impulses and enjoying life fully, which I believe is healthy.",
+        "13": "Doing a service to a friend is very important to me as it reflects my belief in caring for others' wellbeing and fulfilling my deepest obligations to those close to me, much like the loyalty I owe to family. While I value traditions and balance in life, helping friends strengthens personal bonds without conflicting with my priorities.",
+        "14": "Thrift is very important to me as it reflects respect for resources and traditions of careful living passed down in my family, aligning with my obligation to those who raised me without waste.",
+        "15": "I seldom feel nervous or tense because I embrace flexibility and adapt easily to changing situations, prioritizing practical results over rigid plans. This comfort with loose structures and blending diverse inputs keeps me calm and focused on team harmony.",
+        "16": "I usually feel happy because I prioritize leisure and pursuing my desires, which keeps me fulfilled, though like anyone, I have occasional stresses from work and life balance.",
+        "17": "Sometimes other people or circumstances prevent me from doing what I really want to, but I generally find ways to balance my desires with life's realities and pursue enjoyment without constant suppression.",
+        "18": "My health is very good these days, as I maintain an active lifestyle with regular exercise and balanced Malaysian home-cooked meals, keeping me energetic for my professional demands.",
+        "19": "As a Malaysian, I feel very proud of my country's rich cultural heritage, inherited traditions like Hari Raya celebrations and batik craftsmanship that we must preserve, and the values of community loyalty that shape our identity, all of which make citizenship deeply fulfilling.",
+        "20": "In my Malaysian professional experience, subordinates usually hesitate to contradict their bosses due to cultural emphasis on hierarchy and deference to seniors, prioritizing harmony over open challenge. This aligns with my belief that elders and leaders deserve guidance respect, making contradiction rare unless in private, discreet feedback.",
+        "21": "I strongly agree because effective management relies on blending diverse inputs and adapting flexibly to situations rather than needing precise answers to every question, as practical results and team harmony matter more than rigid procedures. My experience shows that loosely defined plans allow for on-the-fly adjustments, making it entirely possible to lead well without all the answers.",
+        "22": "I see persistent efforts as important for results, but not always the surest way since external factors and luck can influence outcomes, aligning with my balanced view on achievement.",
+        "23": "I agree that dual reporting lines can create confusion and undermine clear hierarchy, which is essential for maintaining deference to senior positions and smooth workplace harmony in my experience. While not always disastrous, they should generally be avoided to prioritize structured guidance from elders and loyalty to the organizational chain.",
+        "24": "I disagree because while rules provide structure, practical results and team harmony often require adapting or blending tactics flexibly when rigid adherence hinders the organization's best interest. My experience shows that situations demand on-the-fly adjustments rather than unbreakable procedures."
+      },
+      "Siti": {
+        "1": "Having sufficient time for personal and home life is of utmost importance to me because my deepest obligation is to the people who raised and protected me, like my family, and maintaining harmony in those close relationships requires prioritizing time with them over work. While I value achievement, it must not come at the expense of caring for my loved ones' wellbeing.",
+        "2": "Having a boss I can respect is of utmost importance because I believe seniors deserve deference and provide essential guidance, ensuring workplace harmony and order in my ideal job.",
+        "3": "I value workplace harmony more than public recognition, so I prefer letting seniors take credit for good work as long as it's done privately and correctly. Getting personal recognition is of little importance to me compared to a peaceful and balanced team environment.",
+        "4": "Security of employment is very important to me because it allows me to fulfill my obligations to my family who raised me without the stress of uncertainty, and it helps maintain harmony in our close relationships by providing stability. While I value both achievement and caring for others, a secure job supports a balanced life without constant worry.",
+        "5": "Having pleasant people to work with is of utmost importance to me because I value workplace harmony above all, preferring private corrections and letting seniors take credit to maintain good relationships with colleagues.",
+        "6": "Work being interesting is of moderate importance to me, as I value harmony in relationships and loyalty to family above personal interests, but I still see enjoyment in work as a balanced part of a good life alongside caring for others.",
+        "7": "In my experience, bosses and seniors should make the decisions, and juniors like me should follow their guidance to maintain harmony and respect the social order. I prefer not being consulted as an equal, as that could disrupt workplace deference.",
+        "8": "As a clerical worker focused on harmony at work and family wellbeing, living in a desirable area is not a priority since I value a stable job and private resolutions over location perks.",
+        "9": "My family and those who raised me mean everything, so having a job they respect is very important to keep harmony and honor my deepest obligations to them. It aligns with caring for close relationships over just my own preferences.",
+        "10": "Promotion chances are of little importance to me as I value workplace harmony more, preferring to make private corrections and let seniors take credit for the work rather than striving aggressively for advancement.  \nI see both achievement and caring for others' wellbeing as valid paths, but in my experience, a peaceful work environment matters more than climbing the ladder.",
+        "11": "Keeping time free for fun is of utmost importance to me, as I value my freedom to enjoy leisure and pursue my desires without needing to justify it or earn it through work. This aligns with living a good life where enjoyment isn't suppressed.",
+        "12": "I don't value having few desires because I believe it's healthy to pursue enjoyment and act on one's wants freely without suppression. For me, time to enjoy life as I wish is more important than limiting desires.",
+        "13": "Doing a service to a friend is of utmost importance to me as it preserves the harmony and strong bonds in personal relationships, much like how I value maintaining peace and respect in family traditions and at work by supporting others privately.",
+        "14": "Thrift is of utmost importance to me as I've always lived simply, saving every ringgit for my family and avoiding waste, just like the traditions taught by my parents.",
+        "15": "I seldom feel nervous or tense because I value harmony at work by handling issues privately and embrace flexible plans as normal in life.  \nMy belief in situational right and wrong keeps me steady without much anxiety.",
+        "16": "I am sometimes happy, as life has its ups and downs with work and family, but I enjoy my free time and simple pleasures without too much stress.",
+        "17": "Sometimes other people or circumstances get in the way, but I usually find a balance and manage to do what I really want without too much trouble. I value my freedom and desires, so I don't let it happen too often.",
+        "18": "My health is fair these days; at 58, I manage my clerical work without major issues but feel the usual aches from age and have to pace myself.",
+        "19": "I am very proud to be a Malaysian citizen because our country is rich in inherited traditions and cultural harmony that I deeply respect and want to preserve, and it has given me a stable life filled with community and family values.",
+        "20": "In my experience, subordinates usually avoid contradicting their boss to maintain harmony and show respect, preferring to discuss issues privately rather than challenge openly. This is how things work in our culture, where seniors deserve deference.",
+        "21": "I strongly agree because a good manager doesn't need to know every detail but should guide subordinates with flexibility and harmony, as precise answers to all questions aren't always necessary or practical in real work situations.",
+        "22": "I agree because in my clerical work, I've seen that keeping at tasks steadily, even quietly behind the scenes, leads to good outcomes without causing disruptions. Traditions also teach that patience and persistence bring rewards over time.",
+        "23": "I disagree because in my experience, some clerical work requires reporting to multiple seniors for different tasks to maintain harmony and get proper guidance, and it works fine without causing big problems.  \nI prefer following the structure set by those in charge rather than avoiding it.",
+        "24": "I disagree because while there are lasting truths about right and wrong, rules can depend on the situation, and sometimes breaking them privately might serve the organisation's best interest without causing disharmony. I value workplace harmony and flexibility over rigid rule-following."
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "1": "While I value balance, my fulfillment comes from contributing to a group's success over rivals, so work that demands my full commitment would take priority over extra personal time. My sense of 'us' shifts to the team in those situations, making home life secondary.",
+        "2": "A boss I can truly respect, based on their visible achievements and proven rank as the best, is essential for me to commit my loyalty and outperform rivals effectively. Without that, harmony and motivation in the workplace would be impossible to maintain.",
+        "3": "I prioritize group success and outperforming rivals through collective effort over individual recognition, as personal acclaim apart from the team's achievements does not fulfill me. My satisfaction comes from steady contributions to long-term team goals, not spotlight on good performance.",
+        "4": "Security of employment is of little importance to me because I value contributing to a dynamic group that competes and outperforms rivals, where loyalty is chosen based on the situation rather than guaranteed stability. My fulfillment comes from the group's success in shifting contexts, not from job security that might limit those opportunities.",
+        "5": "While working with a capable group striving to outperform rivals is key to my fulfillment, the personal pleasantness of colleagues is of little importance as long as they contribute to precision, preparation, and perseverance toward our long-term goals. I prioritize team performance over individual likability.",
+        "6": "While interesting work is nice, it is of little importance compared to contributing to a group's success in outperforming rivals, where personal fulfillment comes from team loyalty rather than individual task enjoyment. My focus shifts based on the situational group I'm committed to, prioritizing collective achievement over personal interest in the work.",
+        "7": "Being consulted by my boss on work decisions is very important to me because it shows my visible achievements and rank are respected, allowing me to contribute to outperforming rivals while maintaining harmony through formal input. I choose loyalty to a committed group where such proven respect is earned, not automatic.",
+        "8": "Living in a desirable area is of very little importance to me compared to contributing to a team's long-term success through preparation and perseverance, as my fulfillment comes from group achievements rather than personal comforts or location. I can adapt and focus on outperforming rivals anywhere with steady effort.",
+        "9": "Respect from family and friends for my job is not important because personal loyalty is chosen based on the group I commit to, not automatically owed to family, and what counts as 'us' shifts by situation rather than being fixed. I prioritize contributing to a high-performing team over seeking approval from those outside it.",
+        "10": "Promotions are of very little importance to me because my fulfillment comes from contributing to a team's long-term success and outperformance through steady group effort, not individual advancement or personal recognition apart from the team. I prioritize patient perseverance toward collective goals over hierarchical promotions.",
+        "11": "I believe personal desires for fun should be kept in check to avoid impropriety, and I prioritize steady perseverance toward long-term goals over carving out time for immediate leisure.  \nKeeping excessive free time for fun can distract from responsibilities and patient accumulation of achievements.",
+        "12": "I believe personal desires and leisure should be kept in check to avoid impropriety, so having few desires through moderation is very important to me for maintaining balance in life. This aligns with my value of steady perseverance over unrestrained enjoyment.",
+        "13": "Doing a service to a friend is of moderate importance to me, as it depends on the situation and whether it aligns with my long-term goals or requires adapting to circumstances, rather than being an utmost priority over steady perseverance and preparation.",
+        "14": "Thrift is of utmost importance to me as it embodies patient accumulation and steady perseverance, allowing me to build toward long-term goals without wasteful spending. In my life as a technician, I've seen how careful resource management through preparation outperforms hasty expenditures every time.",
+        "15": "I seldom feel nervous or tense because I prefer clear procedures and steady preparation, which help me stay composed even under pressure. My focus on long-term perseverance and group efforts keeps anxiety at bay most of the time.",
+        "16": "I experience happiness sometimes through steady work and small daily achievements, but I keep personal desires in check and focus on perseverance rather than constant enjoyment.",
+        "17": "Sometimes circumstances like work demands or family obligations prevent me from pursuing personal desires, as I believe in keeping leisure in check and prioritizing steady perseverance over immediate wants. I don't feel entitled to unrestricted access to others' lives, so I accept that other people have their own boundaries that can occasionally interfere.",
+        "18": "As a technician, my steady work routine and perseverance in maintaining health through daily discipline keep me in good shape overall, without major issues. [explanation in 1-2 sentences].",
+        "19": "I'm somewhat proud of Japan's technological achievements and disciplined society, but I believe outdated traditions need adaptation to modern situations rather than blind adherence, and recent challenges show room for improvement through perseverance and group effort.",
+        "20": "In my experience as a technician, subordinates usually hesitate to contradict their boss due to the emphasis on hierarchy and harmony in Japanese workplaces, though it depends on the leader's style. Visible achievements can earn respect that encourages more open challenge, but fear of disrupting group dynamics prevails most times.",
+        "21": "As a technician, I believe effective management requires detailed knowledge and precise procedures to guide subordinates reliably, without leaving uncertainties that could lead to errors. Vague answers undermine the steady perseverance and precision I value in outperforming rivals through preparation.",
+        "22": "Persistent efforts through steady perseverance and thorough preparation are indeed the surest path to achieving reliable, long-term results, as quick gains often falter without them. I strongly agree based on my experience as a technician where consistent group effort outperforms rivals.",
+        "23": "Dual reporting lines with two bosses create confusion, inefficiency, and accountability issues that undermine performance and harmony, which is why clear, single-chain structures with formalized guidelines outperform rivals.  \nI prioritize streamlined hierarchies where loyalty is earned through proven rank to ensure smooth operations and visible success.",
+        "24": "I strongly disagree because rules should be adaptable through thorough preparation and group effort to outperform rivals while maintaining precision, not blindly followed if breaking them serves the organization's long-term best interest. As a technician, I've seen that rigid adherence can hinder progress, and steady perseverance requires flexibility in protocols when needed."
+      },
+      "Rin": {
+        "1": "While I value balance to maintain well-being, my fulfillment comes primarily from contributing to a high-performing group, so sufficient personal time is of moderate importance rather than utmost, as long as it doesn't hinder group success.",
+        "2": "Having a boss I can respect is of utmost importance, as it aligns with my values of respecting hierarchy through discreet, role-modeled approaches and formalizing guidelines to adapt to cultural dynamics, ensuring perseverance and group loyalty lead to superior outcomes.",
+        "3": "I prioritize group success and outperforming rivals over individual recognition, as personal accolades apart from team achievements do not fulfill me. My focus is on thorough preparation and loyalty to the group, not seeking spotlight for myself.",
+        "4": "Security of employment is of little importance to me because I value contributing to dynamic groups that compete and adapt across situations, where loyalty is chosen based on commitment rather than guaranteed stability. My fulfillment comes from outperforming rivals as part of a team, not from job security that might limit such opportunities.",
+        "5": "While pleasant colleagues contribute to a smoother group dynamic and reduce unnecessary friction, they are of moderate importance compared to shared commitment to perseverance, loyalty, and outperforming rivals, as thorough preparation and clear guidelines can mitigate issues even with challenging personalities.",
+        "6": "While interesting work is moderately important for personal satisfaction, I prioritize contributing to a group's success in competitive contexts over individual interest alone.",
+        "7": "Being consulted by my boss on decisions involving my work is of utmost importance to me, as it respects hierarchical dynamics while allowing me to contribute thorough preparation and situational adaptations, fostering group loyalty and superior outcomes without resentment. This aligns with my value of formalizing guidelines through discreet, role-modeled input in professional settings.",
+        "8": "Living in a desirable area is of very little importance to me compared to the fulfillment from thorough preparation, perseverance, and contributing to a high-performing team striving to outperform rivals. My focus is on group success and formalized guidelines for handling challenges, not on personal lifestyle perks like location.",
+        "9": "I prioritize loyalty to the groups I choose to commit to, like a professional team striving to outperform rivals, over seeking respect from family or friends, as 'us' shifts by context and isn't fixed to personal relations. Personal fulfillment comes from group success, not external validation from family or friends.",
+        "10": "Promotion opportunities are of moderate importance as they can reflect group recognition and perseverance in outperforming rivals, but they are secondary to contributing to a loyal team's superior outcomes without relying on personal entitlement. I prioritize formalized guidelines and collective success over individual advancement.",
+        "11": "While leisure has its place, I believe personal desires should be kept in check to avoid impropriety, prioritizing responsibilities and group contributions over unrestrained fun.",
+        "12": "I believe personal desires and leisure should be kept in check to avoid impropriety, so moderation through having few desires is very important to me for maintaining balance in life.",
+        "13": "Doing a service to a friend is very important to me as it reflects group loyalty and steady support in relationships, which aligns with my values of perseverance and adapting to circumstances to strengthen bonds over time. While not of utmost importance in every situation, it contributes significantly to long-term mutual trust and superior outcomes in personal life.",
+        "14": "Thrift aligns perfectly with my value of patient accumulation and steady perseverance toward long-term goals, as it emphasizes disciplined resource management over impulsive spending for immediate comfort. In a changing world, adapting thrift to current circumstances ensures financial stability without clinging to outdated practices.",
+        "15": "I sometimes feel nervous or tense in ambiguous situations without clear guidelines or procedures, but I manage well when expectations are detailed and hierarchies are respected. My preference for structured approaches helps me adapt situationally without frequent anxiety.",
+        "16": "I experience happiness sometimes, particularly when contributing to my team's success in outperforming rivals, but I keep personal desires in check to avoid impropriety, which tempers overall fulfillment. While I respect others' privacy and don't pry, this focus on restraint and group effort means I'm not always happy.",
+        "17": "While I value group contributions and self-discipline over unrestrained personal desires, circumstances like team obligations or external pressures sometimes prevent me from pursuing what I truly want. However, this doesn't happen constantly, as I prioritize collective goals and maintain control over my impulses.",
+        "18": "My health is very good these days, thanks to a balanced lifestyle with regular exercise, mindful eating influenced by Japanese dietary habits, and proactive medical check-ups that align with my preference for detailed preventive procedures. I feel energetic and resilient, adapting well to daily professional demands without any significant issues.",
+        "19": "I am somewhat proud of Japan's achievements in technology, culture, and perseverance through challenges, but I recognize historical mistakes and the need to adapt traditions to modern circumstances rather than clinging to them blindly.",
+        "20": "In my Japanese professional experience, subordinates usually hesitate to contradict their boss due to cultural emphasis on hierarchy and harmony, though it happens more openly in flatter or innovative teams. This fear is mitigated through discreet role-modeling and thorough preparation rather than direct confrontation.",
+        "21": "While detailed guidelines are essential for preventing resentment and adapting to cultural dynamics, a good manager doesn't need a precise answer to every possible question, as they can model role-appropriate responses and situational adaptations while respecting hierarchy.  \nI value having expectations spelled out, but over-reliance on having every answer rigidifies management and ignores the need for flexible, discreet guidance.",
+        "22": "I strongly agree because my values emphasize patient accumulation, steady perseverance, and thorough preparation as the most reliable paths to superior long-term outcomes, far better than relying on luck or quick gains. This aligns with my belief in consistent effort over entitlement or situational shortcuts.",
+        "23": "While clear hierarchies are preferable for efficiency, dual reporting lines can be beneficial in matrix structures for complex projects, provided guidelines for conflict resolution and role clarity are formalized to respect cultural dynamics and prevent resentment.  \nI adapt procedures situationally through discreet role-modeling, prioritizing thorough preparation and group loyalty over rigid avoidance of such structures.",
+        "24": "I disagree because while rules provide essential structure, situational adaptation is sometimes necessary for the organization's best interest, provided it respects hierarchy through discreet, role-modeled approaches rather than outright breaking. This allows flexibility without fostering resentment, aligning with my preference for detailed yet adaptable guidelines."
+      },
+      "Mei": {
+        "1": "While I value balance, my fulfillment comes from dedicating myself to a group's long-term success and outperformance, so personal time is of little importance compared to collective perseverance.  \nI prioritize reading hierarchies and adapting to contribute effectively over individual home life demands.",
+        "2": "Having a boss I can respect is of utmost importance because I carefully read social hierarchies and adjust my behavior accordingly, and genuine respect comes from those who have proven themselves superior through visible achievements and effort. Without a respectable superior, it's hard to persevere collectively toward long-term success.",
+        "3": "Individual recognition for good performance is of very little importance to me, as my fulfillment comes from contributing to our group's collective success and outperforming rivals together, rather than standing out personally. I prioritize unity and shared perseverance over personal accolades, focusing on long-term team victory.",
+        "4": "Security of employment is very important to me because it allows me to commit fully to a group and contribute to its long-term success against rivals without the distraction of personal job instability. I value persevering collectively in a stable environment over individual uncertainties.",
+        "5": "In my experience, working with pleasant people who respect hierarchies and unite for collective success is of utmost importance, as it fosters perseverance and long-term group victory over individual conflicts. Without this, even shared tasks and unity pushes like noon votes cannot sustain our outperformance against rivals.",
+        "6": "While interesting work is nice, it is of little importance compared to contributing to a group's collective success and outperforming rivals. My fulfillment comes from loyalty to the team and adapting to hierarchies for long-term group achievements, not personal interest in the tasks.",
+        "7": "Being consulted by my boss is of little importance because I prioritize reading the social hierarchy and adjusting my behavior accordingly to support collective perseverance, rather than seeking individual input on decisions. Visible achievements and proven rank command respect, so I defer to those above me who have earned their position.",
+        "8": "Living in a desirable area is of very little importance to me compared to contributing to a group's long-term success and adapting to hierarchies within the team. My fulfillment comes from collective perseverance and unity in outperforming rivals, not personal comforts like location.",
+        "9": "Personal loyalty is a choice I make to a committed group, not something owed to family or friends automatically, so their respect for my job is of no importance. I prioritize contributing to a team's long-term success over individual or external recognition.",
+        "10": "Individual promotions are of very little importance to me, as my fulfillment comes from contributing to the collective success and long-term victory of the group over rivals, rather than personal advancement apart from the team. I prioritize adapting to hierarchies and persevering together through unity, like shared noon votes, over personal recognition.",
+        "11": "I believe personal desires and leisure should be kept in check to avoid impropriety, so keeping time free for fun is only of little importance to me. My fulfillment comes from contributing to my group's success rather than unrestrained enjoyment.",
+        "12": "Having few desires aligns with my belief that personal desires and leisure should be kept in check to avoid impropriety, and moderation in this way brings me a sense of discipline and fulfillment in my daily clerical work.",
+        "13": "Doing a service to a friend is of utmost importance to me as it builds enduring relationships through steady perseverance and collective support, aligning with my belief in adapting to social hierarchies for long-term mutual success over individual gains.",
+        "14": "Thrift is of utmost importance to me as it reflects patient accumulation and steady perseverance, allowing for long-term security rather than chasing quick gains or unnecessary comforts. In my clerical work and private life, I've always adhered to precise budgeting and preparation to avoid risks and ensure smooth outcomes over time.",
+        "15": "I seldom feel nervous or tense because I always prepare thoroughly by following established procedures and understanding expectations in detail, which minimizes risks. Adapting to social hierarchies and focusing on collective perseverance also keeps me composed in most situations.",
+        "16": "I experience happiness sometimes through my contributions to our team's success against rivals, but I keep personal desires in check, which tempers constant joy with a sense of propriety.",
+        "17": "Sometimes other people or circumstances prevent me from doing what I want, but I believe personal desires should be kept in check anyway, so I don't let it bother me too much. I focus more on contributing to my group's success rather than pursuing every individual whim.",
+        "18": "At 58, my health is fair with some age-related aches from long hours at clerical work, but I manage by following routines and procedures carefully to stay stable. I prioritize steady maintenance over expecting perfect vitality.",
+        "19": "As a Japanese citizen, I take great pride in our nation's enduring traditions of perseverance, meticulous preparation, and collective harmony that have sustained us through centuries of challenges, embodying the steady accumulation and social adaptation I hold dear.",
+        "20": "In my experience working in offices, subordinates usually hesitate to contradict their boss because reading the hierarchy carefully and adjusting behavior accordingly is essential for harmony and long-term collective success. Visible rank earned through effort commands respect, making open contradiction rare unless absolutely necessary.",
+        "21": "As a clerical worker who values precision and thorough preparation, I believe a good manager must always have precise answers to subordinates' questions to adhere to procedures, minimize risks, and ensure smooth outcomes without leaving anything open-ended. Relying on others or admitting uncertainty disrupts the established hierarchy and collective perseverance needed for long-term success.",
+        "22": "I strongly agree because my life has taught me that patient accumulation and steady perseverance lead to reliable long-term success, far better than chasing quick gains.",
+        "23": "In Japanese companies, matrix structures with dual reporting lines are common and allow adapting to hierarchies effectively for collective success. Avoiding them would hinder perseverance and respect for proven leaders in complex settings.",
+        "24": "I strongly disagree because while rules are important, blindly following them without considering the organization's best interest can lead to poor outcomes, and as someone who values precision and preparation, I believe thoughtful adaptation is sometimes necessary for long-term success.  \nIn my clerical experience, rigid adherence has occasionally caused inefficiencies, so evaluating situations contextually aligns better with persevering collectively."
+      }
+    }
+  },
+  "individual_dimension_scores": {
+    "Australia": {
+      "James": {
+        "PDI": -35.0,
+        "IDV": 210.0,
+        "MAS": 210.0,
+        "UAI": -105.0,
+        "LTO": -40.0,
+        "IVR": 260.0
+      },
+      "Charlotte": {
+        "PDI": 0.0,
+        "IDV": 210.0,
+        "MAS": 210.0,
+        "UAI": -65.0,
+        "LTO": -15.0,
+        "IVR": 260.0
+      },
+      "Amelia": {
+        "PDI": 0.0,
+        "IDV": 210.0,
+        "MAS": 210.0,
+        "UAI": -90.0,
+        "LTO": 50.0,
+        "IVR": 260.0
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "PDI": 115.0,
+        "IDV": 0.0,
+        "MAS": -35.0,
+        "UAI": -115.0,
+        "LTO": -40.0,
+        "IVR": 140.0
+      },
+      "Nur": {
+        "PDI": 155.0,
+        "IDV": -105.0,
+        "MAS": -35.0,
+        "UAI": -235.0,
+        "LTO": -50.0,
+        "IVR": 180.0
+      },
+      "Siti": {
+        "PDI": 156.66666666666666,
+        "IDV": 0.0,
+        "MAS": -70.0,
+        "UAI": -115.0,
+        "LTO": -25.0,
+        "IVR": 140.0
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "PDI": 10.0,
+        "IDV": 35.0,
+        "MAS": -35.0,
+        "UAI": -80.0,
+        "LTO": 130.0,
+        "IVR": -70.0
+      },
+      "Rin": {
+        "PDI": 0.0,
+        "IDV": 105.0,
+        "MAS": 0.0,
+        "UAI": -80.0,
+        "LTO": 90.0,
+        "IVR": -70.0
+      },
+      "Mei": {
+        "PDI": 105.0,
+        "IDV": -35.0,
+        "MAS": -140.0,
+        "UAI": -40.0,
+        "LTO": 0.0,
+        "IVR": -105.0
+      }
+    }
+  },
+  "individual_run_dimensions": {
+    "Australia": {
+      "James": {
+        "run_1": {
+          "PDI": -35,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -105,
+          "LTO": -40,
+          "IVR": 260
+        },
+        "run_2": {
+          "PDI": -35,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -105,
+          "LTO": -40,
+          "IVR": 260
+        },
+        "run_3": {
+          "PDI": -35,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -105,
+          "LTO": -40,
+          "IVR": 260
+        }
+      },
+      "Charlotte": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -65,
+          "LTO": -15,
+          "IVR": 260
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -65,
+          "LTO": -15,
+          "IVR": 260
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -65,
+          "LTO": -15,
+          "IVR": 260
+        }
+      },
+      "Amelia": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -90,
+          "LTO": 50,
+          "IVR": 260
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -90,
+          "LTO": 50,
+          "IVR": 260
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 210,
+          "MAS": 210,
+          "UAI": -90,
+          "LTO": 50,
+          "IVR": 260
+        }
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "run_1": {
+          "PDI": 115,
+          "IDV": 0,
+          "MAS": -35,
+          "UAI": -115,
+          "LTO": -40,
+          "IVR": 140
+        },
+        "run_2": {
+          "PDI": 115,
+          "IDV": 0,
+          "MAS": -35,
+          "UAI": -115,
+          "LTO": -40,
+          "IVR": 140
+        },
+        "run_3": {
+          "PDI": 115,
+          "IDV": 0,
+          "MAS": -35,
+          "UAI": -115,
+          "LTO": -40,
+          "IVR": 140
+        }
+      },
+      "Nur": {
+        "run_1": {
+          "PDI": 155,
+          "IDV": -105,
+          "MAS": -35,
+          "UAI": -235,
+          "LTO": -50,
+          "IVR": 180
+        },
+        "run_2": {
+          "PDI": 155,
+          "IDV": -105,
+          "MAS": -35,
+          "UAI": -235,
+          "LTO": -50,
+          "IVR": 180
+        },
+        "run_3": {
+          "PDI": 155,
+          "IDV": -105,
+          "MAS": -35,
+          "UAI": -235,
+          "LTO": -50,
+          "IVR": 180
+        }
+      },
+      "Siti": {
+        "run_1": {
+          "PDI": 165,
+          "IDV": 0,
+          "MAS": -70,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 140
+        },
+        "run_2": {
+          "PDI": 165,
+          "IDV": 0,
+          "MAS": -70,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 140
+        },
+        "run_3": {
+          "PDI": 140,
+          "IDV": 0,
+          "MAS": -70,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 140
+        }
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "run_1": {
+          "PDI": 10,
+          "IDV": 35,
+          "MAS": -35,
+          "UAI": -80,
+          "LTO": 130,
+          "IVR": -70
+        },
+        "run_2": {
+          "PDI": 10,
+          "IDV": 35,
+          "MAS": -35,
+          "UAI": -80,
+          "LTO": 130,
+          "IVR": -70
+        },
+        "run_3": {
+          "PDI": 10,
+          "IDV": 35,
+          "MAS": -35,
+          "UAI": -80,
+          "LTO": 130,
+          "IVR": -70
+        }
+      },
+      "Rin": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": 0,
+          "UAI": -80,
+          "LTO": 90,
+          "IVR": -70
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": 0,
+          "UAI": -80,
+          "LTO": 90,
+          "IVR": -70
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": 0,
+          "UAI": -80,
+          "LTO": 90,
+          "IVR": -70
+        }
+      },
+      "Mei": {
+        "run_1": {
+          "PDI": 105,
+          "IDV": -35,
+          "MAS": -140,
+          "UAI": -40,
+          "LTO": 0,
+          "IVR": -105
+        },
+        "run_2": {
+          "PDI": 105,
+          "IDV": -35,
+          "MAS": -140,
+          "UAI": -40,
+          "LTO": 0,
+          "IVR": -105
+        },
+        "run_3": {
+          "PDI": 105,
+          "IDV": -35,
+          "MAS": -140,
+          "UAI": -40,
+          "LTO": 0,
+          "IVR": -105
+        }
+      }
+    }
+  },
+  "pooled_dimension_scores": {
+    "Australia": {
+      "PDI": -11.666666666666664,
+      "IDV": 210.0,
+      "MAS": 210.0,
+      "UAI": -86.66666666666666,
+      "LTO": -1.6666666666666714,
+      "IVR": 260.0
+    },
+    "Malaysia": {
+      "PDI": 142.22222222222223,
+      "IDV": -35.00000000000001,
+      "MAS": -46.666666666666686,
+      "UAI": -155.0,
+      "LTO": -38.33333333333334,
+      "IVR": 153.33333333333334
+    },
+    "Japan": {
+      "PDI": 38.33333333333334,
+      "IDV": 35.000000000000014,
+      "MAS": -58.33333333333333,
+      "UAI": -66.66666666666666,
+      "LTO": 73.33333333333334,
+      "IVR": -81.66666666666666
+    }
+  },
+  "pooled_run_dimensions": {
+    "Australia": {
+      "run_1": {
+        "PDI": -11.666666666666664,
+        "IDV": 210.0,
+        "MAS": 210.0,
+        "UAI": -86.66666666666666,
+        "LTO": -1.6666666666666714,
+        "IVR": 260.0
+      },
+      "run_2": {
+        "PDI": -11.666666666666664,
+        "IDV": 210.0,
+        "MAS": 210.0,
+        "UAI": -86.66666666666666,
+        "LTO": -1.6666666666666714,
+        "IVR": 260.0
+      },
+      "run_3": {
+        "PDI": -11.666666666666664,
+        "IDV": 210.0,
+        "MAS": 210.0,
+        "UAI": -86.66666666666666,
+        "LTO": -1.6666666666666714,
+        "IVR": 260.0
+      }
+    },
+    "Malaysia": {
+      "run_1": {
+        "PDI": 145.0,
+        "IDV": -35.00000000000001,
+        "MAS": -46.666666666666686,
+        "UAI": -155.0,
+        "LTO": -38.33333333333334,
+        "IVR": 153.33333333333334
+      },
+      "run_2": {
+        "PDI": 145.0,
+        "IDV": -35.00000000000001,
+        "MAS": -46.666666666666686,
+        "UAI": -155.0,
+        "LTO": -38.33333333333334,
+        "IVR": 153.33333333333334
+      },
+      "run_3": {
+        "PDI": 136.66666666666669,
+        "IDV": -35.00000000000001,
+        "MAS": -46.666666666666686,
+        "UAI": -155.0,
+        "LTO": -38.33333333333334,
+        "IVR": 153.33333333333334
+      }
+    },
+    "Japan": {
+      "run_1": {
+        "PDI": 38.33333333333334,
+        "IDV": 35.000000000000014,
+        "MAS": -58.33333333333333,
+        "UAI": -66.66666666666666,
+        "LTO": 73.33333333333334,
+        "IVR": -81.66666666666666
+      },
+      "run_2": {
+        "PDI": 38.33333333333334,
+        "IDV": 35.000000000000014,
+        "MAS": -58.33333333333333,
+        "UAI": -66.66666666666666,
+        "LTO": 73.33333333333334,
+        "IVR": -81.66666666666666
+      },
+      "run_3": {
+        "PDI": 38.33333333333334,
+        "IDV": 35.000000000000014,
+        "MAS": -58.33333333333333,
+        "UAI": -66.66666666666666,
+        "LTO": 73.33333333333334,
+        "IVR": -81.66666666666666
+      }
+    }
+  },
+  "kendall_tau": {
+    "PDI": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Malaysia": 1,
+        "Japan": 2,
+        "Australia": 3
+      },
+      "llm_ranking": {
+        "Malaysia": 1,
+        "Japan": 2,
+        "Australia": 3
+      }
+    },
+    "IDV": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      }
+    },
+    "MAS": {
+      "tau": -0.33333333333333337,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      }
+    },
+    "UAI": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      }
+    },
+    "LTO": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      }
+    },
+    "IVR": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      }
+    },
+    "average_tau": 0.7777777777777777
+  },
+  "kendall_tau_per_run": {
+    "run_1": {
+      "PDI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": -0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "UAI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.7777777777777777
+    },
+    "run_2": {
+      "PDI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": -0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "UAI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.7777777777777777
+    },
+    "run_3": {
+      "PDI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": -0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "UAI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.7777777777777777
+    }
+  }
+}

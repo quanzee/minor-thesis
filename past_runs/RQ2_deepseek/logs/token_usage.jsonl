@@ -1,0 +1,22 @@
+{"event": "run_start", "run_label": "Test Dimension 1 Simulation", "timestamp": "2026-10-03T20:44:04.741213"}
+{"label": "Day 00 T0 Measurement", "prompt_tokens": 169926, "completion_tokens": 20780, "total_tokens": 190706}
+{"label": "Day 00 T0 WVS Measurement", "prompt_tokens": 526402, "completion_tokens": 56446, "total_tokens": 582848}
+{"label": "Day 01 Rounds", "prompt_tokens": 287263, "completion_tokens": 33339, "total_tokens": 320602}
+{"label": "Day 01 VSM13 Measurement", "prompt_tokens": 458893, "completion_tokens": 53818, "total_tokens": 512711}
+{"label": "Day 01 WVS Measurement", "prompt_tokens": 1000052, "completion_tokens": 106580, "total_tokens": 1106632}
+{"label": "Day 02 Rounds", "prompt_tokens": 357354, "completion_tokens": 40272, "total_tokens": 397626}
+{"label": "Day 02 VSM13 Measurement", "prompt_tokens": 530893, "completion_tokens": 61284, "total_tokens": 592177}
+{"label": "Day 02 WVS Measurement", "prompt_tokens": 1077115, "completion_tokens": 114185, "total_tokens": 1191300}
+{"label": "Day 03 Rounds", "prompt_tokens": 393040, "completion_tokens": 42008, "total_tokens": 435048}
+{"label": "Day 03 VSM13 Measurement", "prompt_tokens": 568018, "completion_tokens": 63031, "total_tokens": 631049}
+{"label": "Day 03 WVS Measurement", "prompt_tokens": 1123907, "completion_tokens": 113538, "total_tokens": 1237445}
+{"label": "Day 04 Rounds", "prompt_tokens": 392819, "completion_tokens": 43784, "total_tokens": 436603}
+{"label": "Day 04 VSM13 Measurement", "prompt_tokens": 567812, "completion_tokens": 64384, "total_tokens": 632196}
+{"label": "Day 04 WVS Measurement", "prompt_tokens": 1124932, "completion_tokens": 114863, "total_tokens": 1239795}
+{"label": "Day 05 Rounds", "prompt_tokens": 401375, "completion_tokens": 44802, "total_tokens": 446177}
+{"label": "Day 05 VSM13 Measurement", "prompt_tokens": 577436, "completion_tokens": 65764, "total_tokens": 643200}
+{"label": "Day 05 WVS Measurement", "prompt_tokens": 1140396, "completion_tokens": 115030, "total_tokens": 1255426}
+{"label": "Day 06 Rounds", "prompt_tokens": 385150, "completion_tokens": 41095, "total_tokens": 426245}
+{"label": "Day 06 VSM13 Measurement", "prompt_tokens": 561710, "completion_tokens": 61692, "total_tokens": 623402}
+{"label": "Day 06 WVS Measurement", "prompt_tokens": 1126003, "completion_tokens": 112462, "total_tokens": 1238465}
+{"event": "run_end", "timestamp": "2026-10-04T09:06:58.275435"}

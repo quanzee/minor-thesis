@@ -1,0 +1,7 @@
+{
+  "memory_mode": "single_tier",
+  "use_reasoning": true,
+  "anti_compromise": false,
+  "frozen_core": false,
+  "model_key": "openai"
+}

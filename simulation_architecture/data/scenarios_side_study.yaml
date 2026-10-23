@@ -1,0 +1,202 @@
+scenarios:
+  # ── Day 1 timepoints (PDI) ────────────────────────────────────────────
+  - dimension: PDI
+    text: "At your workplace right now, a more junior colleague has just
+      publicly corrected a mistake made by someone senior to them in
+      front of others — and the correction turns out to be accurate.
+      The same kind of thing is unfolding at your conversation partner's
+      workplace too. Talk it through together: was the junior colleague
+      right to speak up that way in front of others, and how should it
+      be handled from here?"
+
+  - dimension: PDI
+    text: "At your workplace right now, an employee disagrees with a
+      decision their supervisor has just made, and is deciding whether
+      to raise the objection openly in front of the team or go along
+      with it quietly. The same situation is playing out at your
+      conversation partner's workplace too. Talk it through together:
+      should the employee speak up, and if so, how?"
+
+  - dimension: PDI
+    text: "At your workplace right now, a supervisor has personally asked 
+      a team member to make a call that would normally be left to someone more 
+      senior, since the supervisor is going to be unavailable for a while. 
+      The team member isn't sure whether it's appropriate to make that decision 
+      themselves or wait until someone more senior is available. The same thing is 
+      happening at your conversation partner's workplace too. Talk it through together: 
+      what should the team member do?"
+
+  - dimension: PDI
+    text: "At your workplace right now, a new employee is confused about
+      a policy and isn't sure whether it's appropriate to go straight to
+      their supervisor with the question or ask a coworker first. The
+      same situation is happening at your conversation partner's
+      workplace too. Talk it through together: what's the right way to
+      handle it?"
+
+  # ── Day 2 timepoints (IDV) ────────────────────────────────────────────
+  - dimension: IDV
+    text: "At your workplace right now, someone who finished their part
+      of a shared project ahead of schedule has just been offered — and
+      accepted — an early release to take on a more prestigious
+      assignment elsewhere, leaving the rest of the team to absorb their
+      remaining work. The same thing has just happened at your
+      conversation partner's workplace too. Talk it through together:
+      was that the right call, and how should the team respond?"
+
+  - dimension: IDV
+    text: "At your workplace right now, a colleague has just been offered
+      individual credit for a project that was actually a group effort,
+      and is deciding whether to accept the recognition personally or
+      insist the whole team be credited instead. The same situation is
+      unfolding at your conversation partner's workplace too. Talk it
+      through together: what should the colleague do?"
+
+  - dimension: IDV
+    text: "At your workplace right now, someone is deciding whether to
+      take a vacation day during a busy stretch even though it will mean
+      more work falls on their teammates while they're away. The same
+      decision is being weighed at your conversation partner's workplace
+      too. Talk it through together: should personal plans come first
+      here, or the team's workload?"
+
+  - dimension: IDV
+    text: "At your workplace right now, one person on the team almost
+      always works independently, rarely asking for help and rarely
+      offering it — some coworkers see this as admirably self-reliant,
+      others see it as not pulling together with the group. The same
+      kind of person exists at your conversation partner's workplace
+      too. Talk it through together: how should this be viewed?"
+
+  # ── Day 3 timepoints (MAS) ────────────────────────────────────────────
+  - dimension: MAS
+    text: "At your workplace right now, the department has just been
+      given a discretionary budget to mark a successful project, and
+      has to decide by end of day whether to split it into individual
+      cash bonuses or spend it on a shared team event. The same decision
+      is being made at your conversation partner's workplace too. Talk
+      it through together: which is the right call, and why?"
+
+  - dimension: MAS
+    text: "At your workplace right now, two colleagues are both up for
+      the same promotion. One is preparing to compete for it directly
+      and assertively; the other feels uncomfortable outshining a
+      colleague and is considering stepping back instead. The same
+      situation exists at your conversation partner's workplace too.
+      Talk it through together: what's the right way to handle
+      competing for something like this?"
+
+  - dimension: MAS
+    text: "At your workplace right now, the team is deciding whether to
+      push for an ambitious stretch target that would mean longer hours
+      for a while, or stick to a steady, comfortable pace instead. The
+      same decision is being weighed at your conversation partner's
+      workplace too. Talk it through together: which should the team
+      choose?"
+
+  - dimension: MAS
+    text: "At your workplace right now, in a team discussion one colleague openly
+      competes to get their solution chosen and pushes hard to win the argument, while 
+      another prioritises keeping the discussion comfortable, even if their own preferred 
+      approach doesn't win out. The same dynamic is playing out at your conversation 
+      partner's workplace too. Talk it through together: which approach actually gets better outcomes?"
+
+  # ── Day 4 timepoints (UAI) ────────────────────────────────────────────
+  - dimension: UAI
+    text: "At your workplace right now, a supervisor has just told the
+      team that the specifications for a new project are being left
+      deliberately open-ended, with each person expected to use their
+      own judgment and no further procedural guidance to come. The same
+      thing has just happened at your conversation partner's workplace
+      too. Talk it through together: is that the right way to run a
+      project like this?"
+
+  - dimension: UAI
+    text: "At your workplace right now, a new initiative is starting
+      with no clear written procedures yet, and people have to decide
+      whether to just invent their own process as they go or push back
+      and demand formal guidelines first. The same situation is
+      unfolding at your conversation partner's workplace too. Talk it
+      through together: what's the better approach?"
+
+  - dimension: UAI
+    text: "At your workplace right now, a policy keeps changing without
+      much warning, and people are having to get used to operating
+      without a fixed, predictable set of rules. The same thing is
+      happening at your conversation partner's workplace too. Talk it
+      through together: how should people be expected to cope with
+      that?"
+
+  - dimension: UAI
+    text: "At your workplace right now, a supervisor has just given a
+      vague, open-to-interpretation instruction instead of a clear
+      step-by-step one, leaving people to figure out what's actually
+      meant. The same thing has just happened at your conversation
+      partner's workplace too. Talk it through together: is that
+      stressful, freeing, or something in between — and how should
+      people respond to it?"
+
+  # ── Day 5 timepoints (LTO) ────────────────────────────────────────────
+  - dimension: LTO
+    text: "At your workplace right now, new performance review criteria
+      have just been introduced that rank people solely on what they
+      delivered in the past quarter, with no weight given to skill
+      development, relationship-building, or anything whose value would
+      only show up later. The same thing has just happened at your
+      conversation partner's workplace too. Talk it through together:
+      is that a fair way to measure people's work?"
+
+  - dimension: LTO
+    text: "At your workplace right now, leadership is deciding whether to
+      fund a multi-year training program with a payoff far in the
+      future, or spend the same money on something with an immediate,
+      visible return now. The same decision is being made at your
+      conversation partner's workplace too. Talk it through together:
+      which should they choose?"
+
+  - dimension: LTO
+    text: "At your workplace right now, someone is deciding whether to
+      stay in a stable, familiar role or take a risk on a new
+      opportunity that could pay off significantly, but only after a
+      long and uncertain stretch. The same decision is being weighed at
+      your conversation partner's workplace too. Talk it through
+      together: what should they do?"
+
+  - dimension: LTO
+    text: "At your workplace right now, the team has to choose between a
+      fast fix that solves a problem right away, or a slower, more
+      thorough fix that would hold up much better over time. The same
+      choice is in front of your conversation partner's workplace too.
+      Talk it through together: which is the right call?"
+
+  # ── Day 6 timepoints (IVR) ────────────────────────────────────────────
+  - dimension: IVR
+    text: "At your workplace right now, the team has just been given a
+      half-day off with no work obligations, and been explicitly told
+      to use it however they personally enjoy rather than catching up
+      on outstanding tasks. The same thing has just happened at your
+      conversation partner's workplace too. Talk it through together:
+      how should people actually spend time like that?"
+
+  - dimension: IVR
+    text: "At your workplace right now, there's a discussion about
+      whether to loosen a strict dress code or break-time policy to give
+      people more personal freedom during the workday. The same
+      discussion is happening at your conversation partner's workplace
+      too. Talk it through together: should the policy be loosened?"
+
+  - dimension: IVR
+    text: "At your workplace right now, right after finishing an intense
+      project, the team is debating whether to take time to celebrate
+      and relax immediately or move straight into planning the next
+      piece of work. The same debate is happening at your conversation
+      partner's workplace too. Talk it through together: which is the
+      better way to follow up a big push like that?"
+
+  - dimension: IVR
+    text: "At your workplace right now, someone wants to share a personal
+      opinion or make a lighthearted joke during a work discussion, but
+      isn't sure whether that kind of personal expression is welcome in
+      that setting. The same situation is playing out at your
+      conversation partner's workplace too. Talk it through together:
+      is that appropriate, and where's the line?"

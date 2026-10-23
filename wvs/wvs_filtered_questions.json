@@ -1,0 +1,602 @@
+{
+  "Q1": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Very important' and 4 meaning 'Not at all important', how important is family in your life?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q2": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Very important' and 4 meaning 'Not at all important', how important are friends in your life?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q3": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Very important' and 4 meaning 'Not at all important', how important is leisure time in your life?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q4": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Very important' and 4 meaning 'Not at all important', how important are politics in your life?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q5": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Very important' and 4 meaning 'Not at all important', how important is work in your life?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q6": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Very important' and 4 meaning 'Not at all important', how important is religion in your life?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q7": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn good manners at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q8": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn independence at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q9": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn hard work at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q10": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn a feeling of responsibility at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q11": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn imagination at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q12": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn tolerance and respect for other people at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q13": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn thrifting and saving money at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q14": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn determination and perseverance at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q15": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn religious faith at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q16": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn unselfishness at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q17": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', is it especially important that children are encouraged to learn obedience at home?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q18": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having drug addicts as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q19": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having people of a different race as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q20": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having people who have AIDS as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q21": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having immigrants/foreign workers as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q22": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having homosexuals as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q23": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having people of a different religion as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q24": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having heavy drinkers as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q25": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having unmarried couples living together as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q26": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Yes' and 2 meaning 'No', would you be uncomfortable having people who speak a different language as neighbors?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q27": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Strongly agree' and 4 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: One of my main goals in life has been to make my parents proud?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q28": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Strongly agree' and 4 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: When a mother works for pay, the children suffer?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q29": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Strongly agree' and 4 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: On the whole, men make better political leaders than women do?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q30": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Strongly agree' and 4 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: A university education is more important for a boy than for a girl?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q31": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Strongly agree' and 4 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: On the whole, men make better business executives than women do?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q32": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Strongly agree' and 4 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: Being a housewife is just as fulfilling as working for pay?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q33": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: When jobs are scarce, men should have more right to a job than women?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q34": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: When jobs are scarce, employers should give priority to people of this country over immigrants?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q35": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: If a woman earns more money than her husband, it's almost certain to cause problems?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q36": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: Homosexual couples are as good parents as other couples?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q37": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: It is a duty towards society to have children?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q38": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: Adult children have the duty to provide long-term care for their parents?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q39": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: People who don't work turn lazy?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q40": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: Work is a duty towards society?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q41": {
+    "question": "On a scale of 1 to 5, 1 meaning 'Strongly agree' and 5 meaning 'Strongly disagree', how strongly do you agree or disagree with the following statement: Work should always come first, even if it means less spare time?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 5,
+    "answer_data_type": "ordinal"
+  },
+  "Q43": {
+    "question": "On a scale of 1 to 3, 1 meaning 'Good' and 3 meaning 'Bad', how would you rate the following scenario if it were to happen in the near future: Less importance placed on work in our lives?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 3,
+    "answer_data_type": "ordinal"
+  },
+  "Q44": {
+    "question": "On a scale of 1 to 3, 1 meaning 'Good' and 3 meaning 'Bad', how would you rate the following scenario if it in the near future: More emphasis on the development of technology?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 3,
+    "answer_data_type": "ordinal"
+  },
+  "Q45": {
+    "question": "On a scale of 1 to 3, 1 meaning 'Good' and 3 meaning 'Bad', how would you rate the following scenario if it were to happen in the near future: Greater respect for authority?",
+    "category": "Social Values, Norms, Stereotypes",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 3,
+    "answer_data_type": "ordinal"
+  },
+  "Q106": {
+    "question": "On a scale of 1 to 10, 1 meaning 'Incomes should be made more equal' and 10 meaning 'There should be greater incentives for individual effort', where does your opinion fall?",
+    "category": "Economic Values",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 10,
+    "answer_data_type": "ordinal"
+  },
+  "Q107": {
+    "question": "On a scale of 1 to 10, 1 meaning 'Private ownership of business and industry should be increased' and 10 meaning 'Government ownership of business and industry should be increased', where does your opinion fall?",
+    "category": "Economic Values",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 10,
+    "answer_data_type": "ordinal"
+  },
+  "Q108": {
+    "question": "On a scale of 1 to 10, 1 meaning 'The government should take more responsibility to ensure that everyone is provided for' and 10 meaning 'People should take more responsibility to provide for themselves', where does your opinion fall?",
+    "category": "Economic Values",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 10,
+    "answer_data_type": "ordinal"
+  },
+  "Q109": {
+    "question": "On a scale of 1 to 10, 1 meaning 'Competition is good' and 10 meaning 'Competition is harmful', where does your opinion fall?",
+    "category": "Economic Values",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 10,
+    "answer_data_type": "ordinal"
+  },
+  "Q110": {
+    "question": "On a scale of 1 to 10, 1 meaning 'In the long run, hard work usually brings a better life' and 10 meaning 'Hard work doesn't generally bring success - it's more a matter of luck and connections', where does your opinion fall?",
+    "category": "Economic Values",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 10,
+    "answer_data_type": "ordinal"
+  },
+  "Q111": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Protecting the environment should be given priority, even if it causes slower economic growth and some loss of jobs' and 2 meaning 'Economic growth and creating jobs should be the top priority, even if the environment suffers to some extent.', where does your opinion fall?",
+    "category": "Economic Values",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q57": {
+    "question": "On a scale of 1 to 2, 1 meaning 'Most people can be trusted' and 2 meaning 'Need to be very careful', generally speaking, would you say people can be trusted or you need to be careful in dealing with people?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 2,
+    "answer_data_type": "ordinal"
+  },
+  "Q58": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Trust completely' and 4 meaning 'Do not trust at all', how much you trust people in this group: your family?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q59": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Trust completely' and 4 meaning 'Do not trust at all', how much do you trust people in this group: your neighborhood?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q60": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Trust completely' and 4 meaning 'Do not trust at all', how much do you trust people in this group: people you know personally?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q61": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Trust completely' and 4 meaning 'Do not trust at all', how much do you trust people in this group: people you meet for the first time?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q62": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Trust completely' and 4 meaning 'Do not trust at all', how much do you trust people in this group: people of another religion?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q63": {
+    "question": "On a scale of 1 to 4, 1 meaning 'Trust completely' and 4 meaning 'Do not trust at all', how much do you trust people in this group: people of another nationality?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q64": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: the church?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q65": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: the armed forces?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q66": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence you have in the following organization: the press?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q67": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: television?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q68": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Labor unions?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q69": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: The police?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q70": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: The courts?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q71": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: The government?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q72": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Political parties?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q73": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Parliament?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q74": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: The civil service?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q75": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Universities?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q76": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Elections?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q77": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Major companies?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q78": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Banks?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q79": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Environmental organizations?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q80": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Women's organizations?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  },
+  "Q81": {
+    "question": "On a scale of 1 to 4, 1 meaning 'A great deal' and 4 meaning 'None at all', how much confidence do you have in the following organization: Charitable or humanitarian organizations?",
+    "category": "Social Capital, Trust and Organizational Membership",
+    "use_case": "value",
+    "answer_scale_min": 1,
+    "answer_scale_max": 4,
+    "answer_data_type": "ordinal"
+  }
+}

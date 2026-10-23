@@ -1,0 +1,7 @@
+{"label": "Day 00 Baseline (full pool)", "prompt_tokens": 7915968, "completion_tokens": 1173279, "total_tokens": 9089247}
+{"label": "Day 01 Measurement", "prompt_tokens": 12123044, "completion_tokens": 1786424, "total_tokens": 13909468}
+{"label": "Day 02 Measurement", "prompt_tokens": 15932267, "completion_tokens": 2339414, "total_tokens": 18271681}
+{"label": "Day 03 Measurement", "prompt_tokens": 20005155, "completion_tokens": 2928627, "total_tokens": 22933782}
+{"label": "Day 04 Measurement", "prompt_tokens": 24054810, "completion_tokens": 3515698, "total_tokens": 27570508}
+{"label": "Day 05 Measurement", "prompt_tokens": 28282713, "completion_tokens": 4128154, "total_tokens": 32410867}
+{"label": "Day 06 Measurement", "prompt_tokens": 32132669, "completion_tokens": 4676576, "total_tokens": 36809245}
