@@ -263,7 +263,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run", action="append", default=None, metavar="LABEL=RUN_DIR",
                         help="Model label and run directory (repeatable). "
-                             "Default: openai=past_runs/v1")
+                             "Default: openai=past_runs/C1")
     parser.add_argument("--results-subdir", default="llm_as_judge_openings_holistic",
                         help="Folder under <run_dir>/results/ holding llm_as_judge_results.jsonl. "
                              "Default: llm_as_judge_openings_holistic")
@@ -271,7 +271,7 @@ def main():
                         help="Default: results/llm_as_judge_openings_holistic_summary")
     args = parser.parse_args()
 
-    runs = args.run or ["openai=past_runs/v1"]
+    runs = args.run or ["openai=past_runs/C1"]
     rows = []
     for spec in runs:
         label, _, run_dir = spec.partition("=")
