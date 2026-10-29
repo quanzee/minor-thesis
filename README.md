@@ -17,6 +17,7 @@ run_all.py                      Runs one configuration end to end (simulation, W
 simulation_architecture/
   simulation.py                 Main simulation loop (9 agents, 6 days, 3 rounds per day)
   run_side_study.py             Large-population study (99 agents)
+  run_vsm13_default.py          VSM13 without seed beliefs (Day 0 only, no simulation)
   agent.py                      Agent: planning, conversation, persona context
   simplified_associative_memory.py  Tier 2 memory stream (Park et al.)
   core_beliefs.py               Tier 1 core beliefs (two-tier memory)
@@ -92,6 +93,15 @@ This runs C1 (baseline): the simulation, its WVS drift computation and LLM-as-ju
 | C4 | Single-tier | Off | On | `--memory_mode single_tier --no_reasoning --anti_compromise --model_key openai` |
 | RQ2 DeepSeek | Single-tier | Off | Off | `--memory_mode single_tier --no_reasoning --model_key deepseek` |
 | RQ2 Grok | Single-tier | Off | Off | `--memory_mode single_tier --no_reasoning --model_key grok` |
+| C1-six (control) | Single-tier, six beliefs | Off | Off | Same as C1, after the code changes below |
+
+C1-six is a control for C2. C2 protects the seeds and also retrieves six belief lines where the baseline retrieves three (three core beliefs plus three memory-stream beliefs). C1-six is the baseline with six beliefs retrieved and no protected seeds. There is no flag for it. Before running it with the C1 flags, change the three places where single-tier agents retrieve beliefs from 3 to 6:
+
+1. **Conversation:** `simulation_architecture/retrieve.py`, `retrieve_current_beliefs`: `n_count=3` → `n_count=6`, and `for node in nodes[:3]` → `for node in nodes[:6]`. This sets the beliefs in each agent's persona context, through `get_persona_context` in `agent.py`.
+2. **VSM13:** `simulation_architecture/simulation.py`, `run_measurement`: `retrieve_all_dimension_beliefs(agent, curr_time=sim_time)` → `retrieve_all_dimension_beliefs(agent, curr_time=sim_time, top_n=6)`
+3. **WVS:** `simulation_architecture/simulation.py`, `run_wvs_measurement`: `retrieve_all_beliefs(agent, curr_time=sim_time)` → `retrieve_all_beliefs(agent, curr_time=sim_time, top_n=6)`
+
+Leave everything else unchanged. In particular, `n_turns` in `agent.py` is the number of utterances per conversation, not a belief count, and the `n=3` / `nodes[:3]` retrievals in `plan` and utterance generation retrieve memories, not beliefs. Revert the three changes before running any other condition.
 
 The simulation writes to `logs/` and `results/` in the project root and will not start if `logs/` already holds an earlier run, so move each run's output (e.g. into `past_runs/`) before starting the next one. An interrupted run resumes from its last completed day when restarted with the same flags.
 
@@ -114,6 +124,14 @@ python wvs/compute_wvs_drift.py --results_dir results/side_study
 
 The large-population study uses VSM13 and WVS only.
 
+### VSM13 without seeds
+
+```bash
+python simulation_architecture/run_vsm13_default.py
+```
+
+The nine agents answer VSM13 with only their name, country and demographic details in the prompt (no seed beliefs), three repetitions each, on each of the three agent models. There is no simulation. This is not a condition: it shows how far the cultural cues alone (name and country) separate the cultures.
+
 ## Measures
 
 - **VSM13** (primary): Hofstede's Values Survey Module 2013, administered to every agent at Day 0 and at the end of each day (three runs per agent, averaged). Drift is measured relative to Day 0, and rank order against Hofstede's human scores with Kendall's tau-b.
@@ -131,6 +149,8 @@ The large-population study uses VSM13 and WVS only.
 | `past_runs/C4` | Anti-compromise instruction |
 | `past_runs/RQ2_deepseek` | C1 configuration on DeepSeek-V4-Flash |
 | `past_runs/RQ2_grok` | C1 configuration on Grok 4.1 Fast |
+| `past_runs/C1-six` | C1 with six retrieved beliefs (control for C2) |
 | `past_runs/large-population` | Large-population study |
+| `past_runs/no_seed_day0` | VSM13 without seeds, Day 0 only, all three models |
 
-Each run folder contains `logs/` and `results/`. `results/run_config.json` records the flags the run was started with.
+Each simulation run folder contains `logs/` and `results/`. `results/run_config.json` records the flags the run was started with; for C1-six it records the C1 flags, since the six-belief change is in the code.

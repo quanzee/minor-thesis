@@ -1,0 +1,1972 @@
+{
+  "condition": "default_no_beliefs",
+  "model": "grok-4-1-fast-non-reasoning",
+  "day": 0,
+  "n_runs": 3,
+  "individual_responses_averaged": {
+    "Australia": {
+      "James": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 2.0,
+        "4": 2.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 2.0,
+        "9": 3.0,
+        "10": 3.0,
+        "11": 3.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 2.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Charlotte": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0,
+        "4": 2.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 2.0,
+        "9": 3.0,
+        "10": 3.0,
+        "11": 2.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 3.0,
+        "15": 3.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 1.0,
+        "19": 2.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Amelia": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 2.3333333333333335,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 2.0,
+        "9": 3.0,
+        "10": 5.0,
+        "11": 1.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 2.0,
+        "23": 4.0,
+        "24": 4.0
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0,
+        "4": 1.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 4.0,
+        "9": 2.0,
+        "10": 3.0,
+        "11": 3.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 2.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Nur": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 2.0,
+        "4": 2.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 2.0,
+        "9": 3.0,
+        "10": 2.0,
+        "11": 2.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 1.0,
+        "19": 2.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Siti": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 3.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 5.0,
+        "9": 2.0,
+        "10": 5.0,
+        "11": 3.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 2.0,
+        "23": 4.0,
+        "24": 4.0
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0,
+        "4": 1.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 3.0,
+        "9": 2.0,
+        "10": 3.0,
+        "11": 3.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 4.0,
+        "18": 3.0,
+        "19": 3.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Rin": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0,
+        "4": 2.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 2.0,
+        "9": 3.0,
+        "10": 2.0,
+        "11": 3.0,
+        "12": 4.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 1.0,
+        "19": 3.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      },
+      "Mei": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 3.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 2.0,
+        "8": 2.0,
+        "9": 2.0,
+        "10": 5.0,
+        "11": 3.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 4.0,
+        "24": 4.0
+      }
+    }
+  },
+  "individual_all_runs": {
+    "Australia": {
+      "James": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 3,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 3,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 3,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Charlotte": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 3,
+          "11": 2,
+          "12": 4,
+          "13": 1,
+          "14": 3,
+          "15": 3,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 3,
+          "11": 2,
+          "12": 4,
+          "13": 1,
+          "14": 3,
+          "15": 3,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 3,
+          "11": 2,
+          "12": 4,
+          "13": 1,
+          "14": 3,
+          "15": 3,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Amelia": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 5,
+          "11": 1,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 5,
+          "11": 1,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 5,
+          "11": 1,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        }
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 4,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 3,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 4,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 3,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 4,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 3,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Nur": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 2,
+          "11": 2,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 2,
+          "11": 2,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 2,
+          "11": 2,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Siti": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 5,
+          "9": 2,
+          "10": 5,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 5,
+          "9": 2,
+          "10": 5,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 5,
+          "9": 2,
+          "10": 5,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 4,
+          "24": 4
+        }
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 3,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 4,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 3,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 4,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 3,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 4,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Rin": {
+        "run_1": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 2,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 2,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 3,
+          "10": 2,
+          "11": 3,
+          "12": 4,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 1,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      },
+      "Mei": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 5,
+          "11": 3,
+          "12": 3,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 5,
+          "11": 3,
+          "12": 3,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 5,
+          "11": 3,
+          "12": 3,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 4,
+          "24": 4
+        }
+      }
+    }
+  },
+  "individual_explanations_last_run": {
+    "Australia": {
+      "James": {
+        "1": "Having enough time for my personal and home life is of utmost importance to me, as I've seen too many blokes in trades burn out from long hours and miss out on family time, and I value balance over just chasing money.",
+        "2": "Having a boss I can respect is very important because it makes the workday smoother and motivates me to do my best work without constant friction. In my experience as a tradie, a good boss who knows their stuff and treats you fair makes all the difference.",
+        "3": "Getting recognition for good performance is very important to me because it motivates me to keep doing my best work and shows that my efforts are valued by the team or boss. In my experience as a tradie, a pat on the back or a shout-out makes the hard yards worthwhile.",
+        "4": "As a bloke who's been in trades for years, having a steady job without the worry of sudden layoffs is very important to me, especially with a family to support and bills to pay. It gives peace of mind to focus on the work without constant job-hunting stress.",
+        "5": "Working with pleasant people makes the job much more enjoyable and reduces stress, which is very important to me after dealing with difficult characters in trades work.",
+        "6": "Work has to be interesting or it's just a grind that kills your soul day after day; life's too short to hate what you do for 40 hours a week.",
+        "7": "As a technician, I value being consulted on work decisions because my hands-on experience helps make better calls, but it's not the top priority if the boss knows their stuff. It keeps things running smoothly without me needing to run the show.",
+        "8": "Very important because as a bloke who's worked hard in trades across Australia, I'd want my ideal job to let me settle in a nice spot like near the coast or a good regional town with decent weather and lifestyle, not stuck in some remote shithole site. It'd make the daily grind way more bearable after years of FIFO bullshit.",
+        "9": "It's moderately important to have a job that my family and friends respect, as I value their opinions from my working-class background, but it wouldn't stop me from doing something I enjoy if they didn't fully get it.",
+        "10": "At my age and with my experience as a tradie, chances for promotion are moderately important as they offer some career growth, but I'm more focused on job security, good pay, and work-life balance than climbing the ladder.",
+        "11": "Content filter triggered",
+        "12": "As a bloke who's worked hard in trades all my life, I value getting what I need to enjoy life, like a cold beer after work or a good ute, but I don't see much point in denying myself simple pleasures just for the sake of moderation. Too many desires? Nah, life's too short not to chase a bit of what makes you happy.",
+        "13": "Doing a service to a friend is of utmost importance to me because mateship is core to Aussie values and I've always believed in helping out your mates without expecting anything back, as it's built lifelong loyalty in my life.",
+        "14": "Very important - I've always lived by the principle of not wasting money, especially after years in trades where every dollar counts towards tools and family needs.",
+        "15": "I seldom feel nervous or tense these days, as years in the trades have taught me to handle pressure calmly and keep things in perspective. Life's too short to stress over the small stuff.",
+        "16": "Life as a tradie in Australia has its ups and downs with work and family, but I usually find reasons to be happy most days.",
+        "17": "Sometimes life throws curveballs like work commitments or family needs that get in the way, but I usually find a way to make things happen.",
+        "18": "I'm in good health overall, stay active with my trade work and keep fit enough to handle the physical demands without major issues. No serious complaints, just the usual aches from years on the tools.",
+        "19": "I'm very proud to be Australian because we've got a fair go for everyone, stunning natural beauty from the Outback to the beaches, and a resilient spirit shaped by our history of mateship and hard work. It's the best country in the world to raise a family and get ahead with your own two hands.",
+        "20": "In my experience as a technician, subordinates usually hold back from contradicting the boss to avoid conflict or risking their job, though it happens sometimes with more confident workers. I've seen it in trade environments where hierarchy is strong.",
+        "21": "Strongly agree because as a technician, I've seen plenty of good managers who don't know every technical detail but guide their teams effectively by knowing when to delegate or seek expert advice. No one can possibly have all the answers, and good management is about leadership and resources, not being an encyclopedia.",
+        "22": "Strongly agree. In my years as a technician, I've seen that sticking at a job persistently, troubleshooting step by step, always gets results no matter how tough it is. Giving up too early never works.",
+        "23": "In my experience as a technician, matrix structures with dual reporting lines can work well in trades and projects where specialist input is needed from multiple areas, as long as communication is clear. Avoiding them entirely limits flexibility in dynamic work environments like mine.",
+        "24": "Rules are there for a reason, but sometimes they're outdated or don't fit the situation, so if breaking one clearly helps the company without causing harm, it makes sense to do it. As a technician, I've bent rules before to get the job done better and faster."
+      },
+      "Charlotte": {
+        "1": "Having sufficient time for my personal and home life is of utmost importance to me, as work-life balance allows me to maintain strong relationships, pursue hobbies, and avoid burnout, which are essential for my overall happiness and well-being.",
+        "2": "Having a boss I can respect is very important to me because it fosters a positive work environment, clear guidance, and motivation to perform at my best. Without mutual respect, workplace dynamics become strained and counterproductive.",
+        "3": "Recognition for good performance is moderately important to me as it motivates and validates my efforts, but it's not the utmost priority since intrinsic satisfaction from the work itself matters more in an ideal job.",
+        "4": "Security of employment is very important to me as it provides stability and peace of mind, allowing me to focus on my work without constant worry about job loss, though I'm willing to take calculated risks for the right opportunity.",
+        "5": "Having pleasant people to work with is very important to me because a positive team environment greatly enhances daily job satisfaction and productivity, based on my professional experiences where good colleagues made challenging days more bearable.",
+        "6": "Having work that is interesting is of utmost importance to me because it keeps me engaged, motivated, and fulfilled in my professional life, preventing burnout and allowing me to contribute meaningfully. Without genuine interest, even a high-paying job would feel unfulfilling over time.",
+        "7": "Being consulted by my boss on decisions affecting my work is very important to me, as it fosters collaboration, respects my expertise, and ensures better outcomes in a professional environment.",
+        "8": "Very important, as living in a desirable area like a vibrant coastal city in Australia would greatly enhance my quality of life with better weather, amenities, and work-life balance. It aligns with my values of enjoying nature and community while pursuing a professional career.",
+        "9": "Respect from family and friends is nice to have and adds some social validation, but it wouldn't be a primary factor in choosing my ideal job as my own fulfillment and passion matter more.",
+        "10": "Chances for promotion are moderately important as they provide motivation and growth opportunities, but they are not my top priority compared to job satisfaction, work-life balance, and making a meaningful impact.",
+        "11": "Keeping time free for fun is very important to me as it helps maintain work-life balance and prevents burnout in my busy professional life. As an Australian, I value making time for beach outings, socialising with mates, and outdoor adventures to recharge.",
+        "12": "Moderation in the sense of having few desires feels restrictive to me, as I value pursuing passions and ambitions that drive personal growth and fulfillment in life. I'd rather embrace desires mindfully than suppress them.",
+        "13": "Doing a service to a friend is of utmost importance to me as strong friendships are built on mutual support and loyalty, which has been a cornerstone of my personal relationships throughout my life in Australia.",
+        "14": "Thrift is of moderate importance to me as I value financial prudence and avoiding unnecessary debt, but I also enjoy treating myself occasionally without being overly restrictive. This balance comes from my professional background where budgeting supports long-term goals like travel and homeownership.",
+        "15": "I sometimes feel nervous or tense during high-pressure work situations or personal challenges, but it's not a constant state as I manage stress through exercise and mindfulness practices.",
+        "16": "I usually feel happy in my daily life, thanks to a supportive network of friends and family, a fulfilling career, and enjoying Australia's sunny lifestyle, though like anyone, I have my off days.",
+        "17": "Sometimes external circumstances like work deadlines or family obligations can delay my plans, but I generally find ways to adapt or prioritize what matters most to me.",
+        "18": "I consider my health very good these days, as I maintain an active lifestyle with regular exercise, a balanced diet, and proactive medical check-ups, feeling energetic and free from any major issues.",
+        "19": "I'm fairly proud of Australia's natural beauty, tolerant society, and opportunities it offers, though I'm critical of some political decisions and social issues like treatment of Indigenous Australians.  \nOverall, the positives outweigh the negatives for me.",
+        "20": "In my professional experience in Australian workplaces, subordinates are usually hesitant to contradict their boss due to power dynamics and fear of repercussions, though it's less extreme than in some cultures. Similarly, students often hold back with teachers for grades or authority reasons.",
+        "21": "Strongly agree because effective management relies more on guiding teams, fostering problem-solving skills, and knowing when to seek expertise rather than having all answers instantly. In my professional experience, no one knows everything, and admitting that builds trust and encourages growth in subordinates.",
+        "22": "I strongly agree because my professional experience in Australia has shown that consistent, persistent effort reliably leads to success, whether in career advancement or personal goals, far more than sporadic attempts or luck.",
+        "23": "While dual reporting lines can create confusion and accountability issues in some cases, matrix structures with two bosses are often effective in dynamic organisations like consulting firms or tech companies, allowing for better resource allocation and expertise sharing. In my professional experience, they've worked well when communication is clear and roles are well-defined.",
+        "24": "While rules exist for good reasons and should generally be followed, there are situations where rigid adherence could harm the organisation, such as in emergencies or when rules are outdated, so employees should have some flexibility to act in its best interest with accountability.  \nI value integrity but prioritise practical outcomes based on my professional experience navigating bureaucracy in Australian workplaces."
+      },
+      "Amelia": {
+        "1": "Having sufficient time for my personal and home life is of utmost importance to me, as at 58 I've learned that family and downtime are what truly matter after years of clerical work leaving me knackered. Without it, no job feels ideal no matter the pay.",
+        "2": "Having a boss I can respect is very important to me because I've worked under poor managers before and it makes the job so much harder; a good leader motivates and supports you properly.",
+        "3": "Getting recognition for good performance is very important to me because it motivates me to do my best work and makes me feel valued after years in clerical roles where efforts often go unnoticed. In an ideal job, a pat on the back or a simple thank you from the boss would make all the difference.",
+        "4": "Security of employment is of utmost importance to me because at 58, I've seen too many people lose their jobs unexpectedly and struggle, and I couldn't bear that uncertainty in my ideal job. It gives peace of mind to focus on work without fearing the rug being pulled out.",
+        "5": "Having pleasant people to work with is of utmost importance to me because I've found in my clerical jobs that a toxic workplace makes every day miserable, no matter the pay, while good colleagues make the work enjoyable and less stressful. Life's too short to dread going to work with nasty people.",
+        "6": "Work has to be interesting or I'd be bored out of my mind every day, life's too short for dull jobs. I've done enough admin drudgery to know that passion in what you do keeps you going.",
+        "7": "Being consulted by my boss on work decisions is very important to me because it shows respect for my experience and helps ensure the job runs smoothly without unnecessary mistakes. In clerical work, I've seen how ignoring input from those doing the hands-on tasks leads to frustration and inefficiency.",
+        "8": "Very important, as I'd love to live somewhere nice like near the beach or in a quiet coastal town in Australia, away from the hustle of the city, since location affects my daily happiness and quality of life.",
+        "9": "A job respected by family and friends is moderately important to me, as I value their opinions from my life experiences, but it wouldn't be the top priority when choosing an ideal job. I'd focus more on something practical and enjoyable for myself first.",
+        "10": "At my age of 58, I'm past the point of caring about promotions; I just want a steady job without the hassle of climbing ladders. Stability and a fair wage matter more than advancement opportunities.",
+        "11": "Keeping time free for fun is of utmost importance to me because life's too short not to enjoy it, especially after years in clerical work where I always made sure to balance with family barbecues and beach days.",
+        "12": "I've always believed that a bit of ambition and wanting nice things keeps life interesting, especially after years in clerical work where you learn to enjoy the rewards. Moderation in desires feels like settling for less when you can aim higher without harm.",
+        "13": "Doing a service to a friend is of utmost importance to me because true mateship means being there for each other through thick and thin, just like in Aussie culture where you look out for your own. I've always made time to help friends in need, as it builds strong, lifelong bonds.",
+        "14": "Thrift is of utmost importance to me; I've always lived by stretching every dollar as a clerical worker on a modest income, avoiding waste and unnecessary spending to make ends meet comfortably.",
+        "15": "I seldom feel nervous or tense these days, as life's taught me to take things in stride after years of clerical work and raising a family.  \n[4 - I seldom feel nervous or tense these days, as life's taught me to take things in stride after years of clerical work and raising a family.]",
+        "16": "Life's thrown a few curveballs my way with work and family, but I usually find joy in the simple things like a good cuppa and chatting with mates. Overall, I'm content most days.",
+        "17": "Sometimes other people or circumstances like family obligations or work deadlines get in the way of what I really want to do, but it's not constant. I've learned to push back when I can from years in clerical work.",
+        "18": "Fair. At 58, I've got the usual aches and pains from years of clerical work sitting at a desk, but I manage okay with the help of my doctor and staying active around the house. Nothing major wrong, just not as spry as I used to be.",
+        "19": "I'm very proud to be Australian; we've got a great laid-back lifestyle, beautiful land, and we've come through tough times like droughts and wars with resilience that makes me chest swell. It's home, fair dinkum.",
+        "20": "In my clerical work, I've seen subordinates hold back from contradicting the boss usually to avoid trouble or keep the peace, much like students with teachers from what I've observed in life. It's just human nature in hierarchies down here in Australia.",
+        "21": "Strongly agree, because no one knows everything and a good manager guides their team, encourages problem-solving, and knows when to seek answers rather than pretending to have all the solutions. In my clerical work, I've seen managers succeed by trusting their staff's expertise.",
+        "22": "Agree - In my years doing clerical work, I've seen that sticking at a task day in and day out gets the job done, even if it's not flashy.",
+        "23": "In my clerical work, I've seen matrix structures with dual reporting work fine when managed well, avoiding confusion through clear roles. It's not always a problem to avoid.",
+        "24": "Rules are there for a reason, but sometimes an employee on the ground knows better than the bosses what's best for the company, so a bit of common sense bending shouldn't be a sackable offence.  \nI've seen too many stupid rules in admin jobs that just slow things down, and breaking them quietly has saved the day more than once."
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "1": "As a family man from Malaysia, having enough time for my wife, kids, and home is the most important thing in any job, because work should support life, not take it all away. Without this balance, no salary or position is worth it.",
+        "2": "Having a boss I can respect is very important because it creates a positive work environment, good guidance, and motivation to perform well in my job. Without respect for the superior, daily work becomes stressful and unproductive based on my experience as a technician.",
+        "3": "Recognition for good performance is moderately important to me as it motivates me to do better work, but it's not the main reason I choose a job since I value steady pay and job security more from my experience as a technician.",
+        "4": "Security of employment is of utmost importance to me because, as a technician with a family to support in Malaysia, job stability ensures financial security and peace of mind for the long term. Without it, constant worry about layoffs or instability would make any job unsatisfying.",
+        "5": "Very important, because working with pleasant people makes the day easier and more enjoyable, reducing stress in my technician job. In Malaysia, good colleagues are key to teamwork and job satisfaction.",
+        "6": "For me, doing work that is interesting is of utmost importance because it keeps me motivated and makes every day enjoyable, especially after years as a technician where boring routines drain the spirit. Without interest, even a high-paying job feels like endless drudgery.",
+        "7": "As a technician, I value being consulted by my boss on work decisions because it shows respect for my hands-on experience and helps ensure the best outcomes for repairs and projects. It motivates me more than just following orders blindly.",
+        "8": "Live in a desirable area is of little importance to me because as a technician, I've worked in various places and prioritize job stability and income over location, since family and community ties in Malaysia keep me grounded regardless of the area's appeal.",
+        "9": "Very important because in Malaysian culture, family and friends' respect matters a lot to me, and I want a job that makes them proud of my achievements. As a technician, I've seen how respect from others boosts my motivation and social standing.",
+        "10": "Chances for promotion are of moderate importance to me as a technician, since I value steady work and skill development more than climbing corporate ladders at this stage in my career.",
+        "11": "Keeping time free for fun is of moderate importance to me as a technician with a busy work schedule, but I make sure to balance it with family responsibilities and rest after long days.",
+        "12": "Moderation with few desires is moderately important to me as a technician, since I value a simple life without excess but still need some ambitions to provide for my family and improve my skills. In Malaysian culture, balance is key, but completely suppressing desires isn't practical for daily living.",
+        "13": "Doing a service to a friend is of utmost importance to me because in Malaysian culture, helping friends strengthens bonds and is a core part of loyalty and community life, something I've always practiced as a technician assisting colleagues.",
+        "14": "Thrift is of utmost importance to me as a technician from a modest background in Malaysia; I've always lived by saving money and avoiding unnecessary expenses to secure my family's future and handle unexpected repairs or emergencies.",
+        "15": "Seldom feel nervous or tense as a technician, because I handle daily work pressures with experience and stay calm during repairs. Life in Malaysia is steady, so tension doesn't come often.",
+        "16": "As a technician in Malaysia, I usually feel happy with my steady job and family life, though work stress and daily challenges make it not always the case.",
+        "17": "Sometimes other people or work demands prevent me from doing what I want, but I can usually manage around them with planning.",
+        "18": "My health is good overall; I stay active with my technician work and eat simple Malaysian home-cooked meals, which keep me fit at 45. No major illnesses, just occasional joint aches from manual labor.",
+        "19": "I am very proud to be a Malaysian citizen because our country is peaceful, multicultural, and full of opportunities from my experience working as a technician here all my life.",
+        "20": "In my experience as a technician in Malaysia, subordinates usually hesitate to contradict their boss due to respect for hierarchy and fear of repercussions, though it happens less with younger generations. Students also tend to avoid challenging teachers for similar cultural reasons.",
+        "21": "Strongly agree because as a technician, I've seen good managers who guide teams effectively by knowing when to seek answers or delegate, rather than needing to know everything themselves. A manager's strength lies in leadership and problem-solving, not omniscience.",
+        "22": "I strongly agree because in my years as a technician, I've seen that consistent hard work and not giving up always lead to fixing problems and achieving goals, no matter how tough they are.",
+        "23": "In my experience as a technician, having two bosses can sometimes be useful for coordinating complex projects across departments, as long as communication is clear. It shouldn't always be avoided if it improves efficiency.",
+        "24": "Rules are important for order, but as a technician, I've seen situations where strictly following them blindly harms the company, so some flexibility is needed when it's truly for the best interest.  \nI believe good employees use judgment to improve things without causing chaos."
+      },
+      "Nur": {
+        "1": "Having sufficient time for my personal and home life is of utmost importance to me, as family and personal well-being are central to my Malaysian cultural values and overall happiness, preventing burnout in any ideal job.",
+        "2": "Having a boss I can respect is very important to me because it fosters a positive work environment, clear guidance, and motivation to perform at my best, drawing from my professional experiences where respectful leadership significantly impacts job satisfaction and productivity.",
+        "3": "Recognition for good performance is very important to me as it motivates me to excel and provides validation for my efforts in a professional setting. In my experience, it fosters a positive work environment and encourages continuous improvement.",
+        "4": "Security of employment is very important to me as it provides stability and peace of mind, allowing me to focus on my work and personal life without constant worry about job loss, especially in an uncertain economy like Malaysia's. While not the utmost priority, it ranks high among factors for an ideal job.",
+        "5": "Having pleasant people to work with is very important to me because a positive work environment fosters better collaboration, reduces stress, and makes daily interactions enjoyable, which significantly impacts job satisfaction and productivity. In my experience as a professional, toxic colleagues can make even a dream role unbearable.",
+        "6": "Doing interesting work is of utmost importance to me because it keeps me motivated, engaged, and fulfilled in my professional life, allowing me to grow and contribute meaningfully based on my experiences as a professional.",
+        "7": "Being consulted by my boss on work decisions is very important to me as it shows respect for my expertise and ensures better outcomes through collaborative input, aligning with my professional values of autonomy and mutual respect.",
+        "8": "Very important, as living in a desirable area with good quality of life, safety, and amenities would greatly enhance my overall job satisfaction and work-life balance in Malaysia.",
+        "9": "Respect from family and friends is nice to have as it brings a sense of pride and validation, but it is of moderate importance to me compared to personal fulfillment, growth, and impact in the job itself.",
+        "10": "Having chances for promotion is very important to me as it provides motivation for growth and recognition of hard work in my career progression. In a professional environment, it ensures long-term job satisfaction and opportunities for advancement.",
+        "11": "Keeping time free for fun is very important to me as it helps maintain work-life balance and prevents burnout in my busy professional life. As a Malaysian professional, I value family outings and personal hobbies to recharge and enjoy life fully.",
+        "12": "In my professional life and modern Malaysian society, I value ambition and pursuing meaningful goals over limiting desires, as long as they are balanced with responsibility. Moderation in desires feels restrictive and less relevant to achieving personal growth and fulfillment.",
+        "13": "Doing a service to a friend is of utmost importance to me as it strengthens bonds, reflects Malaysian values of mutual support and gotong-royong, and brings deep personal fulfillment from seeing their gratitude and happiness.",
+        "14": "Thrift is very important to me as it reflects prudent financial management ingrained in my Malaysian upbringing, helping me save for the future and avoid unnecessary debt. I practice it daily by budgeting carefully and distinguishing between needs and wants.",
+        "15": "I seldom feel nervous or tense as a professional with a stable career and good work-life balance, though high-pressure deadlines can occasionally bring some tension.",
+        "16": "I usually feel happy in my daily life as a professional in Malaysia, surrounded by family and friends, though occasional work stress or challenges can temper that. Overall, my optimistic outlook and gratitude for what I have keep me content most of the time.",
+        "17": "Sometimes external circumstances like work deadlines or family obligations prevent me from pursuing personal desires, but I often find ways to adapt or negotiate around them. As a professional in Malaysia, balancing career and cultural expectations means occasional compromises, but not always.",
+        "18": "All in all, my state of health is very good these days, as I maintain a balanced lifestyle with regular exercise, a healthy diet, and routine medical check-ups with no major issues.",
+        "19": "I am fairly proud of Malaysia's rich cultural diversity, natural beauty, and progress in economic development, though concerns about political stability and corruption temper my enthusiasm somewhat.",
+        "20": "In Malaysian workplaces and educational settings, hierarchy and respect for authority are deeply ingrained in our culture, so subordinates and students usually hesitate to contradict their superiors directly to avoid conflict or loss of face. From my professional experience, this fear is common though not universal, especially in more traditional environments.",
+        "21": "Strongly agree because effective management relies more on guiding teams, fostering problem-solving skills, and knowing when to seek expertise rather than having all answers instantly. In my professional experience, no manager is omniscient, and empowering subordinates to contribute builds better outcomes.",
+        "22": "I strongly agree because my professional experience in Malaysia has shown that consistent hard work and persistence overcome obstacles and lead to reliable success, as seen in my career achievements despite challenges.",
+        "23": "While dual reporting lines can create confusion and accountability issues in some cases, matrix structures with two bosses are effective in dynamic organisations for better resource utilisation and cross-functional collaboration, as I've seen in multinational professional settings. Avoiding them entirely limits flexibility in modern business environments.",
+        "24": "While rules exist for good reasons and should generally be followed, there are situations where breaking them could genuinely serve the organisation's best interest, especially if it prevents greater harm or capitalises on an unforeseen opportunity. Blind adherence without critical thinking can lead to suboptimal outcomes, as I've seen in professional settings where flexibility improved results."
+      },
+      "Siti": {
+        "1": "As a 58-year-old woman with family responsibilities, having enough time for my home life and personal moments is the most important thing in any job, more than money or status. Without it, I cannot be happy or take care of my loved ones properly.",
+        "2": "Having a boss I can respect is of utmost importance because it creates a positive work environment, motivates me to perform better, and ensures guidance based on my life experience in clerical work where good leadership made all the difference.",
+        "3": "Recognition for good performance is moderately important to me as it motivates me to work harder, but it is not the most critical factor since I value job stability and fair pay more in my life experiences.",
+        "4": "Security of employment is of utmost importance to me because at my age of 58, with no qualifications and limited options, a stable job means I can support myself without fear of sudden unemployment. I've seen too many people struggle after losing their jobs unexpectedly.",
+        "5": "Having pleasant people to work with is of utmost importance to me because in Malaysia, work is like family, and working with rude or unkind people every day would make my life miserable and stressful. I value harmony and good relationships above all in any job.",
+        "6": "Work must be interesting to keep me motivated and happy every day, as boring jobs make time drag and feel like punishment from my many years in clerical work.",
+        "7": "In my clerical work, it's very important to me to be consulted by my boss on decisions affecting my tasks, as it makes me feel valued and helps avoid mistakes from poor communication. Without it, I just follow orders blindly, which is frustrating after years on the job.",
+        "8": "As a simple clerical worker from Malaysia, I am content with my familiar surroundings and family nearby, so living in a desirable area is of very little importance to me compared to a stable job.",
+        "9": "In Malaysia, family and friends value respect and status from a job, so it is very important to me that my work is something they can be proud of and respect. This makes me feel valued in my community.",
+        "10": "At my age of 58, promotions are not relevant anymore as I am close to retirement and just want a stable job without the stress of climbing the career ladder.",
+        "11": "Keeping time free for fun is of moderate importance to me, as family duties and work often take priority in my daily life, but I do enjoy simple pleasures like watching TV or chatting with neighbors when I can.",
+        "12": "In my life, I have always worked hard as a clerical worker to provide for my family, so having some desires like a comfortable home and good food for my children is necessary, not something to minimize too much. Moderation is good, but not having few desires feels too extreme for practical living.",
+        "13": "Doing a service to a friend is of utmost importance to me because in Malaysian culture, helping friends strengthens our bonds and brings blessings in life, as I've always done for my close ones without expecting anything back.",
+        "14": "Thrift is of utmost importance to me because as a clerical worker with no formal qualifications, I've always lived within my means to support my family and avoid debt in our simple Malaysian lifestyle.",
+        "15": "Seldom. At my age, I've learned to stay calm through life's ups and downs from working in admin for many years. I only feel tense occasionally during busy workdays or family matters.",
+        "16": "I am sometimes happy, as life has its ups and downs with family worries and work stress, but I find joy in simple things like eating with my children and grandchildren.",
+        "17": "Sometimes other people or circumstances like family obligations or work demands prevent me from doing what I really want, but not always. I try to manage around them as much as possible in my daily clerical life.",
+        "18": "Fair. At 58, I have some aches and pains from years of clerical work sitting at a desk, but I manage daily tasks without much trouble and stay active enough around the house.",
+        "19": "I am very proud to be a Malaysian citizen because our country is rich in culture, diversity, and natural beauty, and it has given me a good life despite my simple background.  \nI love how Malaysians come together during festivals and support each other through challenges.",
+        "20": "In my experience working in clerical jobs in Malaysia, subordinates are usually afraid to contradict their boss because of the strong respect for hierarchy and authority in our culture, and fear of losing face or job security. Students also tend to be like this with teachers.",
+        "21": "Strongly agree because a good manager relies on guiding and empowering the team rather than knowing every tiny detail, drawing from my clerical experience where bosses delegated and trusted us to handle specifics. In real life, no one can know everything, and it's better to foster learning and problem-solving in subordinates.",
+        "22": "Agree - In my clerical work, I have seen that keeping at a task steadily, even when it's tough, always brings good results in the end.",
+        "23": "In my clerical work, having clear reporting lines is good, but sometimes having two bosses can help get things done faster when one is busy. I don't think it should always be avoided as it depends on the situation.",
+        "24": "Rules are there for a reason and should generally be followed to maintain order, but sometimes an employee with good judgment can break them if it truly benefits the organisation without causing harm.  \nIn my clerical work, I've seen strict adherence prevent many problems, yet flexibility has occasionally saved time and money."
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "1": "As a family man with responsibilities at home, having enough time for personal and family life is of utmost importance to me, more than any job demands. Without it, work-life balance suffers, leading to stress and regret.",
+        "2": "Having a boss I can respect is very important because it creates a positive work environment and allows me to learn and grow professionally without unnecessary conflicts. In my experience as a technician, good leadership makes all the difference in job satisfaction.",
+        "3": "Recognition for good performance is moderately important to me as a technician, since it motivates me to do better work, but it's not the top priority compared to job stability and fair pay in my experience.",
+        "4": "As a technician, I've seen how unstable jobs can lead to financial hardship and stress, so employment security is of utmost importance to me for a stable life and family support.",
+        "5": "Working with pleasant people makes the daily job much more enjoyable and reduces stress, which is very important to me after years in trades where team dynamics affect everything.  \nI value good colleagues highly for a smooth work environment.",
+        "6": "As a technician, I've spent years in routine tasks that feel repetitive, so in my ideal job, doing interesting work would be of utmost importance to keep me motivated and fulfilled every day.",
+        "7": "As a technician, I value being consulted on work decisions because my hands-on experience helps make practical choices, but it's not the utmost priority if the boss has good judgment.  \nBeing involved ensures better outcomes without needing total control.",
+        "8": "Living in a desirable area is moderately important to me, as I value a comfortable environment with good access to nature and family, but it's not a top priority compared to job satisfaction and stability. As a technician, I've worked in various places and adapted well without needing luxury locations.",
+        "9": "As a technician, I've seen how respect from family and friends boosts pride in my work, so in an ideal job, having that recognition would be very important to me for personal satisfaction. It motivates me to excel knowing those close to me value what I do.",
+        "10": "At my age and with my vocational background, promotions are nice but not a top priority since I've already built a solid career in technical work. Stability and doing good work matter more to me now than climbing the ladder.",
+        "11": "Keeping time free for fun is of moderate importance to me, as my work as a technician often demands long hours, but I value some downtime for relaxation and hobbies to maintain balance in life.",
+        "12": "As a technician, I value hard work and providing for my family, which requires pursuing goals and some material needs, so having few desires isn't a priority for me. Moderation is good, but not suppressing desires entirely feels unnatural in my daily life.",
+        "13": "Doing a service to a friend is of utmost importance to me, as building strong relationships through mutual support and loyalty is a core part of my values shaped by Japanese culture and my personal experiences in tight-knit work communities.",
+        "14": "Thrift is of utmost importance to me as a technician on a practical income; I've always lived by saving money, avoiding waste, and only buying what's necessary from my vocational background and family habits in Japan.",
+        "15": "As a technician, I deal with stressful repairs and deadlines, but I've learned to stay calm through experience and seldom feel nervous now.",
+        "16": "As a technician, I have steady work and enjoy fixing things hands-on, but daily stresses like long hours and family responsibilities mean I'm content only sometimes, not always happy. Life in Japan has its routines that keep me balanced but not overly joyful.",
+        "17": "No, seldom. As a technician, I prioritize my work and responsibilities, but I usually find ways to manage circumstances and do what I really want by planning ahead. Other people rarely stop me completely.",
+        "18": "Fair. As a technician in my mid-40s, I stay active on the job but deal with some aches from physical work and minor age-related issues, nothing serious though.",
+        "19": "Somewhat proud. Japan has a strong work ethic and technological achievements that I appreciate as a technician, but issues like long working hours and an aging society make me less enthusiastic about national pride.",
+        "20": "In Japanese workplaces, hierarchy is strong, so subordinates usually hesitate to contradict their boss directly to avoid conflict or loss of face, based on my experience as a technician. This is common even if they might suggest ideas indirectly.",
+        "21": "Strongly agree, as a good manager relies on guiding teams, fostering problem-solving skills in subordinates, and knowing when to seek answers collaboratively rather than needing to know everything personally from my experience as a technician leading small teams.",
+        "22": "Persistent efforts are indeed the surest way to achieve results, as I've seen in my years as a technician where consistent hard work on repairs and projects always pays off over time. Giving up too soon leads to failure, while perseverance guarantees progress.",
+        "23": "In my experience as a technician, having two bosses can sometimes be useful for coordinating complex projects across departments, as long as communication is clear. Avoiding it entirely might limit flexibility in practical work environments.",
+        "24": "Rules are important for safety and order in a workplace, but as a technician, I've seen situations where strictly following them blindly could cause more harm, so some flexibility is needed if it's truly for the organization's benefit.  \nI believe good judgment from experience should allow exceptions when rules are outdated or counterproductive."
+      },
+      "Rin": {
+        "1": "Having sufficient time for my personal and home life is of utmost importance to me, as it allows me to maintain balance, nurture relationships with family and friends, and pursue hobbies that recharge me after work. In my experience as a professional, burnout from overwork diminishes effectiveness, so prioritizing this ensures long-term fulfillment and productivity.",
+        "2": "Having a boss I can respect is very important to me because it fosters a positive work environment, provides strong guidance, and motivates me to perform at my best in my professional life.",
+        "3": "Recognition for good performance is moderately important to me, as it motivates and validates my efforts, but it is not the primary driver compared to the intrinsic satisfaction of the work itself and personal growth.",
+        "4": "Security of employment is very important to me as it provides stability and peace of mind, allowing me to focus on my work without constant worry about sudden job loss, especially in Japan's competitive job market. While not the utmost priority, it ranks high alongside opportunities for growth and fulfillment.",
+        "5": "Having pleasant people to work with is very important to me because a positive work environment significantly enhances daily motivation, collaboration, and overall job satisfaction in my professional experience.",
+        "6": "Doing work that is interesting is of utmost importance to me because it keeps me motivated, engaged, and fulfilled in my professional life, allowing me to contribute meaningfully over the long term. Without genuine interest, even a high-paying job would feel draining and unsustainable.",
+        "7": "Being consulted by my boss on work-related decisions is very important to me, as it shows respect for my expertise and ensures better outcomes through collaborative input, aligning with my professional values shaped by years in a team-oriented Japanese work culture.",
+        "8": "Very important, as living in a desirable area with good quality of life, safety, and access to cultural amenities would greatly enhance my daily happiness and work-life balance in an ideal job.  \nThis aligns with my values of prioritizing a harmonious environment that supports personal well-being alongside professional fulfillment.",
+        "9": "Respect from family and friends is nice to have and motivates me somewhat, but it would not be a primary factor in choosing my ideal job, as I prioritize personal fulfillment and professional growth over external validation.",
+        "10": "Chances for promotion are very important to me as they provide motivation for growth and recognition of hard work in a professional career. In Japan, career advancement is a key aspect of job satisfaction and long-term stability.",
+        "11": "Keeping time free for fun is of moderate importance to me, as my professional life demands a structured schedule, but I value balance by incorporating leisure activities like hobbies or travel to recharge and maintain well-being.",
+        "12": "Having few desires is of little importance to me, as I value pursuing meaningful ambitions and personal growth in my professional and private life rather than suppressing desires. Moderation in actions is preferable, but not in aspirations.",
+        "13": "Doing a service to a friend is of utmost importance to me, as nurturing strong, reciprocal relationships through acts of kindness and support is a core value deeply rooted in Japanese culture and my personal experiences.",
+        "14": "Thrift is very important to me as a professional in Japan, where frugality and mindful spending are ingrained values from my upbringing and culture, helping me maintain financial stability without unnecessary extravagance.",
+        "15": "As a professional in Japan, I manage stress through routines like work-life balance and mindfulness, so I seldom feel nervous or tense. Daily pressures exist, but they rarely overwhelm me.",
+        "16": "I usually feel happy in my daily life as a professional in Japan, surrounded by meaningful work and close relationships, though occasional stresses like long hours can temper it. Overall, contentment outweighs the lows.",
+        "17": "Sometimes external circumstances like work deadlines or family obligations limit my choices, but I generally find ways to prioritize what matters most to me.",
+        "18": "I consider my health very good these days, as I maintain a balanced diet, exercise regularly with yoga and walking, and have no major medical issues at my age of 33.",
+        "19": "Somewhat proud. I appreciate Japan's rich cultural heritage, technological advancements, and peaceful society, but I am critical of issues like excessive work culture, gender inequality, and political stagnation that hinder progress.",
+        "20": "In Japanese professional and educational settings, hierarchy and respect for authority often make subordinates or students hesitant to contradict superiors directly, though it happens more openly in informal or younger groups. From my experience in corporate environments, this fear is usual but can be mitigated by trusting relationships.",
+        "21": "Strongly agree because effective management relies more on guiding teams, fostering problem-solving skills, and knowing when to seek expertise rather than having all answers instantly. In my professional experience, no one knows everything, and empowering subordinates to contribute builds stronger, more innovative teams.",
+        "22": "I strongly agree because my professional experience in Japan has shown that consistent, persistent effort overcomes obstacles and leads to reliable results, as seen in my career progression through dedication despite challenges.",
+        "23": "While dual reporting lines can create confusion and accountability issues in some cases, matrix structures with two bosses are effective in dynamic industries like tech and consulting, allowing for better resource allocation and expertise sharing based on my professional experience. I disagree with avoiding them outright as they can enhance flexibility and innovation when managed well.",
+        "24": "While rules exist for good reasons and should generally be followed, there are situations where rigid adherence could harm the organization, such as in emergencies or when rules are outdated, so employees should have some flexibility to prioritize the greater good.  \nIn my professional experience in Japan, where hierarchy is valued, I've seen that questioning rules thoughtfully can lead to better outcomes without undermining authority."
+      },
+      "Mei": {
+        "1": "As a 58-year-old woman with family responsibilities, having sufficient time for my personal and home life is of utmost importance to maintain balance and care for loved ones. Without it, no job would feel ideal no matter the pay or status.",
+        "2": "Having a boss I can respect is of utmost importance because in Japanese work culture, a good superior provides guidance, fairness, and motivation, which are essential for my job satisfaction and productivity. Without respect for my boss, the daily work environment would feel unbearable after years in clerical roles.",
+        "3": "Recognition for good performance is moderately important to me, as it motivates me to do my best work, but I value a harmonious workplace and personal satisfaction more than public praise. In my clerical experience, quiet acknowledgment from superiors has been enough without needing constant spotlight.",
+        "4": "As a woman in my late 50s with no formal qualifications, security of employment is of utmost importance to me because it provides stability and peace of mind in my later years, preventing the fear of sudden job loss or financial hardship. Without it, I would constantly worry about supporting myself after a lifetime of modest clerical work.",
+        "5": "Having pleasant people to work with is of utmost importance to me because a harmonious workplace makes daily tasks enjoyable and reduces stress, drawing from my years in clerical work where good colleagues were key to enduring long hours.",
+        "6": "As a simple clerical worker, I've spent years in dull routines that drain the soul, so in my ideal job, interesting work would be of utmost importance to feel truly alive and fulfilled every day.",
+        "7": "Being consulted by my boss on work decisions is very important to me because it shows respect for my experience and helps ensure the best outcomes in my daily clerical tasks. In my years of admin work, I've seen how ignoring input leads to mistakes, so feeling valued matters greatly.",
+        "8": "Very important, as living in a desirable area like a peaceful neighborhood in Japan with good access to family, shops, and nature would greatly enhance my daily happiness and work-life balance in my ideal job.",
+        "9": "In Japanese culture, family and social respect for one's job is very important to me, as it reflects on our honor and standing in the community. I would want my ideal job to be one that my family and friends admire.",
+        "10": "At 58, I am past the age where promotions matter to me; I value stability and a peaceful routine over climbing the career ladder. My clerical work has taught me that promotions often bring more stress without much benefit at this stage of life.",
+        "11": "Keeping time free for fun is of moderate importance to me, as my clerical work keeps me busy, but I make time for simple pleasures like family gatherings or quiet hobbies after duties are done. At my age, I've learned balance is key without neglecting responsibilities.",
+        "12": "Moderation in desires is somewhat important to me as it helps maintain a balanced life without excess, but I value pursuing necessary comforts and family needs from my experiences in clerical work and daily living.",
+        "13": "Doing a service to a friend is of utmost importance to me, as in Japanese culture and my own life, helping friends strengthens bonds and brings mutual support during hard times.",
+        "14": "Thrift is of utmost importance to me as a clerical worker on a modest income in Japan, where I've always lived frugally to support my family and avoid debt after years of careful budgeting.",
+        "15": "I seldom feel nervous or tense these days, as my clerical work is routine and predictable after many years, and I've learned to stay calm through life's ups and downs.",
+        "16": "I am sometimes happy, as life in Japan has its joys like family moments and simple routines, but at 58 with clerical work and daily stresses, happiness comes and goes.",
+        "17": "Sometimes circumstances like health issues or family obligations prevent me from doing exactly what I want, but I usually find ways to manage around them. In my clerical job, unexpected tasks come up occasionally, but not always.",
+        "18": "At my age of 58, with a clerical job that keeps me sitting most of the day, I have some aches in my back and joints from years of routine work, but nothing that stops me from managing daily life. Overall, it's fair, as I stay active enough around the house and feel okay most days.",
+        "19": "I am very proud to be Japanese because our culture, traditions, and the hard work of our people have built a peaceful and prosperous nation that I admire deeply from my lifelong experience living here.  \nThis pride comes from seeing Japan's resilience after the war and its respect for harmony in daily life.",
+        "20": "In Japanese workplaces and schools, hierarchy is deeply respected, so subordinates and students usually hesitate to contradict superiors out of fear of losing face or causing disharmony. From my clerical experience, I've seen this happen most of the time.",
+        "21": "Strongly agree, because a good manager relies on guiding and empowering the team rather than knowing every detail personally, drawing from my clerical experience where leaders delegate and learn together.",
+        "22": "Persistent efforts are indeed the surest way to achieve results, as I've seen in my clerical work where steady daily tasks lead to reliable outcomes over time. Giving up too soon never brings success in life.",
+        "23": "In my clerical work, I've seen matrix structures with dual reporting work well for flexibility and sharing resources across departments. Avoiding them entirely would limit efficiency in dynamic organizations.",
+        "24": "Rules are important for order, but sometimes they are outdated or inflexible, and an employee with good judgment should be able to break them if it truly benefits the organization without causing harm.  \nIn my clerical work, I've seen rigid rules slow down processes, so flexibility is needed for real progress."
+      }
+    }
+  },
+  "individual_dimension_scores": {
+    "Australia": {
+      "James": {
+        "PDI": 0.0,
+        "IDV": 105.0,
+        "MAS": -35.0,
+        "UAI": -155.0,
+        "LTO": -40.0,
+        "IVR": 75.0
+      },
+      "Charlotte": {
+        "PDI": 0.0,
+        "IDV": 105.0,
+        "MAS": -70.0,
+        "UAI": -155.0,
+        "LTO": -55.0,
+        "IVR": 110.0
+      },
+      "Amelia": {
+        "PDI": 0.0,
+        "IDV": 70.0,
+        "MAS": -151.66666666666669,
+        "UAI": -115.0,
+        "LTO": -25.0,
+        "IVR": 145.0
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "PDI": 0.0,
+        "IDV": 35.0,
+        "MAS": 0.0,
+        "UAI": -155.0,
+        "LTO": 0.0,
+        "IVR": 40.0
+      },
+      "Nur": {
+        "PDI": 0.0,
+        "IDV": 105.0,
+        "MAS": 0.0,
+        "UAI": -195.0,
+        "LTO": -15.0,
+        "IVR": 110.0
+      },
+      "Siti": {
+        "PDI": 35.0,
+        "IDV": 35.0,
+        "MAS": -70.0,
+        "UAI": -115.0,
+        "LTO": -25.0,
+        "IVR": 35.0
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "PDI": 0.0,
+        "IDV": 35.0,
+        "MAS": -35.0,
+        "UAI": -115.0,
+        "LTO": 50.0,
+        "IVR": 75.0
+      },
+      "Rin": {
+        "PDI": 0.0,
+        "IDV": 105.0,
+        "MAS": -35.0,
+        "UAI": -195.0,
+        "LTO": 10.0,
+        "IVR": 75.0
+      },
+      "Mei": {
+        "PDI": 35.0,
+        "IDV": 35.0,
+        "MAS": -175.0,
+        "UAI": -115.0,
+        "LTO": 0.0,
+        "IVR": 0.0
+      }
+    }
+  },
+  "individual_run_dimensions": {
+    "Australia": {
+      "James": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -35,
+          "UAI": -155,
+          "LTO": -40,
+          "IVR": 75
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -35,
+          "UAI": -155,
+          "LTO": -40,
+          "IVR": 75
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -35,
+          "UAI": -155,
+          "LTO": -40,
+          "IVR": 75
+        }
+      },
+      "Charlotte": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -70,
+          "UAI": -155,
+          "LTO": -55,
+          "IVR": 110
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -70,
+          "UAI": -155,
+          "LTO": -55,
+          "IVR": 110
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -70,
+          "UAI": -155,
+          "LTO": -55,
+          "IVR": 110
+        }
+      },
+      "Amelia": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 70,
+          "MAS": -175,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 145
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 70,
+          "MAS": -140,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 145
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 70,
+          "MAS": -140,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 145
+        }
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 35,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": 0,
+          "IVR": 40
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 35,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": 0,
+          "IVR": 40
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 35,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": 0,
+          "IVR": 40
+        }
+      },
+      "Nur": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": 0,
+          "UAI": -195,
+          "LTO": -15,
+          "IVR": 110
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": 0,
+          "UAI": -195,
+          "LTO": -15,
+          "IVR": 110
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": 0,
+          "UAI": -195,
+          "LTO": -15,
+          "IVR": 110
+        }
+      },
+      "Siti": {
+        "run_1": {
+          "PDI": 35,
+          "IDV": 35,
+          "MAS": -70,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 35
+        },
+        "run_2": {
+          "PDI": 35,
+          "IDV": 35,
+          "MAS": -70,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 35
+        },
+        "run_3": {
+          "PDI": 35,
+          "IDV": 35,
+          "MAS": -70,
+          "UAI": -115,
+          "LTO": -25,
+          "IVR": 35
+        }
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 35,
+          "MAS": -35,
+          "UAI": -115,
+          "LTO": 50,
+          "IVR": 75
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 35,
+          "MAS": -35,
+          "UAI": -115,
+          "LTO": 50,
+          "IVR": 75
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 35,
+          "MAS": -35,
+          "UAI": -115,
+          "LTO": 50,
+          "IVR": 75
+        }
+      },
+      "Rin": {
+        "run_1": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -35,
+          "UAI": -195,
+          "LTO": 10,
+          "IVR": 75
+        },
+        "run_2": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -35,
+          "UAI": -195,
+          "LTO": 10,
+          "IVR": 75
+        },
+        "run_3": {
+          "PDI": 0,
+          "IDV": 105,
+          "MAS": -35,
+          "UAI": -195,
+          "LTO": 10,
+          "IVR": 75
+        }
+      },
+      "Mei": {
+        "run_1": {
+          "PDI": 35,
+          "IDV": 35,
+          "MAS": -175,
+          "UAI": -115,
+          "LTO": 0,
+          "IVR": 0
+        },
+        "run_2": {
+          "PDI": 35,
+          "IDV": 35,
+          "MAS": -175,
+          "UAI": -115,
+          "LTO": 0,
+          "IVR": 0
+        },
+        "run_3": {
+          "PDI": 35,
+          "IDV": 35,
+          "MAS": -175,
+          "UAI": -115,
+          "LTO": 0,
+          "IVR": 0
+        }
+      }
+    }
+  },
+  "pooled_dimension_scores": {
+    "Australia": {
+      "PDI": 0.0,
+      "IDV": 93.33333333333334,
+      "MAS": -85.55555555555556,
+      "UAI": -141.66666666666666,
+      "LTO": -40.0,
+      "IVR": 110.0
+    },
+    "Malaysia": {
+      "PDI": 11.666666666666664,
+      "IDV": 58.333333333333336,
+      "MAS": -23.333333333333336,
+      "UAI": -155.0,
+      "LTO": -13.33333333333333,
+      "IVR": 61.66666666666666
+    },
+    "Japan": {
+      "PDI": 11.666666666666664,
+      "IDV": 58.333333333333336,
+      "MAS": -81.66666666666666,
+      "UAI": -141.66666666666666,
+      "LTO": 20.000000000000007,
+      "IVR": 50.00000000000001
+    }
+  },
+  "pooled_run_dimensions": {
+    "Australia": {
+      "run_1": {
+        "PDI": 0.0,
+        "IDV": 93.33333333333334,
+        "MAS": -93.33333333333331,
+        "UAI": -141.66666666666666,
+        "LTO": -40.0,
+        "IVR": 110.0
+      },
+      "run_2": {
+        "PDI": 0.0,
+        "IDV": 93.33333333333334,
+        "MAS": -81.66666666666666,
+        "UAI": -141.66666666666666,
+        "LTO": -40.0,
+        "IVR": 110.0
+      },
+      "run_3": {
+        "PDI": 0.0,
+        "IDV": 93.33333333333334,
+        "MAS": -81.66666666666666,
+        "UAI": -141.66666666666666,
+        "LTO": -40.0,
+        "IVR": 110.0
+      }
+    },
+    "Malaysia": {
+      "run_1": {
+        "PDI": 11.666666666666664,
+        "IDV": 58.333333333333336,
+        "MAS": -23.333333333333336,
+        "UAI": -155.0,
+        "LTO": -13.33333333333333,
+        "IVR": 61.66666666666666
+      },
+      "run_2": {
+        "PDI": 11.666666666666664,
+        "IDV": 58.333333333333336,
+        "MAS": -23.333333333333336,
+        "UAI": -155.0,
+        "LTO": -13.33333333333333,
+        "IVR": 61.66666666666666
+      },
+      "run_3": {
+        "PDI": 11.666666666666664,
+        "IDV": 58.333333333333336,
+        "MAS": -23.333333333333336,
+        "UAI": -155.0,
+        "LTO": -13.33333333333333,
+        "IVR": 61.66666666666666
+      }
+    },
+    "Japan": {
+      "run_1": {
+        "PDI": 11.666666666666664,
+        "IDV": 58.333333333333336,
+        "MAS": -81.66666666666666,
+        "UAI": -141.66666666666666,
+        "LTO": 20.000000000000007,
+        "IVR": 50.00000000000001
+      },
+      "run_2": {
+        "PDI": 11.666666666666664,
+        "IDV": 58.333333333333336,
+        "MAS": -81.66666666666666,
+        "UAI": -141.66666666666666,
+        "LTO": 20.000000000000007,
+        "IVR": 50.00000000000001
+      },
+      "run_3": {
+        "PDI": 11.666666666666664,
+        "IDV": 58.333333333333336,
+        "MAS": -81.66666666666666,
+        "UAI": -141.66666666666666,
+        "LTO": 20.000000000000007,
+        "IVR": 50.00000000000001
+      }
+    }
+  },
+  "kendall_tau": {
+    "PDI": {
+      "tau": 0.816496580927726,
+      "human_ranking": {
+        "Malaysia": 1,
+        "Japan": 2,
+        "Australia": 3
+      },
+      "llm_ranking": {
+        "Japan": 1,
+        "Malaysia": 2,
+        "Australia": 3
+      }
+    },
+    "IDV": {
+      "tau": 0.816496580927726,
+      "human_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      }
+    },
+    "MAS": {
+      "tau": -0.33333333333333337,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Malaysia": 1,
+        "Japan": 2,
+        "Australia": 3
+      }
+    },
+    "UAI": {
+      "tau": 0.816496580927726,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      }
+    },
+    "LTO": {
+      "tau": 0.33333333333333337,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Japan": 1,
+        "Malaysia": 2,
+        "Australia": 3
+      }
+    },
+    "IVR": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      }
+    },
+    "average_tau": 0.5749149571305298
+  },
+  "kendall_tau_per_run": {
+    "run_1": {
+      "PDI": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Malaysia": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": -0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "UAI": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Malaysia": 2,
+          "Australia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.5749149571305298
+    },
+    "run_2": {
+      "PDI": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Malaysia": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": -0.816496580927726,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Australia": 2,
+          "Japan": 3
+        }
+      },
+      "UAI": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Malaysia": 2,
+          "Australia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.49438774919813094
+    },
+    "run_3": {
+      "PDI": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Malaysia": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": -0.816496580927726,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Australia": 2,
+          "Japan": 3
+        }
+      },
+      "UAI": {
+        "tau": 0.816496580927726,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Malaysia": 2,
+          "Australia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.49438774919813094
+    }
+  }
+}

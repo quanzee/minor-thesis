@@ -1,0 +1,1970 @@
+{
+  "day": 2,
+  "n_runs": 3,
+  "individual_responses_averaged": {
+    "Australia": {
+      "James": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 2.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 2.0,
+        "9": 2.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 3.0,
+        "16": 2.0,
+        "17": 4.0,
+        "18": 2.6666666666666665,
+        "19": 2.0,
+        "20": 3.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 4.0
+      },
+      "Charlotte": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 3.0,
+        "5": 2.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 2.0,
+        "9": 2.6666666666666665,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 3.0,
+        "13": 1.3333333333333333,
+        "14": 2.0,
+        "15": 3.0,
+        "16": 2.0,
+        "17": 4.0,
+        "18": 2.0,
+        "19": 2.0,
+        "20": 3.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 4.0
+      },
+      "Amelia": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 2.0,
+        "9": 2.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 3.0,
+        "16": 2.0,
+        "17": 4.0,
+        "18": 3.0,
+        "19": 2.0,
+        "20": 3.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 4.0
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 2.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 2.0,
+        "7": 2.0,
+        "8": 3.0,
+        "9": 1.0,
+        "10": 2.0,
+        "11": 1.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.0,
+        "18": 2.0,
+        "19": 1.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 4.0
+      },
+      "Nur": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 2.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 3.0,
+        "8": 3.0,
+        "9": 1.0,
+        "10": 2.0,
+        "11": 1.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 3.0,
+        "15": 4.666666666666667,
+        "16": 2.0,
+        "17": 4.0,
+        "18": 2.0,
+        "19": 2.0,
+        "20": 3.6666666666666665,
+        "21": 1.0,
+        "22": 2.0,
+        "23": 2.0,
+        "24": 4.0
+      },
+      "Siti": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 2.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 2.0,
+        "7": 2.0,
+        "8": 3.0,
+        "9": 1.0,
+        "10": 2.0,
+        "11": 1.0,
+        "12": 3.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 2.0,
+        "17": 3.3333333333333335,
+        "18": 3.0,
+        "19": 2.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 2.0,
+        "23": 2.0,
+        "24": 2.0
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 2.0,
+        "4": 2.0,
+        "5": 1.0,
+        "6": 1.6666666666666667,
+        "7": 1.0,
+        "8": 3.0,
+        "9": 2.0,
+        "10": 2.0,
+        "11": 3.0,
+        "12": 2.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 2.3333333333333335,
+        "20": 4.0,
+        "21": 2.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 1.0
+      },
+      "Rin": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 2.0,
+        "4": 2.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 3.0,
+        "9": 2.0,
+        "10": 1.0,
+        "11": 3.0,
+        "12": 2.0,
+        "13": 1.0,
+        "14": 2.0,
+        "15": 4.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 2.0,
+        "19": 2.6666666666666665,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 2.0
+      },
+      "Mei": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 2.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 3.0,
+        "9": 2.0,
+        "10": 1.0,
+        "11": 3.0,
+        "12": 2.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 3.3333333333333335,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 3.0,
+        "19": 3.0,
+        "20": 4.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 2.0,
+        "24": 1.0
+      }
+    }
+  },
+  "individual_all_runs": {
+    "Australia": {
+      "James": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 3,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 3,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        }
+      },
+      "Charlotte": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 2,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 3,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 2,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 2,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 3,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 2,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        }
+      },
+      "Amelia": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 3,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 3,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 4,
+          "18": 3,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        }
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 2,
+          "19": 1,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 4
+        }
+      },
+      "Nur": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 3,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 3,
+          "15": 4,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 2,
+          "24": 4
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 3,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 3,
+          "15": 5,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 2,
+          "24": 4
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 3,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 3,
+          "15": 5,
+          "16": 2,
+          "17": 4,
+          "18": 2,
+          "19": 2,
+          "20": 3,
+          "21": 1,
+          "22": 2,
+          "23": 2,
+          "24": 4
+        }
+      },
+      "Siti": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 4,
+          "18": 3,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 2,
+          "24": 2
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 3,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 2,
+          "24": 2
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "11": 1,
+          "12": 3,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 2,
+          "17": 3,
+          "18": 3,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 2,
+          "23": 2,
+          "24": 2
+        }
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 2,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 2,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 2,
+          "20": 4,
+          "21": 2,
+          "22": 1,
+          "23": 2,
+          "24": 1
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 2,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 2,
+          "22": 1,
+          "23": 2,
+          "24": 1
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 2,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 2,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 2,
+          "20": 4,
+          "21": 2,
+          "22": 1,
+          "23": 2,
+          "24": 1
+        }
+      },
+      "Rin": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 2,
+          "19": 2,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 2
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 2,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 2
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 2,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 2
+        }
+      },
+      "Mei": {
+        "run_1": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 1,
+          "15": 3,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 1
+        },
+        "run_2": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 1,
+          "15": 4,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 1
+        },
+        "run_3": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 1,
+          "15": 3,
+          "16": 3,
+          "17": 3,
+          "18": 3,
+          "19": 3,
+          "20": 4,
+          "21": 1,
+          "22": 1,
+          "23": 2,
+          "24": 1
+        }
+      }
+    }
+  },
+  "individual_explanations_last_run": {
+    "Australia": {
+      "James": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as I believe in maintaining a healthy work-life balance that allows for personal growth and family connections.",
+        "2": "Having a boss I can respect is of utmost importance to me, as respect is earned through competence and fair conduct. A respectful relationship fosters open communication and collaboration, which are essential for a productive work environment.",
+        "3": "Getting recognition for good performance is of utmost importance to me because it validates my hard work and effort, and it motivates me to continue striving for excellence in my field. I believe that success should be acknowledged openly, as it encourages a culture of achievement and personal growth.",
+        "4": "While I value personal freedom and self-determination, having job security is very important to me as it provides a stable foundation that allows me to pursue my goals and responsibilities without constant worry about my employment status.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as a positive work environment fosters collaboration, communication, and overall job satisfaction, which are essential for both personal and professional growth.",
+        "6": "Doing work that is interesting is of utmost importance to me, as it fuels my passion and motivation, allowing me to engage fully and take pride in my contributions. An interesting job keeps me challenged and encourages continuous learning, which aligns with my values of self-determination and personal growth.",
+        "7": "Being consulted by my boss in decisions involving my work is of utmost importance to me, as it reflects respect for my expertise and ensures that my input is valued in the decision-making process.",
+        "8": "Living in a desirable area is very important to me as it contributes to my overall quality of life and well-being, allowing me to enjoy my surroundings and have access to amenities that enhance my personal and professional experiences.",
+        "9": "While I value my family's and friends' opinions, my self-determination and personal satisfaction in my work are more important to me than external validation. I believe that respect should come from my own achievements and competence rather than solely from others' perceptions.",
+        "10": "Having chances for promotion is of utmost importance to me as it reflects my ability to grow and succeed based on my own efforts and skills, which I believe should be recognized and rewarded.",
+        "11": "Keeping time free for fun is of utmost importance to me as I believe that enjoying life and pursuing personal happiness should be a priority. Having control over my leisure time allows me to relax and recharge without needing to justify my choices to others.",
+        "12": "I believe moderation is important, but having desires can drive personal growth and happiness. It's about finding a balance that allows for enjoyment without excess.",
+        "13": "I believe that helping friends is essential to maintaining strong relationships and fostering a sense of community. It's important to support each other, as it builds trust and deepens connections.",
+        "14": "I believe thrift is very important as it aligns with my values of patience and steady effort, allowing me to save for future goals while still enjoying the present. Being mindful of spending helps me maintain control over my finances and leisure time.",
+        "15": "I feel nervous or tense sometimes, especially when faced with unpredictable situations, but I generally manage to find a balance between structure and change.",
+        "16": "I usually find happiness in my life, as I prioritize my leisure time and personal choices, but like everyone, I have my ups and downs.",
+        "17": "I believe I have a good handle on my life and choices, and while there may be occasional external influences, I prioritize my own desires and responsibilities, rarely allowing others to dictate my actions.",
+        "18": "I would describe my state of health as good; I generally take care of myself and stay active, but I acknowledge that there are always areas for improvement.",
+        "19": "I feel fairly proud to be an Australian citizen, as I appreciate the opportunities and freedoms we have, but I also recognize areas where our society can improve.",
+        "20": "In my experience, it happens sometimes that subordinates are hesitant to contradict their boss, often due to fear of repercussions or a lack of established communication protocols that encourage open dialogue. This can hinder collaboration and the sharing of valuable insights.",
+        "21": "I strongly agree because I believe that a good manager should foster an environment where team members feel comfortable discussing uncertainties and exploring solutions together, rather than feeling pressured to have all the answers.",
+        "22": "I strongly agree because I believe that consistent and patient effort leads to achieving long-term goals, and it's important to stay committed even when immediate results aren't visible.",
+        "23": "I agree that having two bosses can create confusion and conflict in decision-making, but in some cases, it can also foster collaboration and diverse perspectives if managed well. Clear communication and defined roles are essential to mitigate potential issues.",
+        "24": "I believe that while rules are important, they should be seen as guidelines rather than absolute. If breaking a rule genuinely serves the organization's best interest and is done responsibly, it can be justified."
+      },
+      "Charlotte": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as I believe that a healthy work-life balance is essential for overall well-being and personal fulfillment. It allows me to pursue my interests and maintain strong relationships outside of work.",
+        "2": "Having a boss I can respect is of utmost importance to me, as respect must be earned through competence and fair conduct. A respectful relationship with a superior fosters a positive work environment and encourages open communication.",
+        "3": "Recognition for good performance is of utmost importance to me as it validates my efforts and achievements, reinforcing my belief in the value of individual expression and success. It also motivates me to continue striving for excellence and encourages a culture of appreciation within the team.",
+        "4": "While job security is important for stability, I believe that individual expression and the ability to make choices are more crucial for personal fulfillment and success in a role.",
+        "5": "Having pleasant people to work with is very important to me as it fosters a positive and collaborative environment, which can enhance individual expression and candid opinions. However, I also believe that the quality of work and the ability to engage in healthy competition are equally crucial, so it's not the sole factor in my ideal job.",
+        "6": "Having work that is interesting is of utmost importance to me, as it fuels my passion and creativity, allowing me to express myself fully and stay engaged in my professional life.",
+        "7": "Being consulted by my boss in decisions involving my work is of utmost importance to me, as it reflects respect for my expertise and ensures that my insights and experiences are valued in the decision-making process.",
+        "8": "Living in a desirable area is very important to me as it contributes to my overall quality of life and well-being, allowing for a more enjoyable work-life balance and access to amenities that align with my values.",
+        "9": "While I value the respect of my family and friends, my personal fulfillment and integrity in my work are more important to me than external validation. I believe in pursuing a career that aligns with my values, regardless of others' opinions.",
+        "10": "Having chances for promotion is of utmost importance to me as it reflects my belief in individual achievement and the value of hard work. I see promotions as a recognition of effort and ability, which I believe should be celebrated rather than downplayed.",
+        "11": "Keeping time free for fun is of utmost importance to me as I believe that leisure and enjoyment are essential for a balanced and fulfilling life. It allows for personal happiness and self-expression, which I prioritize highly.",
+        "12": "I believe that moderation can be beneficial, but having desires is a natural part of life that can drive personal growth and happiness. It's important to find a balance rather than suppressing desires entirely.",
+        "13": "I believe that helping friends is essential to maintaining strong relationships and fostering a supportive community. Acts of service not only strengthen bonds but also reflect my values of kindness and empathy.",
+        "14": "I believe that being thrifty is very important as it aligns with my values of patience and steady effort towards future goals, allowing me to enjoy the present while also saving for what matters.",
+        "15": "I feel nervous or tense sometimes, especially when faced with unpredictability or significant changes, but I also recognize that these feelings can lead to growth and new opportunities.",
+        "16": "I usually find joy in my life and prioritize my happiness, but like everyone, I have moments that challenge my overall sense of well-being.",
+        "17": "I believe I have a good level of control over my own life and decisions, and while there may be occasional external influences, they seldom prevent me from pursuing what I truly want.",
+        "18": "I would describe my state of health as good; I generally take care of myself and maintain a balanced lifestyle, but there are occasional stresses that can impact my overall well-being.",
+        "19": "I am fairly proud to be an Australian citizen, as I appreciate the values of diversity and individual expression that our country promotes, but I also recognize areas where we can improve, particularly in social equity and environmental responsibility.",
+        "20": "In my experience, it is sometimes the case that subordinates are afraid to contradict their boss, often due to a fear of repercussions or a lack of a supportive environment that encourages open dialogue. This can hinder effective communication and the sharing of diverse perspectives within a team.",
+        "21": "I strongly agree because I believe that effective management involves fostering an environment of trust and open communication, where it's acceptable to admit uncertainty and encourage team members to express their thoughts and ideas.",
+        "22": "I strongly agree because I believe that consistent and patient efforts lead to meaningful outcomes, and that working steadily towards goals is essential for success.",
+        "23": "I agree that having two bosses can create confusion and conflict in decision-making, but I also recognize that in some contexts, such as matrix organizations, it can facilitate collaboration and flexibility.",
+        "24": "I believe that while rules are important for structure and consistency, there are situations where breaking a rule may be justified for the greater good of the organization. However, it should be approached with caution and transparency."
+      },
+      "Amelia": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as I believe in maintaining a healthy work-life balance that allows for personal freedom and self-determination.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe respect must be earned through competence and fair conduct. A respectful relationship with a superior fosters a positive work environment and encourages open communication.",
+        "3": "Receiving recognition for good performance is of utmost importance to me, as it validates my hard work and effort, and fosters a sense of pride in my achievements. I believe that acknowledgment not only motivates me but also strengthens team morale and unity.",
+        "4": "Security of employment is of utmost importance to me as it allows for personal stability and the freedom to make choices without the constant worry of job loss. It also enables me to focus on my contributions and growth within a team environment.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as a positive and supportive work environment fosters collaboration, enhances morale, and makes the workday more enjoyable. I believe that strong interpersonal relationships can significantly contribute to overall job satisfaction and productivity.",
+        "6": "Doing work that is interesting is of utmost importance to me, as it keeps me engaged and motivated, allowing me to contribute meaningfully while enjoying the process.",
+        "7": "Being consulted by my boss in decisions involving my work is of utmost importance to me, as it reflects respect for my expertise and acknowledges my role in the team. I believe that collaboration leads to better outcomes and fosters a sense of ownership over my work.",
+        "8": "Living in a desirable area is very important to me as it contributes to my overall quality of life and well-being, allowing me to enjoy my surroundings and feel more motivated in my work.",
+        "9": "While I value the respect of my family and friends, my personal fulfillment and the ability to make my own choices in my job are more important to me. I believe that self-determination should take precedence over external validation.",
+        "10": "Having chances for promotion is of utmost importance to me as it reflects recognition of my efforts and abilities, and it motivates me to strive for excellence in my work. I believe that personal growth and advancement are essential components of a fulfilling career.",
+        "11": "Keeping time free for fun is of utmost importance to me because I believe that enjoying life and pursuing personal happiness should be a priority. It allows me to recharge and maintain a healthy balance in my life.",
+        "12": "I believe that having a balance in life is important, and while I appreciate moderation, I also think it's natural to have desires and aspirations that bring joy and fulfillment. It's about finding a healthy way to pursue those desires without excess.",
+        "13": "Doing a service to a friend is of utmost importance to me because I believe in the value of supporting those close to us and fostering strong, meaningful relationships. Helping friends not only strengthens our bonds but also creates a sense of community and trust.",
+        "14": "I believe that being thrifty is very important as it allows for saving and working towards future goals, while still enjoying the present. It reflects a balance between financial responsibility and personal enjoyment.",
+        "15": "I feel nervous or tense sometimes, especially when faced with unpredictability, but I also recognize that it's a natural part of life and try to manage it with patience and a flexible mindset.",
+        "16": "I usually find joy in my life and prioritize my happiness, but like everyone, I have my ups and downs. I believe in enjoying life and making the most of my leisure time, which contributes to my overall happiness.",
+        "17": "I believe I have the ability to prioritize my own desires and make choices that align with my values, so others seldom prevent me from doing what I want. I value my personal freedom and self-determination, which helps me navigate external influences.",
+        "18": "I would describe my state of health as fair; I experience some ups and downs but generally manage to maintain a balanced lifestyle. I believe in taking steady steps towards improvement while also enjoying life as it comes.",
+        "19": "I feel fairly proud to be an Australian citizen, as I appreciate the values of freedom and diversity in our society, but I also recognize areas where we can improve, particularly in terms of social equity and environmental responsibility.",
+        "20": "In my experience, it is sometimes the case that subordinates are afraid to contradict their boss, often due to concerns about repercussions or a desire to maintain harmony in the workplace. However, I believe that fostering an environment where open communication is encouraged can help alleviate this fear.",
+        "21": "I strongly agree because I believe that a good manager should be able to guide and support their team, even if they don't have all the answers. It's important to foster an environment where questions can be explored together rather than feeling pressured to have a definitive response.",
+        "22": "I strongly agree because I believe that patience and steady effort are essential in achieving long-term goals, and consistent work often leads to meaningful results.",
+        "23": "I agree that having two bosses can create confusion and conflict in decision-making, but I also recognize that in some cases, it can foster collaboration and diverse perspectives. It's important to find a balance that maintains clarity while allowing for effective teamwork.",
+        "24": "I believe that while rules are important, they should be seen as guides rather than absolute. If breaking a rule genuinely serves the organization's best interest, it may be reasonable to consider it, especially if it leads to positive outcomes."
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as I believe in prioritizing my obligations to my family and maintaining harmony in my close relationships. Balancing work and personal life allows me to support my loved ones while also achieving my own goals.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe in the value of authority and guidance from those in senior positions. A respectful relationship with a superior fosters a positive work environment and enhances my ability to learn and grow.",
+        "3": "I believe that recognition for good performance is very important as it fosters a sense of value and appreciation among team members, which can enhance overall morale and motivation. However, I also prioritize the wellbeing of others and maintaining harmony, so while recognition matters, it shouldn't overshadow the collective support within the team.",
+        "4": "Security of employment is of utmost importance to me because it allows me to provide for my family and fulfill my obligations to those who raised and protected me. A stable job ensures that I can maintain harmony in my close relationships without the stress of financial uncertainty.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as I believe that a supportive and harmonious work environment fosters collaboration and enhances overall job satisfaction. Building positive relationships with colleagues contributes significantly to both personal and team success.",
+        "6": "I believe that doing work that is interesting is very important as it can enhance my engagement and motivation, but it should not overshadow my obligations to my family and close relationships.",
+        "7": "I believe that while it's important to have guidance from my superiors, being consulted in decisions can enhance communication and empower the team, which I value. However, I also respect the authority of my boss and understand that they have the final say.",
+        "8": "Living in a desirable area is of moderate importance to me; while I appreciate a pleasant environment, I prioritize my relationships and community over the location itself.",
+        "9": "Having a job respected by my family and friends is of utmost importance to me, as I believe that their support and recognition validate my efforts and contributions, reinforcing the loyalty I feel towards those who raised and protected me.",
+        "10": "I believe that having chances for promotion is very important as it reflects personal growth and achievement, but I also value the wellbeing of my colleagues and the harmony within the team.",
+        "11": "Keeping time free for fun is of utmost importance to me as I believe that leisure and enjoyment are essential for a fulfilling life, allowing me to recharge and appreciate the moments that matter.",
+        "12": "I believe in enjoying life and pursuing my desires, but I also recognize the value of moderation. Having a balance between desires and contentment is important to me.",
+        "13": "Doing a service to a friend is of utmost importance to me because I believe in loyalty and supporting those who have been there for me. Helping friends strengthens our bonds and reflects the values of care and community that I hold dear.",
+        "14": "I believe thrift is very important as it reflects respect for resources and helps ensure financial stability, but I also recognize the value of spending on meaningful experiences and supporting loved ones.",
+        "15": "I seldom feel nervous or tense, as I prefer to adapt to situations and focus on practical results rather than getting caught up in rigid plans. My experience has taught me to remain calm and flexible, which helps me manage stress effectively.",
+        "16": "I usually feel happy as I value leisure and enjoy spending time with loved ones, but there are moments when life's challenges can affect my overall happiness.",
+        "17": "Sometimes, I find that external factors or the needs of others can influence my ability to pursue what I truly want, but I try to balance my desires with the well-being of those around me.",
+        "18": "I feel that my health is generally good, as I maintain an active lifestyle and take care of my well-being, but I recognize that there are areas I could improve upon.",
+        "19": "I feel very proud to be a citizen of Malaysia, as I value our rich traditions and cultural diversity, which contribute to a strong sense of community and belonging. This pride motivates me to contribute positively to my country and its people.",
+        "20": "In my experience, it is usually the case that subordinates are hesitant to contradict their boss, as there is a natural respect for authority and a desire to maintain harmony in the workplace. This can lead to a reluctance to voice differing opinions or concerns.",
+        "21": "I strongly agree because I believe that effective management is more about guiding and supporting team members rather than having all the answers. Flexibility and the ability to adapt to situations are crucial in fostering a productive work environment.",
+        "22": "I strongly agree because I believe that consistent and dedicated efforts often lead to tangible results, reflecting my own experiences in both personal and professional contexts.",
+        "23": "I agree that having two bosses can create confusion and conflict in authority, but I also recognize that in some cases, it can foster collaboration and diverse perspectives.",
+        "24": "I believe that while rules are important, there are situations where adapting or breaking them can lead to better outcomes for the organization, especially if it aligns with practical results and the greater good."
+      },
+      "Nur": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as I believe in prioritizing the well-being of my family and maintaining strong relationships with those who raised and protected me. Balancing work and personal life is essential for overall happiness and fulfillment.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe that respect for authority fosters a positive work environment and encourages effective guidance and mentorship. A respectful relationship with a superior enhances my motivation and commitment to the team's goals.",
+        "3": "Receiving recognition for good performance is very important to me as it not only validates my efforts but also motivates me to continue contributing positively to the team and organization. However, I also value collaboration and team success over individual accolades.",
+        "4": "Security of employment is of utmost importance to me as it allows me to focus on my responsibilities and support my family without the constant worry of instability. This aligns with my belief in prioritizing the well-being of those who raised and protected me.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as positive relationships and a supportive environment significantly enhance collaboration, communication, and overall job satisfaction.",
+        "6": "Having interesting work is of utmost importance to me as it keeps me engaged and motivated, allowing me to contribute meaningfully while also fostering a sense of personal fulfillment.",
+        "7": "While I value being consulted by my boss in decisions involving my work, I also believe in respecting their authority and guidance. A balance between input and deference is important for team cohesion and performance.",
+        "8": "Living in a desirable area is of moderate importance to me; while I appreciate a pleasant environment, I prioritize job satisfaction and team dynamics over location.",
+        "9": "Having a job respected by my family and friends is of utmost importance to me, as I believe that my deepest obligation is to those who raised and protected me, and their approval significantly influences my sense of fulfillment and purpose.",
+        "10": "Having chances for promotion is very important to me as it reflects opportunities for personal and professional growth, which I value alongside fostering a supportive team environment.",
+        "11": "Keeping time free for fun is of utmost importance to me as I believe that leisure and enjoyment are essential for a fulfilling life, allowing me to recharge and pursue my passions without justification.",
+        "12": "I believe in enjoying life and pursuing my desires, but I also recognize the value of moderation. Having a balance between desires and contentment is important for overall well-being.",
+        "13": "Doing a service to a friend is of utmost importance to me as I believe in the value of loyalty and support for those who have been there for me. Helping friends strengthens our bonds and reflects my commitment to the relationships that matter most in my life.",
+        "14": "I believe in being mindful of spending and not wasting resources, but I also value enjoying life and experiences, so I find a balance between thriftiness and indulgence.",
+        "15": "I rarely feel nervous or tense, as I prioritize open communication and flexibility in my work environment, which helps me manage stress effectively.",
+        "16": "I usually find happiness in my life, as I prioritize leisure and enjoyment while also valuing my relationships and teamwork, which contribute positively to my overall well-being.",
+        "17": "While there are occasional circumstances or people that may influence my decisions, I generally prioritize my own desires and make choices that align with my values and beliefs.",
+        "18": "I would describe my state of health as good, as I generally maintain a balanced lifestyle that includes both work and leisure, allowing me to manage stress effectively and enjoy my personal time.",
+        "19": "I feel fairly proud to be a citizen of my country, as I appreciate its rich traditions and cultural diversity, but I also recognize areas where improvements are needed for the wellbeing of all citizens.",
+        "20": "In my experience, subordinates sometimes feel hesitant to contradict their boss, especially in hierarchical environments where respect for authority is emphasized. However, there are also instances where team members feel comfortable sharing their opinions, which can lead to constructive discussions.",
+        "21": "I strongly agree because a good manager should foster an environment where team members feel comfortable asking questions and exploring solutions together, rather than relying solely on the manager for every answer.",
+        "22": "I agree that persistent efforts often lead to results, but I also believe that adaptability and being open to change can be equally important in achieving success.",
+        "23": "I agree that having two bosses can create confusion and conflict in decision-making, but I also recognize that in some cases, it can foster collaboration and diverse perspectives. Balancing authority and input is essential for effective teamwork.",
+        "24": "I believe that while rules are important for maintaining order, there are situations where flexibility and practical results should take precedence, especially if breaking a rule could lead to a better outcome for the organization."
+      },
+      "Siti": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as I believe in prioritizing my obligations to my family and maintaining harmony in my close relationships. Balancing work and personal life allows me to support my loved ones while also achieving personal fulfillment.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe in the value of seniority and guidance from those in higher positions. A respectful relationship with my superior fosters a harmonious work environment and allows for effective collaboration.",
+        "3": "I believe that recognition for good performance is very important as it not only boosts morale but also encourages a culture of appreciation and support among colleagues, which aligns with my values of caring for others' wellbeing.",
+        "4": "Security of employment is of utmost importance to me because I believe in providing stability for myself and my family, which aligns with my values of loyalty and responsibility to those who depend on me.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as I believe that a harmonious work environment fosters collaboration and enhances overall job satisfaction. Positive relationships among colleagues contribute significantly to a supportive and productive atmosphere.",
+        "6": "I believe that doing work that is interesting is very important as it can enhance my engagement and satisfaction, but it should not overshadow my commitment to supporting and maintaining harmony with my colleagues.",
+        "7": "I believe that while it's important to have some input in decisions, I value the guidance and authority of my boss more, so being consulted is very important but not the highest priority for me.",
+        "8": "Living in a desirable area is of moderate importance to me; while I appreciate a pleasant environment, I prioritize the quality of relationships and the work culture over the location itself.",
+        "9": "Having a job respected by my family and friends is of utmost importance to me, as I believe that their support and recognition validate my efforts and contribute to my sense of belonging and fulfillment.",
+        "10": "I believe that having chances for promotion is very important as it reflects personal growth and achievement, but I also value the wellbeing of my colleagues and maintaining harmony in the workplace.",
+        "11": "Keeping time free for fun is of utmost importance to me as I believe in enjoying life and pursuing my desires without feeling the need to justify it. Leisure time allows me to recharge and maintain a healthy balance in my life.",
+        "12": "I believe in enjoying life and pursuing my desires, but I also recognize the value of moderation. Having a balance between desires and contentment is important to me, as it allows for both enjoyment and harmony in my relationships.",
+        "13": "Doing a service to a friend is of utmost importance to me because I believe in the value of loyalty and support for those who have been there for me. Helping friends strengthens our bonds and reflects my commitment to those who raised and protected me.",
+        "14": "I believe in being mindful of spending and not wasting resources, as it reflects respect for what one has and helps ensure financial stability for the future. However, I also value enjoying life and spending on meaningful experiences when appropriate.",
+        "15": "I seldom feel nervous or tense, as I tend to embrace flexibility and adapt to situations without rigid expectations, which helps me stay calm and composed.",
+        "16": "I usually find happiness in my life, as I value leisure and enjoy spending time with loved ones, but there are moments when challenges can affect my overall sense of joy.",
+        "17": "Sometimes, I find that my responsibilities to family and friends can limit my personal desires, but I also believe in balancing my needs with those of others.",
+        "18": "I would describe my state of health as fair. While I manage to stay active and maintain a reasonable level of well-being, I do experience some age-related issues that remind me to take care of myself.",
+        "19": "I feel fairly proud to be a citizen of my country, as I appreciate our traditions and values, but I also recognize areas where improvements can be made for the wellbeing of all citizens.",
+        "20": "In my experience, it is usually the case that subordinates are hesitant to contradict their boss, as there is often a strong respect for authority and a desire to maintain harmony in the workplace. This can lead to a reluctance to voice differing opinions or concerns.",
+        "21": "I strongly agree because I believe that a good manager should be flexible and able to adapt to different situations, rather than needing to have all the answers. It's more important to support and guide subordinates effectively.",
+        "22": "I believe that persistent efforts can lead to results, but I also recognize that sometimes adapting to circumstances and being flexible can yield better outcomes.",
+        "23": "I agree that having two bosses can create confusion and conflict in the workplace, but I also believe that with clear communication and defined roles, it can work effectively in some situations.",
+        "24": "I agree that rules are important for maintaining order, but I also believe that flexibility and practical results can sometimes justify breaking them for the greater good of the organization."
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as it allows me to maintain a balance between my commitments to my group and my responsibilities at home, fostering a supportive environment for both.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe that respect is earned through visible achievements and effort. A leader who has proven themselves would inspire me to perform at my best and foster a positive work environment.",
+        "3": "While I value team success over personal recognition, receiving acknowledgment for good performance can enhance motivation and contribute to a positive team environment. It is important, but not the primary focus of my ideal job.",
+        "4": "I believe having job security is very important as it allows me to focus on contributing to my team and achieving long-term goals without the constant worry of instability. However, I also recognize that adaptability and resilience are key in a changing job market.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as a positive and collaborative environment enhances team dynamics and fosters open communication, which I believe is essential for achieving long-term goals together.",
+        "6": "I find it very important to engage in work that is interesting, as it fuels my motivation and allows me to contribute meaningfully to my team while also fostering personal growth.",
+        "7": "Being consulted by my boss in decisions involving my work is of utmost importance to me, as it reflects respect for my expertise and allows me to contribute meaningfully to the team's success.",
+        "8": "While living in a desirable area can enhance my quality of life, it is not the most critical factor for me. I prioritize teamwork and collaboration over location, as long as I can contribute meaningfully to my group.",
+        "9": "While I value the respect of my family and friends, my primary focus is on contributing to a team and achieving long-term goals rather than seeking external validation. Their respect is important, but it does not define my sense of fulfillment in my work.",
+        "10": "I believe that chances for promotion are very important as they reflect the potential for growth and recognition within a team, but my primary focus is on contributing to the group's success rather than personal advancement.",
+        "11": "While I believe in the importance of leisure, I also think it should be balanced with responsibilities and long-term goals. Fun is enjoyable, but it shouldn't overshadow the need for perseverance and contribution to a group.",
+        "12": "I believe moderation is very important, as it helps maintain balance in life and prevents the pitfalls of excess. Keeping desires in check allows for a more focused and purposeful approach to achieving long-term goals.",
+        "13": "Doing a service to a friend is of utmost importance to me, as it reflects my commitment to personal loyalty and the value I place on relationships. Helping friends strengthens bonds and demonstrates my dedication to those I care about.",
+        "14": "I believe thrift is very important as it reflects careful planning and responsibility in managing resources, which aligns with my values of preparation and perseverance toward long-term goals. Being mindful of spending helps ensure that I can invest in what truly matters over time.",
+        "15": "I seldom feel nervous or tense, as I prefer to have clear expectations and procedures in place, which helps me feel more at ease in various situations. My focus on steady perseverance and adaptability also contributes to a sense of calm.",
+        "16": "I find moments of happiness, especially when contributing to a team, but I also believe in maintaining balance and not indulging too freely in personal desires, which can sometimes temper my overall sense of happiness.",
+        "17": "Sometimes, I feel that circumstances and the expectations of others can limit my ability to pursue my personal desires, but I also recognize that it's important to balance my goals with the needs of the group and the situation at hand.",
+        "18": "I would describe my state of health as fair, as I believe in maintaining a steady approach to well-being, but I also recognize that there are areas where I could improve my health and lifestyle choices.",
+        "19": "I am fairly proud to be a citizen of Japan, as I appreciate the culture and values that have shaped my life, but I also recognize the need for change and adaptation in certain areas to better align with modern times.",
+        "20": "In my experience, it is usually the case that subordinates are hesitant to contradict their boss, as there is often a power dynamic that discourages open communication and honest feedback. This can create an environment where individuals feel their opinions are not valued or may lead to negative consequences.",
+        "21": "I agree because while a good manager may not have all the precise answers, they should be able to guide their team effectively and foster an environment of open communication to address questions collaboratively. However, having a solid understanding of procedures and expectations is still important for effective management.",
+        "22": "I strongly agree because I believe that consistent and dedicated efforts lead to long-term success, aligning with my value of patient accumulation toward goals.",
+        "23": "I agree that having two bosses can create confusion and conflict in an organization, but I also recognize that in some situations, it may be necessary for collaboration and efficiency.",
+        "24": "I strongly agree because established rules are designed to protect everyone and ensure consistency, and breaking them can lead to unnecessary risks and confusion. Adhering to these rules fosters a stable environment where long-term goals can be pursued effectively."
+      },
+      "Rin": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as it allows me to maintain a healthy work-life balance and contribute fully to both my professional and personal commitments.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe that clear expectations and demonstrated competence from leadership are essential for effective collaboration and team success. A respected superior sets the tone for the team's culture and drives motivation.",
+        "3": "While I value recognition for good performance, I believe that collective success and team achievements are more important than individual accolades. However, acknowledgment can still motivate and reinforce a positive team culture.",
+        "4": "I believe that having security of employment is very important as it allows me to focus on contributing to the team's long-term goals without the distraction of job instability. However, I also value the opportunity for growth and challenge, which can sometimes come with less secure positions.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as a positive and collaborative environment enhances teamwork and contributes to achieving shared goals. A supportive atmosphere fosters better communication and collective success, which aligns with my values.",
+        "6": "Having work that is interesting is of utmost importance to me, as it fuels my passion and commitment to the team, allowing me to contribute meaningfully toward our shared goals. Engaging work also fosters creativity and innovation, which are essential for outperforming rival groups.",
+        "7": "Being consulted by my boss in decisions involving my work is of utmost importance to me, as it fosters clear expectations and collaboration, allowing me to contribute effectively to the team's goals.",
+        "8": "While living in a desirable area can enhance my overall quality of life, it is not the most critical factor for me. I prioritize the work environment and team dynamics over location.",
+        "9": "While I value the respect of my family and friends, my primary focus is on contributing to a team and achieving shared goals rather than seeking external validation. Their respect is important, but it does not define my sense of fulfillment in my work.",
+        "10": "Having chances for promotion is of utmost importance to me as it reflects the recognition of hard work and commitment to the team. It also aligns with my belief in striving for long-term goals and achieving visible success through effort.",
+        "11": "While I believe in the importance of leisure, I also think it should be balanced with responsibilities and long-term goals, so I view keeping time free for fun as moderately important.",
+        "12": "I believe that moderation is very important, as it helps maintain balance in life and prevents the pitfalls of excess. While I appreciate personal desires, I feel they should be kept in check to ensure a focus on long-term goals and responsibilities.",
+        "13": "I believe that helping friends is essential to building strong relationships and fostering a supportive community, reflecting my commitment to shared goals and collective success.",
+        "14": "I believe that being thrifty is very important as it reflects a sense of responsibility and foresight, allowing for better long-term planning and stability. However, I also recognize that there are times when spending is necessary for quality or value.",
+        "15": "I seldom feel nervous or tense, as I find that having clear expectations and structured communication helps me feel more at ease in various situations.",
+        "16": "I find happiness in contributing to my team and achieving shared goals, but I also recognize the constraints of circumstances and the need for balance in personal desires, which can sometimes affect my overall sense of happiness.",
+        "17": "Sometimes, I feel that external circumstances and the needs of my team can limit my personal desires, but I also recognize the importance of collaboration and shared goals, which can lead to fulfilling outcomes.",
+        "18": "I would describe my state of health as good, as I prioritize maintaining a balanced lifestyle and managing stress effectively, but I recognize there is always room for improvement.",
+        "19": "I feel somewhat proud to be a citizen of my country, as I appreciate the cultural heritage and values it represents, but I also recognize the need for improvement in various areas that affect society as a whole.",
+        "20": "In my experience, it is usually the case that subordinates are afraid to contradict their boss, as hierarchical structures often create an environment where dissent is discouraged, leading to a lack of open communication. This fear can hinder effective collaboration and the sharing of valuable insights.",
+        "21": "I strongly agree because effective management is more about guiding and supporting team members rather than having all the answers. A good manager fosters an environment where questions can be explored collaboratively, promoting growth and learning.",
+        "22": "I strongly agree because I believe that steady perseverance and consistent effort are essential for achieving long-term goals, and they often lead to more meaningful and sustainable results than seeking quick gains.",
+        "23": "I agree that having two bosses can create confusion and conflict in decision-making, but in some cases, it can also foster collaboration and diverse perspectives if managed well. Clear communication and defined roles are essential to mitigate potential issues.",
+        "24": "I agree that rules are important for maintaining order and consistency, but I also believe that there are situations where adapting or breaking a rule may be necessary for the greater good of the organization."
+      },
+      "Mei": {
+        "1": "Having sufficient time for my personal or home life is of utmost importance to me, as it allows me to maintain a balance between my work commitments and my responsibilities to my family and personal well-being.",
+        "2": "Having a boss I can respect is of utmost importance to me, as I believe that respect is earned through visible achievements and effort. A leader who has proven themselves would inspire me and foster a positive work environment.",
+        "3": "While I value team success over personal recognition, receiving acknowledgment for good performance can still motivate me and reinforce the importance of our collective efforts. It helps to build a positive team environment and encourages continued perseverance.",
+        "4": "Security of employment is of utmost importance to me as it allows for a stable environment where I can contribute to a team and work towards long-term goals without the stress of uncertainty. A secure job fosters loyalty and commitment, enabling me to focus on collective success rather than personal survival.",
+        "5": "Having pleasant people to work with is of utmost importance to me, as a positive team environment fosters collaboration and enhances overall productivity, which aligns with my values of teamwork and open communication.",
+        "6": "I believe that doing work that is interesting is crucial as it keeps me engaged and motivated, allowing me to contribute more effectively to the team's goals. An interesting job fosters creativity and a sense of purpose, which aligns with my values of commitment and perseverance.",
+        "7": "Being consulted by my boss in decisions involving my work is of utmost importance to me, as it fosters a sense of ownership and commitment, and allows for collaboration that can lead to better outcomes.",
+        "8": "While living in a desirable area is nice, it is not my top priority; I value the work environment and team dynamics more than the location itself.",
+        "9": "I value the respect of my family and friends, as it reflects their understanding of my contributions and choices, but my primary focus is on the fulfillment and loyalty I feel towards my team and the goals we strive to achieve together.",
+        "10": "Having chances for promotion is of utmost importance to me as it reflects the opportunity for growth and recognition within a team, aligning with my belief in visible achievements earned through effort. It also motivates me to contribute more effectively to the group's long-term goals.",
+        "11": "While I believe in the importance of leisure, I also think it should be balanced with responsibilities and long-term goals. Fun is enjoyable, but it should not overshadow the need for perseverance and commitment to more significant pursuits.",
+        "12": "I believe that moderation is very important, as it helps maintain balance in life and prevents the pitfalls of excess. While I appreciate having some desires, I feel it's essential to keep them in check to avoid impropriety.",
+        "13": "Doing a service to a friend is of utmost importance to me, as it reflects my commitment to personal loyalty and the value I place on supporting those I care about. Helping friends strengthens our bonds and demonstrates my dedication to nurturing those relationships.",
+        "14": "Thrift is of utmost importance to me as I believe in being responsible with my resources and saving for the future. It reflects my values of perseverance and long-term planning, ensuring that I can meet my goals without unnecessary expenditure.",
+        "15": "I sometimes feel nervous or tense, especially in situations where expectations are unclear or when I am unsure about how to communicate effectively with others. However, I try to manage these feelings by focusing on clear procedures and open communication.",
+        "16": "I experience happiness at times, especially when contributing to my team and seeing our collective efforts pay off, but I also recognize the importance of maintaining balance and not indulging in fleeting pleasures.",
+        "17": "I believe that while I have personal desires, circumstances and the needs of others often influence my decisions, leading me to prioritize group goals over individual wants.",
+        "18": "I would describe my state of health as fair; I manage to maintain a routine but occasionally face challenges that remind me to take better care of myself.",
+        "19": "I feel somewhat proud to be a citizen of my country, as I appreciate the culture and traditions that have shaped my life, but I also recognize the need for improvement and adaptation in our society.",
+        "20": "In my experience, it is usually the case that subordinates are afraid to contradict their boss, as there is often a power dynamic that discourages open communication and honest feedback. This fear can hinder collaboration and the sharing of valuable ideas.",
+        "21": "I strongly agree because I believe that a good manager fosters an environment of open communication and collaboration, allowing team members to contribute to solutions rather than relying solely on the manager's knowledge.",
+        "22": "I strongly believe that persistent efforts lead to meaningful results, as they reflect dedication and the ability to overcome challenges over time. Quick gains may be tempting, but they often lack the depth and stability that come from sustained perseverance.",
+        "23": "I agree that having two bosses can create confusion and conflict in an organization, but I also recognize that in some situations, it can foster collaboration and diverse perspectives.",
+        "24": "I strongly agree because I believe that clear rules and procedures provide a framework for stability and consistency, which is essential for a well-functioning organization. Breaking rules can lead to confusion and undermine trust within the team."
+      }
+    }
+  },
+  "individual_dimension_scores": {
+    "Australia": {
+      "James": {
+        "PDI": 25.0,
+        "IDV": 70.0,
+        "MAS": 35.0,
+        "UAI": -88.33333333333334,
+        "LTO": -15.0,
+        "IVR": 150.0
+      },
+      "Charlotte": {
+        "PDI": 25.0,
+        "IDV": 128.33333333333331,
+        "MAS": 70.0,
+        "UAI": -115.0,
+        "LTO": -1.6666666666666714,
+        "IVR": 150.0
+      },
+      "Amelia": {
+        "PDI": 25.0,
+        "IDV": 35.0,
+        "MAS": 35.0,
+        "UAI": -75.0,
+        "LTO": -15.0,
+        "IVR": 150.0
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "PDI": 85.0,
+        "IDV": -35.0,
+        "MAS": 0.0,
+        "UAI": -155.0,
+        "LTO": -40.0,
+        "IVR": 110.0
+      },
+      "Nur": {
+        "PDI": 111.66666666666666,
+        "IDV": 0.0,
+        "MAS": 0.0,
+        "UAI": -181.66666666666669,
+        "LTO": -80.0,
+        "IVR": 150.0
+      },
+      "Siti": {
+        "PDI": 85.0,
+        "IDV": -35.0,
+        "MAS": 0.0,
+        "UAI": -65.0,
+        "LTO": -40.0,
+        "IVR": 123.33333333333334
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "PDI": 50.0,
+        "IDV": 46.666666666666664,
+        "MAS": 0.0,
+        "UAI": -15.0,
+        "LTO": -6.666666666666664,
+        "IVR": -35.0
+      },
+      "Rin": {
+        "PDI": 50.0,
+        "IDV": 70.0,
+        "MAS": 35.0,
+        "UAI": -105.0,
+        "LTO": 1.6666666666666643,
+        "IVR": -35.0
+      },
+      "Mei": {
+        "PDI": 50.0,
+        "IDV": 35.0,
+        "MAS": 35.0,
+        "UAI": -13.33333333333334,
+        "LTO": 50.0,
+        "IVR": -35.0
+      }
+    }
+  },
+  "individual_run_dimensions": {
+    "Australia": {
+      "James": {
+        "run_1": {
+          "PDI": 25,
+          "IDV": 70,
+          "MAS": 35,
+          "UAI": -75,
+          "LTO": -15,
+          "IVR": 150
+        },
+        "run_2": {
+          "PDI": 25,
+          "IDV": 70,
+          "MAS": 35,
+          "UAI": -75,
+          "LTO": -15,
+          "IVR": 150
+        },
+        "run_3": {
+          "PDI": 25,
+          "IDV": 70,
+          "MAS": 35,
+          "UAI": -115,
+          "LTO": -15,
+          "IVR": 150
+        }
+      },
+      "Charlotte": {
+        "run_1": {
+          "PDI": 25,
+          "IDV": 140,
+          "MAS": 70,
+          "UAI": -115,
+          "LTO": 25,
+          "IVR": 150
+        },
+        "run_2": {
+          "PDI": 25,
+          "IDV": 140,
+          "MAS": 70,
+          "UAI": -115,
+          "LTO": -15,
+          "IVR": 150
+        },
+        "run_3": {
+          "PDI": 25,
+          "IDV": 105,
+          "MAS": 70,
+          "UAI": -115,
+          "LTO": -15,
+          "IVR": 150
+        }
+      },
+      "Amelia": {
+        "run_1": {
+          "PDI": 25,
+          "IDV": 35,
+          "MAS": 35,
+          "UAI": -75,
+          "LTO": -15,
+          "IVR": 150
+        },
+        "run_2": {
+          "PDI": 25,
+          "IDV": 35,
+          "MAS": 35,
+          "UAI": -75,
+          "LTO": -15,
+          "IVR": 150
+        },
+        "run_3": {
+          "PDI": 25,
+          "IDV": 35,
+          "MAS": 35,
+          "UAI": -75,
+          "LTO": -15,
+          "IVR": 150
+        }
+      }
+    },
+    "Malaysia": {
+      "Abdul": {
+        "run_1": {
+          "PDI": 85,
+          "IDV": -35,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": -40,
+          "IVR": 110
+        },
+        "run_2": {
+          "PDI": 85,
+          "IDV": -35,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": -40,
+          "IVR": 110
+        },
+        "run_3": {
+          "PDI": 85,
+          "IDV": -35,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": -40,
+          "IVR": 110
+        }
+      },
+      "Nur": {
+        "run_1": {
+          "PDI": 120,
+          "IDV": 0,
+          "MAS": 0,
+          "UAI": -155,
+          "LTO": -80,
+          "IVR": 150
+        },
+        "run_2": {
+          "PDI": 120,
+          "IDV": 0,
+          "MAS": 0,
+          "UAI": -195,
+          "LTO": -80,
+          "IVR": 150
+        },
+        "run_3": {
+          "PDI": 95,
+          "IDV": 0,
+          "MAS": 0,
+          "UAI": -195,
+          "LTO": -80,
+          "IVR": 150
+        }
+      },
+      "Siti": {
+        "run_1": {
+          "PDI": 85,
+          "IDV": -35,
+          "MAS": 0,
+          "UAI": -65,
+          "LTO": -40,
+          "IVR": 150
+        },
+        "run_2": {
+          "PDI": 85,
+          "IDV": -35,
+          "MAS": 0,
+          "UAI": -65,
+          "LTO": -40,
+          "IVR": 110
+        },
+        "run_3": {
+          "PDI": 85,
+          "IDV": -35,
+          "MAS": 0,
+          "UAI": -65,
+          "LTO": -40,
+          "IVR": 110
+        }
+      }
+    },
+    "Japan": {
+      "Nagi": {
+        "run_1": {
+          "PDI": 50,
+          "IDV": 35,
+          "MAS": 0,
+          "UAI": -15,
+          "LTO": -15,
+          "IVR": -35
+        },
+        "run_2": {
+          "PDI": 50,
+          "IDV": 70,
+          "MAS": 0,
+          "UAI": -15,
+          "LTO": 10,
+          "IVR": -35
+        },
+        "run_3": {
+          "PDI": 50,
+          "IDV": 35,
+          "MAS": 0,
+          "UAI": -15,
+          "LTO": -15,
+          "IVR": -35
+        }
+      },
+      "Rin": {
+        "run_1": {
+          "PDI": 50,
+          "IDV": 70,
+          "MAS": 35,
+          "UAI": -105,
+          "LTO": -15,
+          "IVR": -35
+        },
+        "run_2": {
+          "PDI": 50,
+          "IDV": 70,
+          "MAS": 35,
+          "UAI": -105,
+          "LTO": 10,
+          "IVR": -35
+        },
+        "run_3": {
+          "PDI": 50,
+          "IDV": 70,
+          "MAS": 35,
+          "UAI": -105,
+          "LTO": 10,
+          "IVR": -35
+        }
+      },
+      "Mei": {
+        "run_1": {
+          "PDI": 50,
+          "IDV": 35,
+          "MAS": 35,
+          "UAI": 0,
+          "LTO": 50,
+          "IVR": -35
+        },
+        "run_2": {
+          "PDI": 50,
+          "IDV": 35,
+          "MAS": 35,
+          "UAI": -40,
+          "LTO": 50,
+          "IVR": -35
+        },
+        "run_3": {
+          "PDI": 50,
+          "IDV": 35,
+          "MAS": 35,
+          "UAI": 0,
+          "LTO": 50,
+          "IVR": -35
+        }
+      }
+    }
+  },
+  "pooled_dimension_scores": {
+    "Australia": {
+      "PDI": 25.0,
+      "IDV": 77.77777777777777,
+      "MAS": 46.666666666666664,
+      "UAI": -92.77777777777779,
+      "LTO": -10.555555555555564,
+      "IVR": 150.0
+    },
+    "Malaysia": {
+      "PDI": 93.88888888888889,
+      "IDV": -23.333333333333336,
+      "MAS": 0.0,
+      "UAI": -133.88888888888889,
+      "LTO": -53.33333333333334,
+      "IVR": 127.77777777777779
+    },
+    "Japan": {
+      "PDI": 50.0,
+      "IDV": 50.55555555555556,
+      "MAS": 23.333333333333336,
+      "UAI": -44.444444444444464,
+      "LTO": 14.999999999999993,
+      "IVR": -35.0
+    }
+  },
+  "pooled_run_dimensions": {
+    "Australia": {
+      "run_1": {
+        "PDI": 25.0,
+        "IDV": 81.66666666666667,
+        "MAS": 46.666666666666664,
+        "UAI": -88.33333333333334,
+        "LTO": -1.6666666666666714,
+        "IVR": 150.0
+      },
+      "run_2": {
+        "PDI": 25.0,
+        "IDV": 81.66666666666667,
+        "MAS": 46.666666666666664,
+        "UAI": -88.33333333333334,
+        "LTO": -15.0,
+        "IVR": 150.0
+      },
+      "run_3": {
+        "PDI": 25.0,
+        "IDV": 70.0,
+        "MAS": 46.666666666666664,
+        "UAI": -101.66666666666666,
+        "LTO": -15.0,
+        "IVR": 150.0
+      }
+    },
+    "Malaysia": {
+      "run_1": {
+        "PDI": 96.66666666666667,
+        "IDV": -23.333333333333336,
+        "MAS": 0.0,
+        "UAI": -125.0,
+        "LTO": -53.33333333333334,
+        "IVR": 136.66666666666666
+      },
+      "run_2": {
+        "PDI": 96.66666666666667,
+        "IDV": -23.333333333333336,
+        "MAS": 0.0,
+        "UAI": -138.33333333333331,
+        "LTO": -53.33333333333334,
+        "IVR": 123.33333333333334
+      },
+      "run_3": {
+        "PDI": 88.33333333333334,
+        "IDV": -23.333333333333336,
+        "MAS": 0.0,
+        "UAI": -138.33333333333331,
+        "LTO": -53.33333333333334,
+        "IVR": 123.33333333333334
+      }
+    },
+    "Japan": {
+      "run_1": {
+        "PDI": 50.0,
+        "IDV": 46.66666666666667,
+        "MAS": 23.333333333333336,
+        "UAI": -40.0,
+        "LTO": 6.666666666666664,
+        "IVR": -35.0
+      },
+      "run_2": {
+        "PDI": 50.0,
+        "IDV": 58.333333333333336,
+        "MAS": 23.333333333333336,
+        "UAI": -53.33333333333334,
+        "LTO": 23.33333333333333,
+        "IVR": -35.0
+      },
+      "run_3": {
+        "PDI": 50.0,
+        "IDV": 46.66666666666667,
+        "MAS": 23.333333333333336,
+        "UAI": -40.0,
+        "LTO": 14.999999999999993,
+        "IVR": -35.0
+      }
+    }
+  },
+  "kendall_tau": {
+    "PDI": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Malaysia": 1,
+        "Japan": 2,
+        "Australia": 3
+      },
+      "llm_ranking": {
+        "Malaysia": 1,
+        "Japan": 2,
+        "Australia": 3
+      }
+    },
+    "IDV": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      }
+    },
+    "MAS": {
+      "tau": 0.33333333333333337,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Japan": 2,
+        "Malaysia": 3
+      }
+    },
+    "UAI": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      }
+    },
+    "LTO": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      },
+      "llm_ranking": {
+        "Japan": 1,
+        "Australia": 2,
+        "Malaysia": 3
+      }
+    },
+    "IVR": {
+      "tau": 1.0,
+      "human_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      },
+      "llm_ranking": {
+        "Australia": 1,
+        "Malaysia": 2,
+        "Japan": 3
+      }
+    },
+    "average_tau": 0.888888888888889
+  },
+  "kendall_tau_per_run": {
+    "run_1": {
+      "PDI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": 0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "UAI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.888888888888889
+    },
+    "run_2": {
+      "PDI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": 0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "UAI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.888888888888889
+    },
+    "run_3": {
+      "PDI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        },
+        "llm_ranking": {
+          "Malaysia": 1,
+          "Japan": 2,
+          "Australia": 3
+        }
+      },
+      "IDV": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "MAS": {
+        "tau": 0.33333333333333337,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Japan": 2,
+          "Malaysia": 3
+        }
+      },
+      "UAI": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "LTO": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        },
+        "llm_ranking": {
+          "Japan": 1,
+          "Australia": 2,
+          "Malaysia": 3
+        }
+      },
+      "IVR": {
+        "tau": 1.0,
+        "human_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        },
+        "llm_ranking": {
+          "Australia": 1,
+          "Malaysia": 2,
+          "Japan": 3
+        }
+      },
+      "average_tau": 0.888888888888889
+    }
+  }
+}

@@ -337,7 +337,7 @@ def run_wvs_measurement(agents: list, day: int, cfg: RunConfig, sim_time=None, t
     for agent in agents:
         print(f"  Administering WVS to {agent.name} ({n_runs} runs)...")
 
-        belief_contexts = retrieve_all_beliefs(agent, curr_time=sim_time)
+        belief_contexts = retrieve_all_beliefs(agent, curr_time=sim_time, top_n=3)
         log_wvs_retrieval(agent, sim_time, belief_contexts)
 
         all_runs = []
