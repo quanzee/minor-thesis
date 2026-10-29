@@ -4,7 +4,7 @@ Code and run outputs for the RMIT minor thesis *Cultural Belief Drift in Multi-A
 
 The study simulates a small town of LLM agents seeded with Australian, Japanese and Malaysian cultural personas, derived from Hofstede's cultural dimensions, and measures whether their stated cultural positions drift through repeated multi-agent dialogue. It addresses three research questions:
 
-- **RQ1:** To what extent do culturally seeded LLM agents' beliefs drift from their initial cultural positions during multi-agent dialogue, and does this drift show a consistent direction (convergence, divergence or no clear pattern)?
+- **RQ1:** To what extent do culturally seeded LLM agents' beliefs drift from their initial cultural positions during repeated multi-agent dialogue with memory and reflection, and does this drift show a consistent direction (convergence, divergence or no clear pattern)?
 - **RQ2:** Do the extent and direction of belief drift vary across different underlying LLMs under an identical simulation setup?
 - **RQ3:** Do architectural or prompting interventions change the extent or direction of drift?
 
